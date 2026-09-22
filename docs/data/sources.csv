@@ -12,9 +12,14 @@ fiber,AND,Movistar España,https://www.movistar.es
 fiber,AND,Orange France,https://www.orange.fr
 fiber,ARE,e& (Etisalat),https://giraffy.com/uae/en/internet/fiber-internet
 fiber,ARE,du,https://giraffy.com/uae/en/internet/fiber-internet
+fiber,ARG,Fibertel,https://www.personal.com.ar
+fiber,ARG,Claro,https://www.claro.com.ar
+fiber,ARG,Telecentro,https://www.telecentro.com.ar
 fiber,ARM,Ucom,https://www.ucom.am/en
 fiber,ARM,Telecom Armenia (Beeline / Team),https://www.telecomarmenia.am/en/
 fiber,ARM,Viva Armenia,https://www.viva.am/en
+fiber,ATG,Flow,https://www.flowantigua.com
+fiber,ATG,Digicel,https://www.digicelgroup.com
 fiber,AUS,Telstra,https://nbntracker.au/providers/telstra
 fiber,AUS,Optus,https://www.comparebroadband.com.au/internet-providers/optus-broadband/
 fiber,AUS,TPG,https://nbntracker.au/providers/tpg
@@ -38,6 +43,7 @@ fiber,BFA,Bridge Fiber Solutions (BFS),https://www.bfs.bf/
 fiber,BGD,Link3 Technologies,https://link3.net/packages
 fiber,BGD,Fiber@Home Ltd,https://fiberathome.net/
 fiber,BGD,Bangladesh Telecommunications Company (BTCL),https://www.thedailystar.net/news/btcl-slashes-internet-price-introduces-new-packages-4078371
+fiber,BGR,Vivacom,https://www.vivacom.bg
 fiber,BGR,A1 Bulgaria,https://en.wikipedia.org/wiki/A1_Bulgaria
 fiber,BGR,Yettel Bulgaria,https://ontology.point-topic.com/profiles/operators/yettel-bulgaria
 fiber,BHR,Batelco,https://gsmplans.com/plan/bahrain/batelco-ultra-home-internet-bahrain/
@@ -49,10 +55,18 @@ fiber,BIH,BH Telecom,https://www.bhtelecom.ba
 fiber,BIH,Telemach Bosnia and Herzegovina,https://telemach.ba
 fiber,BIH,m:tel Bosnia and Herzegovina,https://www.mtel.ba
 fiber,BLR,Beltelecom (byfly),https://beltelecom.by/en/private/internet
+fiber,BLR,MTS Belarus,https://www.mts.by
+fiber,BLR,A1 Belarus,https://www.a1.by
 fiber,BLZ,Digi,https://livedigi.com/diginet/
 fiber,BLZ,SMART,https://www.smart-bz.com/
+fiber,BOL,Nuevatel,https://www.viva.com.bo
+fiber,BOL,Entel,https://www.entel.bo
+fiber,BOL,Tigo,https://www.tigo.com.bo
 fiber,BRA,Vivo,https://vivo.com.br/para-voce/produtos-e-servicos/para-casa/internet
 fiber,BRA,Claro,https://www.claro.com.br/internet/banda-larga/fibra-otica
+fiber,BRA,TIM,https://www.tim.com.br
+fiber,BRB,Flow,https://www.flowbarbados.com
+fiber,BRB,Digicel,https://www.digicelgroup.com
 fiber,BRN,imagine (TelBru),https://www.imagine.com.bn/
 fiber,BRN,DST (Datastream Digital),https://dst.com.bn/infinity-plan/
 fiber,BRN,Progresif,https://www.progresif.com/
@@ -87,23 +101,38 @@ fiber,COD,Orange DRC,https://www.orange.cd/
 fiber,COG,Congo Telecom,https://www.arpce.cg/
 fiber,COG,MTN Congo,https://mtn.cg/particuliers/offres-mobiles/internet-en-fin-de-forfait-internet/
 fiber,COG,Airtel Congo,https://blog.iambeezy.app/fr/forfaits-internet-mtn-airtel-congo-2026-comparatif-plans/
+fiber,COL,Claro,https://www.claro.com.co
+fiber,COL,Movistar,https://www.movistar.com.co
+fiber,COL,Tigo,https://www.tigo.com.co
 fiber,COM,Comores Telecom,https://en.wikipedia.org/wiki/Telecommunications_in_the_Comoros
 fiber,CPV,Unitel T+,https://www.uniteltmais.cv/private/home/home-plus-bundles
 fiber,CPV,CVMovel,https://www.caboverdeexpert.com/cape-verde-communication-and-internet/
 fiber,CRI,Kolbi,https://www.kolbi.cr/wps/portal/kolbi/hogares/servicios-kolbi-hogar/internet/
 fiber,CRI,Liberty,https://libertycr.com/web/hogar/planes-fibra-optica
 fiber,CRI,Telecable,https://www.pressreader.com/costa-rica/el-financiero-costa-rica/20260509/281483578005370
+fiber,CUB,ETECSA,https://www.etecsa.cu
 fiber,CYP,CYTA,https://www.cyta.com.cy/
 fiber,CYP,PrimeTel,https://www.primetel.com.cy/en
 fiber,CYP,Cablenet,https://www.cablenet.com.cy/en/
+fiber,CZE,O2 Czech Republic,https://www.o2.cz
+fiber,CZE,T-Mobile Czech Republic,https://www.t-mobile.cz
+fiber,CZE,Vodafone Czech Republic,https://www.vodafone.cz
 fiber,DEU,Deutsche Telekom,https://www.telekom.de
 fiber,DEU,Vodafone Deutschland,https://www.vodafone.de
 fiber,DEU,1&1 Telekom,https://www.1und1.de
 fiber,DJI,afrifiber (AfriFiber),https://www.afrifiber.com/
+fiber,DMA,Flow,https://www.flowdominica.com
+fiber,DMA,Digicel,https://www.digicelgroup.com
 fiber,DNK,YouSee (TDC),https://billig-fiber.dk/internetudbydere
 fiber,DNK,Norlys,https://billig-fiber.dk/internetudbydere
 fiber,DNK,Telenor Denmark,https://billig-fiber.dk/internetudbydere
+fiber,DOM,Altice,https://altice.com.do
+fiber,DOM,Claro,https://www.claro.com.do
+fiber,DOM,Wind Telecom,https://www.wind.com.do
 fiber,DZA,Algérie Télécom,https://zoomalgerie.com/fibre-optique-algerie-idoom-prix-offres-eligibilite/
+fiber,ECU,CNT,https://www.cnt.gob.ec
+fiber,ECU,Movistar,https://www.movistar.com.ec
+fiber,ECU,Xtrim,https://www.xtrim.com.ec
 fiber,EGY,Telecom Egypt (WE),https://flatswipe.app/en/guides-egypt/egypt-home-internet
 fiber,ERI,EriTel,https://eritel.com.er/
 fiber,ESP,Movistar,https://www.movistar.es
@@ -111,8 +140,12 @@ fiber,ESP,Orange España,https://www.orange.es
 fiber,ESP,Vodafone España,https://www.vodafone.es
 fiber,EST,Telia Eesti,https://www.telia.ee/en/era/internet/koduinternet/
 fiber,EST,Elisa Eesti,https://www.elisa.ee/et/eraklient/internet/kodus/koduinternet-ja-tv-paketid
+fiber,EST,STV,https://www.stv.ee
 fiber,ETH,Ethio Telecom,https://planspapa.com/offer/ethio-telecom-wifi-packages/
 fiber,ETH,Safaricom Ethiopia,https://www.safaricom.et/
+fiber,FIN,Elisa,https://www.elisa.fi
+fiber,FIN,DNA,https://www.dna.fi
+fiber,FIN,Telia Finland,https://www.telia.fi
 fiber,FJI,Telecom Fiji,https://telecom.com.fj/
 fiber,FJI,Vodafone Fiji,https://www.vodafone.com.fj/personal/price-plans/broadband/5g-broadband-plans
 fiber,FJI,Digicel Fiji,https://www.digicelpacific.com/mobile/fj/bundles
@@ -123,6 +156,9 @@ fiber,FSM,FSM Telecommunications Corp,https://fsmtc.fm/internet
 fiber,GAB,Moov Africa Gabon (Gabon Telecom),https://www.moov-africa.ga/
 fiber,GAB,Airtel Gabon,https://blog.iambeezy.app/fr/forfaits-mobile-gabon-airtel-moov-libertis-2026/
 fiber,GAB,Libertis,https://blog.iambeezy.app/fr/forfaits-mobile-gabon-airtel-moov-libertis-2026/
+fiber,GBR,BT (Openreach),https://www.bt.com
+fiber,GBR,Virgin Media,https://www.virginmedia.com
+fiber,GBR,Sky (Openreach FTTP),https://www.sky.com
 fiber,GEO,MagtiCom,https://www.magticom.ge/en/internet/internet-tariffs/internet-packages
 fiber,GEO,Silknet,https://silknet.com/en/
 fiber,GEO,Neo Net,https://neonet.ge/ge/home
@@ -140,11 +176,23 @@ fiber,GNQ,GETESA,https://getesa.gq/fr/
 fiber,GRC,COSMOTE (OTE),https://www.cosmote.gr
 fiber,GRC,Vodafone Greece,https://www.vodafone.gr
 fiber,GRC,Nova,https://www.nova.gr
+fiber,GRD,Flow,https://www.flowgrenada.com
+fiber,GRD,Digicel,https://www.digicelgroup.com
 fiber,GTM,Tigo,https://livinginguatemala.com/es/guias/internet-guatemala/
 fiber,GTM,Claro,https://www.claro.com.gt/personas/servicios/servicios-hogar/fibra-optica/
+fiber,GUY,GTT,https://www.gtt.co.gy
+fiber,GUY,Digicel,https://www.digicelgroup.com
+fiber,GUY,E-Networks,https://www.enetworks.gy
+fiber,HND,Tigo,https://www.tigo.com.hn
+fiber,HND,Claro,https://www.claro.com.hn
+fiber,HND,Hondutel,http://www.hondutel.hn
 fiber,HRV,Hrvatski Telekom,https://www.hrvatskitelekom.hr
 fiber,HRV,A1 Hrvatska,https://www.a1.hr
 fiber,HRV,Telemach Hrvatska,https://telemach.hr
+fiber,HTI,Natcom,https://natcom.ht
+fiber,HUN,Magyar Telekom,https://www.telekom.hu
+fiber,HUN,DIGI Hungary,https://www.digi.hu
+fiber,HUN,Vodafone Hungary,https://www.one.hu
 fiber,IDN,IndiHome,https://www.telkomsel.com/en/indihome
 fiber,IDN,Biznet,https://biznethome.net/product/packages
 fiber,IDN,MyRepublic,https://myrepublicdaftarinternet.com/daftar-paket
@@ -165,6 +213,7 @@ fiber,ISR,Bezeq,https://en.wikipedia.org/wiki/Bezeq
 fiber,ITA,TIM,https://www.tim.it
 fiber,ITA,WindTre,https://www.windtre.it
 fiber,ITA,Fastweb,https://www.fastweb.it
+fiber,JAM,Flow,https://www.flowjamaica.com
 fiber,JAM,Digicel,https://www.digicelgroup.com/jm/en/home-and-entertainment/internet
 fiber,JOR,Orange Jordan,https://eshop.orange.jo/en/internet/fiber-offers/fiber-200-mbps
 fiber,JOR,Umniah,https://eshop.umniah.com/en/plans/internet/fiber.html
@@ -187,6 +236,8 @@ fiber,KHM,SINet,https://www.sinet.com.kh/internet-solution/fiber-plus/
 fiber,KHM,MekongNet,https://www.mekongnet.com.kh/
 fiber,KIR,OceanLink,https://www.oceanlink.ki/plans
 fiber,KIR,Vodafone Kiribati,https://vodafone.com.ki/
+fiber,KNA,Flow,https://discoverflow.co
+fiber,KNA,Digicel,https://www.digicelgroup.com
 fiber,KOR,KT,https://m.product.kt.com/mDic/productDetail.do?ItemCode=1504
 fiber,KOR,SK Broadband,https://en.wikipedia.org/wiki/SK_Broadband
 fiber,KOR,LG U+,https://setkora.com/internet/lgu-100-solo
@@ -201,6 +252,8 @@ fiber,LBR,Orange Liberia,https://www.orange.com.lr/en/voice-and-data-offers.html
 fiber,LBR,Lonestar Cell (MTN Liberia),https://lonestarcell.com/data-bundle/
 fiber,LBR,Novafone,https://www.telecomtrainer.com/list-of-mobile-operators-in-liberia/
 fiber,LBY,Libya Telecom & Technology (LTT),https://www.ltt.ly/personal/fiber
+fiber,LCA,Flow,https://discoverflow.co
+fiber,LCA,Digicel,https://www.digicelgroup.com
 fiber,LIE,Telecom Liechtenstein AG (FL1),https://www.fl1.li
 fiber,LIE,Salt (Liechtenstein) AG,https://www.salt.ch
 fiber,LIE,SupraNet AG,https://www.supranet.li
@@ -209,10 +262,13 @@ fiber,LKA,Dialog Axiata,https://dialog.lk/wi-fi/fibre
 fiber,LSO,Econet Telecom Lesotho,https://techbiva.com/data/lesotho-internet-packages-data-plans/
 fiber,LSO,Vodacom Lesotho,https://techbiva.com/data/lesotho-internet-packages-data-plans/
 fiber,LSO,Leo Lesotho,https://techbiva.com/data/lesotho-internet-packages-data-plans/
+fiber,LTU,Telia Lietuva,https://www.telia.lt
+fiber,LTU,Cgates,https://www.cgates.lt
 fiber,LTU,Init,https://init.lt/internet-offer/
 fiber,LUX,POST Luxembourg,https://www.post.lu
 fiber,LUX,Eltrona,https://eltrona.lu
 fiber,LUX,Tango,https://www.tango.lu
+fiber,LVA,Tet (Lattelecom),https://www.tet.lv
 fiber,LVA,Balticom,https://balticom.lv/en/internet
 fiber,LVA,Bite Latvija,https://www.bite.lv/lv/optiskais-majas-internets
 fiber,MAR,Maroc Telecom,https://fiberoptic.ma/comparatif-fibre-optique-maroc-2026-orange-inwi-ou-maroc-telecom/
@@ -272,6 +328,9 @@ fiber,NIC,Tigo,https://ayuda.tigo.com.ni/hc/centro-de-ayuda/articles/1740423272
 fiber,NLD,KPN,https://www.kpn.com
 fiber,NLD,Ziggo,https://www.ziggo.nl
 fiber,NLD,Odido,https://www.odido.nl
+fiber,NOR,Telenor,https://www.telenor.no
+fiber,NOR,Altibox (Lyse),https://www.altibox.no
+fiber,NOR,Telia Norge (Get),https://www.telia.no
 fiber,NPL,WorldLink,https://www.worldlink.com.np/
 fiber,NPL,Subisu CableNet,https://www.subisu.net.np/
 fiber,NPL,Nepal Telecom (NTC),https://www.ntc.net.np/
@@ -288,18 +347,33 @@ fiber,PAK,Nayatel,https://propakistani.pk/2026/06/19/nayatel-increases-prices-of
 fiber,PAN,Tigo,https://insidepanama.com/es/vida-cotidiana/internet-operadores-panama-2026
 fiber,PAN,+Movil (Cable & Wireless),https://panamarealestateguide.com/living/internet-providers-panama-expats
 fiber,PAN,Movistar,https://panacrypto.com/es/conectividad-internet-panama/
+fiber,PER,Movistar,https://www.movistar.com.pe
+fiber,PER,Claro,https://www.claro.com.pe
+fiber,PER,Bitel,https://www.bitel.com.pe
 fiber,PHL,PLDT,https://pldthome.com/fiber-unli-all
 fiber,PHL,Globe,https://www.globe.com.ph/about-us/newsroom/consumer/globe-at-home-new-gfiber-plans-family-bundle-worth-7k
 fiber,PHL,Converge,https://fiberx.convergeict.com/products/plans/22
 fiber,PLW,PNCC (Palau National Communications Corp),https://www.pnccpalau.com/residential-and-personal/internet
 fiber,PNG,Telikom PNG,https://www.telikompng.com.pg/index.php/fixed-broadband/fixed-broadband-plans
 fiber,PNG,ElluNet PNG,https://ellunetpng.com.pg
+fiber,POL,Orange Polska,https://www.orange.pl
+fiber,POL,Play (Netia),https://www.play.pl
+fiber,POL,T-Mobile Polska,https://www.t-mobile.pl
 fiber,PRT,MEO,https://www.meo.pt
 fiber,PRT,NOS,https://www.nos.pt
 fiber,PRT,Vodafone Portugal,https://www.vodafone.pt
+fiber,PRY,Tigo,https://www.tigo.com.py
+fiber,PRY,Claro,https://www.claro.com.py
+fiber,PRY,Copaco,https://www.copaco.com.py
 fiber,PSE,Paltel (Hadara),https://www.facebook.com/paltel.palastine/posts/1538542584953077/
 fiber,QAT,Ooredoo,https://gsmplans.com/plan/qatar/ooredoo-home-plus-internet-qatar/
 fiber,QAT,Vodafone Qatar,https://gsmplans.com/plan/qatar/vodafone-gigahome-fiber-qatar/
+fiber,ROU,Digi (RCS&RDS),https://www.digi.ro
+fiber,ROU,Orange România,https://www.orange.ro
+fiber,ROU,Vodafone România,https://www.vodafone.ro
+fiber,RUS,Rostelecom,https://www.rostelecom.ru
+fiber,RUS,MGTS,https://www.mgts.ru
+fiber,RUS,Beeline,https://www.beeline.ru
 fiber,RWA,MTN Rwanda,https://www.mtn.co.rw/
 fiber,SAU,STC,https://www.stc.com.sa/content/stc/sa/en/personal/homepackages/baity-bundles.html
 fiber,SAU,Mobily,https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-300
@@ -316,6 +390,8 @@ fiber,SLB,Our Telekom,https://ourtelekom.com.sb/personal/prepaid-broadband
 fiber,SLE,Orange Sierra Leone,https://www.orange.sl/en/b2c-internet-personal/data-bundles-monthly.html
 fiber,SLE,Africell Sierra Leone,https://www.africell.sl/services/data-bundles/
 fiber,SLE,Qcell Sierra Leone,https://www.qcell.sl/
+fiber,SLV,Claro,https://www.claro.com.sv
+fiber,SLV,Tigo,https://www.tigo.com.sv
 fiber,SMR,TIM San Marino,https://www.telecomitalia.sm
 fiber,SMR,Telenet San Marino,https://www.telenet.sm
 fiber,SMR,TIM Italia,https://www.tim.it
@@ -326,10 +402,17 @@ fiber,SRB,SBB,https://sbb.rs
 fiber,SSD,South Sudan Telecom,https://en.wikipedia.org/wiki/Communications_in_South_Sudan
 fiber,STP,CST (Companhia Santomense de Telecomunicacoes),https://www.telecomtrainer.com/list-of-mobile-operators-in-sao-tome-and-principe/
 fiber,STP,Unitel STP,http://unitel.st/tarifarios.php
+fiber,SUR,Telesur,https://www.telesur.sr
+fiber,SUR,Digicel,https://www.digicelgroup.com
+fiber,SVK,Slovak Telekom,https://www.telekom.sk
+fiber,SVK,Orange Slovensko,https://www.orange.sk
 fiber,SVK,ANTIK Telecom,https://www.antik.sk/en/pages/najlepsi-opticky-internet
 fiber,SVN,Telekom Slovenije,https://www.telekom.si
 fiber,SVN,A1 Slovenija,https://www.a1.si
 fiber,SVN,Telemach Slovenia,https://telemach.si
+fiber,SWE,Telia,https://www.telia.se
+fiber,SWE,Bahnhof,https://www.bahnhof.se
+fiber,SWE,Tele2 (Com Hem),https://www.tele2.se
 fiber,SWZ,Eswatini Mobile,https://eswatinimobile.co.sz/
 fiber,SWZ,MTN Eswatini,https://www.mtn.co.sz/
 fiber,SYC,Cable & Wireless Seychelles,https://cwseychelles.com/giganet
@@ -351,7 +434,9 @@ fiber,TJK,Tcell,https://www.tcell.tj/en
 fiber,TKM,Turkmentelekom,https://telecom.tm/en/internet/
 fiber,TLS,Timor Telecom,https://www.timortelecom.tl/en/tt-fibra
 fiber,TON,Digicel Tonga,https://www.digicelpacific.com/
+fiber,TTO,Flow,https://www.flowtrinidad.com
 fiber,TTO,Digicel,https://www.digicelgroup.com/tt/en/home-and-entertainment/internet
+fiber,TTO,TSTT,https://www.tstt.co.tt
 fiber,TUN,Tunisie Telecom,https://mnin.tn/forfaits/tunisie-telecom
 fiber,TUN,Ooredoo Tunisia,https://www.ooredoo.tn/Personal/fr/content/344-fibre-box
 fiber,TUN,Orange Tunisie,https://www.orange.tn/pages/fibre-optique
@@ -365,6 +450,12 @@ fiber,TZA,Airtel Tanzania,https://pamojacompare.com/home-internet-in-2026/
 fiber,UGA,MTN Uganda,https://nymynet.com/best-unlimited-fibre-internet-providers-in-uganda-prices-speeds-compared/
 fiber,UGA,Liquid Home Uganda,https://nymynet.com/best-unlimited-fibre-internet-providers-in-uganda-prices-speeds-compared/
 fiber,UGA,Zuku (Wananchi/Yas),https://nymynet.com/best-unlimited-fibre-internet-providers-in-uganda-prices-speeds-compared/
+fiber,UKR,Ukrtelecom,https://www.ukrtelecom.ua
+fiber,UKR,Kyivstar,https://www.kyivstar.ua
+fiber,UKR,Triolan,https://triolan.com
+fiber,URY,Antel,https://www.antel.com.uy
+fiber,URY,Movistar,https://www.movistar.com.uy
+fiber,URY,Claro,https://www.claro.com.uy
 fiber,USA,AT&T Fiber,https://www.att.com/internet/fiber/
 fiber,USA,Verizon Fios,https://www.verizon.com/fios/
 fiber,USA,Spectrum,https://www.spectrum.com/internet
@@ -372,7 +463,11 @@ fiber,UZB,TNET,http://www.tnet.uz/tariffs.html
 fiber,VAT,Vatican Internet Service,https://www.vaticanstate.va
 fiber,VAT,TIM Italia,https://www.tim.it
 fiber,VAT,Fastweb,https://www.fastweb.it
+fiber,VCT,Flow,https://discoverflow.co
+fiber,VCT,Digicel,https://www.digicelgroup.com
 fiber,VEN,Movistar,https://www.movistar.com.ve/Particulares/terminos-y-condiciones-servicio-internet.html
+fiber,VEN,Digitel,https://www.digitel.com.ve
+fiber,VEN,Movilnet,http://www.movilnet.com.ve
 fiber,VNM,VNPT,https://vnptmedia.vn/english/news/202505/vnpt-launches-internet-package-with-minimum-speed-of-300-mbps-28f5669
 fiber,VNM,FPT Telecom,https://dangkymangfpt.vn/internet/internet-giga
 fiber,VNM,Viettel,https://viettelinternet.vn/netvt1_t
@@ -401,6 +496,9 @@ mobile,AND,Orange France,https://www.orange.fr
 mobile,ARE,e& (Etisalat),https://giraffy.com/uae/en/mobile/mobile-sims
 mobile,ARE,du,https://giraffy.com/uae/en/mobile/mobile-sims
 mobile,ARE,Virgin Mobile UAE,https://www.virginmobile.ae/monthly-plans
+mobile,ARG,Personal,https://www.personal.com.ar
+mobile,ARG,Claro,https://www.claro.com.ar
+mobile,ARG,Movistar,https://www.movistar.com.ar
 mobile,ARM,Viva Armenia (VivaCell-MTS),https://www.viva.am/en
 mobile,ARM,Ucom,https://www.ucom.am/en/business/universal
 mobile,ARM,Team Telecom Armenia (Beeline),https://arkatelecom.am/en/news/telecom/beeline_in_armenia_offers_unlimited_communication_within_new_beefree_packages
@@ -443,6 +541,12 @@ mobile,BLR,MTS Belarus,https://en.wikipedia.org/wiki/Telecommunications_in_Belar
 mobile,BLR,life:),https://en.wikipedia.org/wiki/Telecommunications_in_Belarus
 mobile,BLZ,Digi,https://livedigi.com/
 mobile,BLZ,SMART,https://www.smart-bz.com/
+mobile,BOL,Nuevatel,https://www.viva.com.bo
+mobile,BOL,Entel,https://www.entel.bo
+mobile,BOL,Tigo,https://www.tigo.com.bo
+mobile,BRA,Vivo,https://www.vivo.com.br
+mobile,BRA,Claro,https://www.claro.com.br
+mobile,BRA,TIM,https://www.tim.com.br
 mobile,BRB,Flow,https://www.flowbarbados.com/
 mobile,BRB,Digicel,https://www.digicelgroup.com/
 mobile,BRN,DST,https://dst.com.bn/infinity-plan/
@@ -461,6 +565,9 @@ mobile,CAN,Telus,https://www.telus.com/
 mobile,CHE,Swisscom,https://www.swisscom.ch
 mobile,CHE,Sunrise,https://www.sunrise.ch
 mobile,CHE,Salt,https://www.salt.ch
+mobile,CHL,Entel,https://www.entel.cl
+mobile,CHL,Movistar,https://www.movistar.cl
+mobile,CHL,WOM,https://www.wom.cl
 mobile,CHN,China Mobile,https://www.10086.cn/
 mobile,CHN,China Unicom,https://www.10010.com/
 mobile,CHN,China Telecom,https://www.chinatelecom.com.cn/
@@ -476,6 +583,9 @@ mobile,COD,Vodacom DRC,https://www.vodacom.cd/fr/particulier/nos-offres/js8/js8-
 mobile,COG,MTN Congo,https://blog.iambeezy.app/fr/forfaits-mtn-airtel-congo-brazzaville-2026-tarifs-internet-appels/
 mobile,COG,Airtel Congo,https://testmain.airtel.africa/cg/personal/forfaits-internet
 mobile,COG,Congo Telecom,https://www.arpce.cg/
+mobile,COL,Claro,https://www.claro.com.co
+mobile,COL,Movistar,https://www.movistar.com.co
+mobile,COL,Tigo,https://www.tigo.com.co
 mobile,CPV,CVMovel,https://www.caboverdeexpert.com/cape-verde-communication-and-internet/
 mobile,CPV,Unitel T+,https://www.uniteltmais.cv/private/mobile/mobile-plans
 mobile,CRI,Kolbi,https://www.kolbi.cr/
@@ -484,14 +594,23 @@ mobile,CUB,ETECSA,https://www.etecsa.cu
 mobile,CYP,CYTA (EPITEL),https://www.cyta.com.cy/
 mobile,CYP,MTN Cyprus,https://www.epic.com.cy/
 mobile,CYP,Epic,https://www.epic.com.cy/
+mobile,CZE,O2 Czech Republic,https://www.o2.cz
+mobile,CZE,T-Mobile Czech Republic,https://www.t-mobile.cz
+mobile,CZE,Vodafone Czech Republic,https://www.vodafone.cz
 mobile,DEU,Deutsche Telekom,https://www.telekom.de
 mobile,DEU,Vodafone,https://www.vodafone.de
 mobile,DEU,Telefonica Germany (o2),https://www.o2online.de
 mobile,DMA,Flow,https://www.flowdominica.com/
 mobile,DMA,Digicel,https://www.digicelgroup.com/
+mobile,DNK,Telenor Denmark,https://www.telenor.dk
+mobile,DNK,Hi3G Denmark (3),https://www.3.dk
+mobile,DNK,TDC NET (Nuuday/YouSee),https://www.yousee.dk
 mobile,DOM,Claro,https://www.claro.com.do/
 mobile,DOM,Altice,https://altice.com.do/
 mobile,DOM,Viva,https://www.viva.com.do/
+mobile,ECU,Claro,https://www.claro.com.ec
+mobile,ECU,Movistar,https://www.movistar.com.ec
+mobile,ECU,CNT,https://www.cnt.gob.ec
 mobile,EGY,Vodafone Egypt,https://mobilemasr.com/en/blogs/vodafone-egypt-internet-package-prices-2026
 mobile,EGY,e& Egypt (Etisalat),https://www.traveltomtom.net/destinations/africa/egypt/prepaid-sim-card-cairo
 mobile,EGY,Orange Egypt,https://orange.eg
@@ -505,6 +624,9 @@ mobile,EST,Elisa Eesti,https://en.wikipedia.org/wiki/Telecommunications_in_Eston
 mobile,EST,Tele2 Estonia,https://en.wikipedia.org/wiki/Telecommunications_in_Estonia
 mobile,ETH,Ethio Telecom,https://timbu.com/ethiopia/networks/ethio-telecom/dataplan
 mobile,ETH,Safaricom Ethiopia,https://www.safaricom.et/
+mobile,FIN,Elisa,https://www.elisa.fi
+mobile,FIN,DNA,https://www.dna.fi
+mobile,FIN,Telia Finland,https://www.telia.fi
 mobile,FJI,Vodafone Fiji,https://www.vodafone.com.fj/personal/price-plans/rates-price-plan/mobile-internet-rates
 mobile,FJI,Digicel Fiji,https://www.digicelpacific.com/mobile/fj/bundles
 mobile,FRA,Orange,https://www.orange.fr
@@ -514,6 +636,9 @@ mobile,FSM,FSM Telecommunications Corp,https://fsmtc.fm/internet
 mobile,GAB,Airtel Gabon,https://blog.iambeezy.app/fr/forfaits-mobile-gabon-airtel-moov-libertis-2026/
 mobile,GAB,Moov Africa Gabon,https://blog.iambeezy.app/fr/forfaits-mobile-gabon-airtel-moov-libertis-2026/
 mobile,GAB,Libertis,https://blog.iambeezy.app/fr/forfaits-mobile-gabon-airtel-moov-libertis-2026/
+mobile,GBR,EE,https://www.ee.co.uk
+mobile,GBR,Vodafone UK,https://www.vodafone.co.uk
+mobile,GBR,Three UK,https://www.three.co.uk
 mobile,GEO,MagtiCom,https://www.magticom.ge/en/internet/internet-tariffs/internet-packages
 mobile,GEO,Cellfie (ex-Beeline Georgia),https://cellfie.ge/ka/private-customers/news/akhali-ulimito-internet-paketebi-selfisgan
 mobile,GEO,Silknet (Geocell),https://silknet.com/en/personal/geocell/internet-packages/019-unlimited
@@ -535,13 +660,20 @@ mobile,GRD,Flow,https://www.flowgrenada.com/
 mobile,GRD,Digicel,https://www.digicelgroup.com/
 mobile,GTM,Tigo,https://www.tigo.com.gt/
 mobile,GTM,Claro,https://www.claro.com.gt/
+mobile,GUY,GTT,https://www.gtt.co.gy
+mobile,GUY,Digicel,https://www.digicelgroup.com
+mobile,GUY,One Communications,https://onecomm.gy
 mobile,HND,Tigo,https://www.tigo.com.hn/
 mobile,HND,Claro,https://www.claro.com.hn/
+mobile,HND,Hondutel,http://www.hondutel.hn
 mobile,HRV,Hrvatski Telekom (HT),https://www.hrvatskitelekom.hr
 mobile,HRV,A1 Hrvatska,https://www.a1.hr
 mobile,HRV,Telemach Hrvatska,https://telemach.hr
 mobile,HTI,Digicel,https://www.digicelgroup.com/
 mobile,HTI,Natcom,https://natcom.ht/
+mobile,HUN,Magyar Telekom,https://www.telekom.hu
+mobile,HUN,Yettel Hungary,https://www.yettel.hu
+mobile,HUN,Vodafone Hungary,https://www.one.hu
 mobile,IDN,Telkomsel,https://www.telkomsel.com/
 mobile,IDN,Indosat (IM3),https://www.idntimes.com/tech/gadget/kenalan-sama-im3-istimewa-02-8jvcl-j6mp1k
 mobile,IDN,XL (AXIS),https://prioritas.xl.co.id/news/apa-itu-fup
@@ -607,6 +739,9 @@ mobile,LKA,Mobitel (SLT-Mobitel),https://www.mobitel.lk/
 mobile,LKA,Hutch Sri Lanka,https://www.hutch.lk/
 mobile,LSO,Vodacom Lesotho,https://techbiva.com/data/lesotho-internet-packages-data-plans/
 mobile,LSO,Econet Telecom Lesotho,https://techbiva.com/data/lesotho-internet-packages-data-plans/
+mobile,LTU,Telia Lietuva,https://www.telia.lt
+mobile,LTU,Bite Lietuva,https://www.bite.lt
+mobile,LTU,Tele2 Lithuania,https://www.tele2.lt
 mobile,LUX,POST Luxembourg,https://www.post.lu
 mobile,LUX,Orange Luxembourg,https://www.orange.lu
 mobile,LUX,Tango,https://www.tango.lu
@@ -670,9 +805,13 @@ mobile,NGA,Airtel Nigeria,https://nigerianinformer.com/unlimited-data-plans-in-n
 mobile,NGA,Glo (Globacom),https://www.shelaf.net/cheapest-data-plans-in-nigeria/
 mobile,NIC,Claro,https://www.claro.com.ni/
 mobile,NIC,Tigo,https://www.tigo.com.ni/
+mobile,NIC,Cootel,https://cootel.com.ni
 mobile,NLD,KPN,https://www.kpn.com
 mobile,NLD,Vodafone,https://www.vodafone.nl
 mobile,NLD,Odido,https://www.odido.nl
+mobile,NOR,Telenor,https://www.telenor.no
+mobile,NOR,Telia Norge,https://www.telia.no
+mobile,NOR,Ice,https://www.ice.no
 mobile,NPL,Ncell,https://www.ncell.com.np/en
 mobile,NPL,Nepal Telecom (NTC),https://www.ntc.net.np/
 mobile,NRU,Digicel,https://www.digicelpacific.com/mobile/nr/bundles
@@ -688,6 +827,9 @@ mobile,PAK,Ufone (PTCL Group),https://www.ufone.com/
 mobile,PAN,Tigo,https://www.tigo.com.pa/
 mobile,PAN,+Movil,https://plusmovil.com.pa/
 mobile,PAN,Mas Movil,https://www.masmovil.com.pa/
+mobile,PER,Movistar,https://www.movistar.com.pe
+mobile,PER,Claro,https://www.claro.com.pe
+mobile,PER,Bitel,https://www.bitel.com.pe
 mobile,PHL,Globe,https://www.globe.com.ph/prepaid/gounli
 mobile,PHL,PLDT (Smart),https://store.smart.com.ph/smart-bro/unli-999/
 mobile,PHL,DITO,https://dito.ph/prepaid/unli5g/mechanics
@@ -695,11 +837,23 @@ mobile,PLW,PNCC (PalauCel),https://www.pnccpalau.com/products-and-services/palau
 mobile,PNG,Digicel,https://www.digicelpacific.com/mobile/pg/bundles
 mobile,PNG,Telikom PNG (bmobile-Vodafone),https://www.telikompng.com.pg/
 mobile,PNG,Vodafone PNG (Digitec Communications),https://www.budde.com.au/Research/Papua-New-Guinea-Telecoms-Mobile-and-Broadband-Statistics-and-Analyses
+mobile,POL,Orange Polska,https://www.orange.pl
+mobile,POL,Play,https://www.play.pl
+mobile,POL,T-Mobile Polska,https://www.t-mobile.pl
 mobile,PRT,MEO,https://www.meo.pt
 mobile,PRT,NOS,https://www.nos.pt
 mobile,PRT,Vodafone Portugal,https://www.vodafone.pt
+mobile,PRY,Tigo,https://www.tigo.com.py
+mobile,PRY,Claro,https://www.claro.com.py
+mobile,PRY,Personal,https://www.personal.com.py
 mobile,QAT,Ooredoo,https://gsmplans.com/plan/qatar/ooredoo-qatar-prepaid-plans/
 mobile,QAT,Vodafone Qatar,https://gsmplans.com/plan/qatar/vodafone-qatar-prepaid-plans/
+mobile,ROU,Digi Mobile,https://www.digi.ro
+mobile,ROU,Orange România,https://www.orange.ro
+mobile,ROU,Vodafone România,https://www.vodafone.ro
+mobile,RUS,MTS,https://www.mts.ru
+mobile,RUS,MegaFon,https://www.megafon.ru
+mobile,RUS,Beeline,https://www.beeline.ru
 mobile,RWA,MTN Rwanda,https://timbu.com/rwanda/networks/mtn-rwanda/dataplan
 mobile,RWA,Airtel Rwanda,https://www.airtel.co.rw/
 mobile,SAU,STC,https://www.stc.com.sa/content/stc/sa/en/personal/mobile/quicknet/quicknet-prepaid.html
@@ -728,12 +882,17 @@ mobile,SRB,Yettel Serbia,https://www.yettel.rs
 mobile,SSD,Zain South Sudan,https://www.zain.com/en/south-sudan/
 mobile,STP,CST,https://www.telecomtrainer.com/list-of-mobile-operators-in-sao-tome-and-principe/
 mobile,STP,Unitel STP,http://unitel.st/tarifarios.php
+mobile,SUR,Digicel,https://www.digicelgroup.com
+mobile,SUR,Telesur,https://www.telesur.sr
 mobile,SVK,Orange Slovensko,https://en.wikipedia.org/wiki/Telecommunications_in_Slovakia
 mobile,SVK,Slovak Telekom,https://en.wikipedia.org/wiki/Telecommunications_in_Slovakia
 mobile,SVK,O2 Slovakia,https://en.wikipedia.org/wiki/Telecommunications_in_Slovakia
 mobile,SVN,Telekom Slovenije,https://www.telekom.si
 mobile,SVN,A1 Slovenija,https://www.a1.si
 mobile,SVN,Telemach Slovenia,https://telemach.si
+mobile,SWE,Telia,https://www.telia.se
+mobile,SWE,Tele2,https://www.tele2.se
+mobile,SWE,Telenor,https://www.telenor.se
 mobile,SWZ,MTN Eswatini,https://www.mtn.co.sz/
 mobile,SWZ,Eswatini Mobile,https://eswatinimobile.co.sz/
 mobile,SYC,Airtel Seychelles,https://www.airtel.sc/
@@ -766,6 +925,12 @@ mobile,TZA,Halotel,https://halotel.co.tz/
 mobile,UGA,MTN Uganda,https://kompare.ug/data/mobile-internet-rates/
 mobile,UGA,Airtel Uganda,https://kompare.ug/data/mobile-internet-rates/
 mobile,UGA,Uganda Telecom (UTL),https://kompare.ug/data/mobile-internet-rates/
+mobile,UKR,Kyivstar,https://www.kyivstar.ua
+mobile,UKR,Vodafone Ukraine,https://www.vodafone.ua
+mobile,UKR,lifecell,https://www.lifecell.ua
+mobile,URY,Antel,https://www.antel.com.uy
+mobile,URY,Movistar,https://www.movistar.com.uy
+mobile,URY,Claro,https://www.claro.com.uy
 mobile,USA,T-Mobile,https://www.t-mobile.com/cell-phone-plans
 mobile,USA,AT&T,https://www.att.com/plans/unlimited-data-plans/
 mobile,USA,Verizon,https://www.verizon.com/prepaid/
@@ -779,6 +944,7 @@ mobile,VAT,WindTre,https://www.windtre.it
 mobile,VCT,Flow,https://www.flowvinci.com/
 mobile,VCT,Digicel,https://www.digicelgroup.com/
 mobile,VEN,Digitel,https://2001online.com/servicios/movistar-y-digitel-ajustan-tarifas-de-sus-planes-montos-actualizados-al-3-de-agosto-202683800
+mobile,VEN,Movilnet,http://www.movilnet.com.ve
 mobile,VEN,Movistar,https://elestimulo.com/elinteres/tu-bolsillo/2026-09-01/planes-movistar-precios/
 mobile,VNM,Viettel,https://www.viettel.com.vn/
 mobile,VNM,VinaPhone (VNPT),https://vnptmedia.vn/english/news/202505/vnpt-launches-internet-package-with-minimum-speed-of-300-mbps-28f5669
