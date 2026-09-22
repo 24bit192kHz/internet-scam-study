@@ -1,7 +1,7 @@
 iso3,country,operator,plan_name,speed_down_mbps,speed_up_mbps,price_usd_month,source_url,notes
 AFG,Afghanistan,Afghan Telecom (Salaam),FTTX/FTTH 200 Mbps,200,100,30.30,https://www.afghantelecom.af/en/service-list/internet/fttx,State operator with FTTH/FTTX product; AFN 2000/mo indicative; FX official 66 AFN/USD (Sep-2026) - free-market runs higher
-AFG,Afghanistan,Afghan Wireless Communication Company (AWCC),Home Internet 100 Mbps,100,50,22.73,knowledge,FTTx / fixed-wireless home broadband in Kabul and Mazar; AFN 1500/mo indicative - highest published residential tier; FX official 66 AFN/USD
-AFG,Afghanistan,Etisalat Afghanistan,FTTH Home 200,200,100,34.85,knowledge,Kabul FTTH offering; AFN 2300/mo indicative; FX official 66 AFN/USD (Sep-2026)
+AFG,Afghanistan,Afghan Wireless Communication Company (AWCC),Home Internet 100 Mbps,100,50,22.73,https://en.wikipedia.org/wiki/Afghan_Wireless,FTTx / fixed-wireless home broadband in Kabul and Mazar; AFN 1500/mo indicative - highest published residential tier; FX official 66 AFN/USD
+AFG,Afghanistan,Etisalat Afghanistan,FTTH Home 200,200,100,34.85,https://www.etisalat.af/,Kabul FTTH offering; AFN 2300/mo indicative; FX official 66 AFN/USD (Sep-2026)
 AGO,Angola,Africell Angola,Konekta 5G200,200,,,https://www.africell.ao/konekta/plans/Konekta-5G/,"Fixed5G (FWA) packs 'Konekta5G' advertise25 Mbps to200 Mbps with7- or30-day validity (USSD *123*5#, Afrimoney); package prices are not printed on the reachable page - blank; FX AOA929.13=1USD (22-Sep-2026)"
 AGO,Angola,Unitel,,,,,https://unitel.ao/wp-content/uploads/share_upload/2025/12/Novos-Planos-UNITEL_2.pdf,"Angola's dominant operator; plan catalogues are published only as PDFs (mobile 'Net' monthly tier10,000 Kz =12-13 GB) and fixed/fibre tiers were not machine-readable in this pass - blank; FX AOA929.13=1USD"
 ALB,Albania,ALBtelecom,ALBtelecom Fiber 300,300,300,24.20,https://www.albtelecom.al,Local ALL 2000 approx knowledge; nearest-200 tier; FX ALL=0.0121 (95 per EUR)
@@ -15,9 +15,9 @@ ARE,United Arab Emirates,du,Du Fibre 200Mbps,200,200,81.42,https://giraffy.com/u
 ARG,Argentina,Fibertel,Fibertel 300,300,300,15.45,knowledge,ARS 23400/mes; tasa oficial ARS 1514.91/USD; FTTH simetrica
 ARG,Argentina,Claro,Claro Fibra 300,300,300,17.76,knowledge,ARS 26900/mes; tasa oficial ARS 1514.91/USD
 ARG,Argentina,Telecentro,Telecentro Fibra 300,300,300,13.14,knowledge,ARS 19900/mes; ISP metropolitano CABA/GBA; Personal y Fibertel son mismo grupo (Telecom) por eso se usa Telecentro como tercera
-ARM,Armenia,Ucom,Unity home internet,100,50,16.48,knowledge,Home internet component of the Unity 8000 bundle approx AMD 6000/mo (bundles 8000/10900/12500/16000/20000); FX 364 AMD/USD (Aug-2026)
-ARM,Armenia,Telecom Armenia (Beeline / Team),Beeline home internet FTTB,100,50,13.74,knowledge,Approx AMD 5000/mo indicative; FTTB triple-play; FX 364 AMD/USD
-ARM,Armenia,Viva Armenia,Viva FTTB 100,100,50,15.11,knowledge,Approx AMD 5500/mo indicative; FTTB triple-play; FX 364 AMD/USD
+ARM,Armenia,Ucom,Unity home internet,100,50,16.48,https://www.ucom.am/en,Home internet component of the Unity 8000 bundle approx AMD 6000/mo (bundles 8000/10900/12500/16000/20000); FX 364 AMD/USD (Aug-2026)
+ARM,Armenia,Telecom Armenia (Beeline / Team),Beeline home internet FTTB,100,50,13.74,https://www.telecomarmenia.am/en/,Approx AMD 5000/mo indicative; FTTB triple-play; FX 364 AMD/USD
+ARM,Armenia,Viva Armenia,Viva FTTB 100,100,50,15.11,https://www.viva.am/en,Approx AMD 5500/mo indicative; FTTB triple-play; FX 364 AMD/USD
 ATG,Antigua and Barbuda,Flow,Flow Fibra 200,200,,48,knowledge,Price approx - VERIFY; upload not published
 ATG,Antigua and Barbuda,Digicel,Digicel Home 200,200,,42,knowledge,Price approx - VERIFY; upload not published; APUA is utilities only - no third fixed operator confirmed
 AUS,Australia,Telstra,Premium nbn (NBN250),250,48,70.50,https://nbntracker.au/providers/telstra,A$99/mo standard price (A$49.50 first 2 months); NBN250 is the tier nearest 200 Mbps; speeds are typical evening; FX AUD 1.404334 (Sep-22-2026)
@@ -27,10 +27,10 @@ AUT,Austria,A1,A1 Internet 250,250,25,45.89,https://www.a1.net,Local EUR 39.90/m
 AUT,Austria,Magenta,Internet L,250,25,46.00,https://www.magenta.at,Local EUR 40.00/mo; Magenta tiers S50/M100/L250/XL500; FX EUR=1.15
 AUT,Austria,Drei (Hutchison Drei),HomeNet L,200,30,36.80,https://www.drei.at,Local EUR 32.00/mo; exact 200/30 tier - Drei mixes fiber and 5G FWA; FX EUR=1.15
 AZE,Azerbaijan,Aztelekom,250 Mbit/s internet,250,250,21.18,https://aztelekom.az/en/menu/154-tarifler,AZN 36/mo - published ladder 100 = 25 / 150 = 30 / 250 = 36 / 500 = 40 / 1000 = 49; 150 and 250 tie as nearest to 200 so the higher tier recorded; nationwide 'Online Azerbaijan' GPON; FX 1.70 AZN/USD
-AZE,Azerbaijan,Azeronline (Azercell group),Fiber 200,200,100,17.65,knowledge,Internet provider founded by Azercell Telecom in 1999 offering fibre-optic/wireless/dedicated lines; approx AZN 30/mo indicative; FX 1.70 AZN/USD
-AZE,Azerbaijan,Bakcell,Home fiber 200,200,100,14.71,knowledge,Fixed/fiber arm listed in the brief; no consumer FTTH tariff published online - approx AZN 25/mo indicative; FX 1.70 AZN/USD
-BDI,Burundi,ONATEL,,,,,knowledge,Incumbent;250km MAN fibre ring Bujumbura + ADSL2+; top published ADSL tier16/1Mbps (2018 tariff); consumer FTTH tiers not published
-BDI,Burundi,Lumitel,,,,,knowledge,"Viettel Burundi;700km metro fibre in Bujumbura,5000km national commitment; residential FTTH packages not published"
+AZE,Azerbaijan,Azeronline (Azercell group),Fiber 200,200,100,17.65,https://www.azercell.com/en,Internet provider founded by Azercell Telecom in 1999 offering fibre-optic/wireless/dedicated lines; approx AZN 30/mo indicative; FX 1.70 AZN/USD
+AZE,Azerbaijan,Bakcell,Home fiber 200,200,100,14.71,https://www.bakcell.com/en,Fixed/fiber arm listed in the brief; no consumer FTTH tariff published online - approx AZN 25/mo indicative; FX 1.70 AZN/USD
+BDI,Burundi,ONATEL,,,,,https://onatel.bi/,Incumbent;250km MAN fibre ring Bujumbura + ADSL2+; top published ADSL tier16/1Mbps (2018 tariff); consumer FTTH tiers not published
+BDI,Burundi,Lumitel,,,,,https://lumitel.bi/,"Viettel Burundi;700km metro fibre in Bujumbura,5000km national commitment; residential FTTH packages not published"
 BEL,Belgium,Proximus,Internet Go Fiber,150,30,74.74,https://www.proximus.be,Local EUR 64.99 list (promo EUR 44.99 first 12 months); FTTH tiers 100/150/500/2000 so 150 nearest; FX EUR=1.15
 BEL,Belgium,Telenet,Easy Internet,200,20,64.40,https://www.telenet.be,Local EUR 56.00/mo; HFC coax with fiber to the street - not FTTH; FX EUR=1.15
 BEL,Belgium,BASE,Unlimited Internet,200,20,46.00,https://www.base.be,Local EUR 40.00 standalone (EUR 36 in combo); runs on Telenet HFC network; FX EUR=1.15
@@ -67,15 +67,15 @@ BRA,Brazil,Claro,Claro Fibra 350 Mega,350,50,19.47,https://www.claro.com.br/inte
 BRA,Brazil,TIM,TIM Ultrafibra 300 Mega,300,150,17.52,knowledge,300 Mega R$89.90/mes (comparador 2026); upload ~50% do download
 BRB,Barbados,Flow,Flow Fibra 200,200,,45,knowledge,~BBD 90/mo @2.0 approx - VERIFY; upload not published
 BRB,Barbados,Digicel,Digicel Plus 200,200,,40,knowledge,Digicel Plus home broadband; price approx - VERIFY; upload not published; Cable & Wireless = Flow so only 2 distinct fixed groups
-BRN,Brunei,imagine (TelBru),imagine Fibre 100M,100,100,46.88,knowledge,BND 1.28/USD; B$60/mo (entry band BND50-70 Expat Focus 2026); 100Mbps national baseline since Sep-2023; upload assumed symmetric
-BRN,Brunei,DST (Datastream Digital),DST Infinity 100M,100,100,42.97,knowledge,BND 1.28/USD; B$55/mo (entry band BND50-70; DST usually slightly cheaper per user reports)
-BRN,Brunei,Progresif,Progresif Fibre 100M,100,100,39.06,knowledge,BND 1.28/USD; B$50/mo (entry band BND50-70; Progresif promotes fibre from B$25)
-BTN,Bhutan,Bhutan Telecom (DrukNet),DrukNet Fibre 100,100,50,8.51,knowledge,Nu 1200/mo indicative; FTTH in Thimphu/Phuntsholing/Paro; FX Nu 141/USD (INR peg 1:1.6 at INR 88/USD)
-BTN,Bhutan,Tashi InfoComm,Tashi Fiber 100,100,50,10.64,knowledge,Nu 1500/mo indicative; second fixed operator; FX 141 BTN/USD
+BRN,Brunei,imagine (TelBru),imagine Fibre 100M,100,100,46.88,https://www.imagine.com.bn/,BND 1.28/USD; B$60/mo (entry band BND50-70 Expat Focus 2026); 100Mbps national baseline since Sep-2023; upload assumed symmetric
+BRN,Brunei,DST (Datastream Digital),DST Infinity 100M,100,100,42.97,https://dst.com.bn/infinity-plan/,BND 1.28/USD; B$55/mo (entry band BND50-70; DST usually slightly cheaper per user reports)
+BRN,Brunei,Progresif,Progresif Fibre 100M,100,100,39.06,https://www.progresif.com/,BND 1.28/USD; B$50/mo (entry band BND50-70; Progresif promotes fibre from B$25)
+BTN,Bhutan,Bhutan Telecom (DrukNet),DrukNet Fibre 100,100,50,8.51,https://www.bt.bt/,Nu 1200/mo indicative; FTTH in Thimphu/Phuntsholing/Paro; FX Nu 141/USD (INR peg 1:1.6 at INR 88/USD)
+BTN,Bhutan,Tashi InfoComm,Tashi Fiber 100,100,50,10.64,https://www.tashicell.com/,Nu 1500/mo indicative; second fixed operator; FX 141 BTN/USD
 BTN,Bhutan,SuperNet InfoComm,Home Broadband up to 100 Mbps,100,50,7.09,https://supernetbhutan.com/,Home broadband starts Nu 1000/mo up to 100 Mbps in Thimphu/Paro/Phuentsholing; FX 141 BTN/USD
-BWA,Botswana,Botswana Telecom (BTC),,,,,knowledge,Incumbent fixed operator; residential FTTH tier list not captured Sep-2026
-BWA,Botswana,Orange Botswana,,,,,knowledge,"Orange BW sells Home Internet (4G/5G, '5G' on orange.co.bw); FTTH tiers/prices not published"
-CAF,Central African Rep.,Orange RCA,,,,,knowledge,Orange RCA (Sonatel group) sells mobile plus limited fixed internet in Bangui; no public consumer FTTH tier/price found - blank; FX XOF571.81=1USD
+BWA,Botswana,Botswana Telecom (BTC),,,,,https://btc.bw/product/home-internet/,Incumbent fixed operator; residential FTTH tier list not captured Sep-2026
+BWA,Botswana,Orange Botswana,,,,,https://www.orange.co.bw/,"Orange BW sells Home Internet (4G/5G, '5G' on orange.co.bw); FTTH tiers/prices not published"
+CAF,Central African Rep.,Orange RCA,,,,,http://www.orange.cf/,Orange RCA (Sonatel group) sells mobile plus limited fixed internet in Bangui; no public consumer FTTH tier/price found - blank; FX XOF571.81=1USD
 CAF,Central African Rep.,Telecel Centrafrique,,,,,https://www.telecomtrainer.com/list-of-mobile-operators-in-central-african-republic/,"Telecel Globe-owned operator, one of the main players; no published consumer fibre tier - blank; FX XOF571.81=1USD"
 CAN,Canada,Bell,Fibe 150,150,150,51,https://www.bell.ca/Bell_Internet/Products/Fibe-Internet-150-FTTH/,FTTH symmetric (FTTN areas asymmetric); lineup 150/500/1G so 150 is nearest 200; C$70 Quebec promo ~US$51 @0.73; Ontario ~C$75+
 CAN,Canada,Rogers,Ignite Internet 150,150,15,51,http://www.bell-vs-rogers.com/internet/compare/Rogers-Ignite-Internet-150/,HFC cable 150/15 verified; promo ~C$70/mo ~US$51 @0.73 (regular ~C$100) - price approx - VERIFY
@@ -86,19 +86,19 @@ CHE,Switzerland,Salt,Home,10000,10000,83.94,https://www.salt.ch,Local CHF 69.95 
 CHL,Chile,Movistar,Fibra 600 Megas,600,600,15.62,https://ofertas.movistar.cl/hogar/multioferta-fija-c/?tab=home,CLP 14990/mes 6 meses luego CLP 18990; simetrica; el menor tier de Chile es 600 (no hay 100-300)
 CHL,Chile,Claro,Claro Fibra 600 Megas,600,600,16.67,https://www.clarochile.cl/personas/servicios/servicios-hogar/,CLP 15990/mes 12 meses; luego CLP 21900; simetrica
 CHL,Chile,WOM,WOM Fibra 600 Megas,600,600,14.58,https://store.wom.cl/hogar/internet-fibra-optica,CLP 13990/mes (flash CLP 11990); luego CLP 21990
-CHN,China,China Telecom,纯宽带 300M,300,30,7.04,knowledge,CNY 7.10/USD; 600 CNY/yr mid of 500-700 band = 50 CNY/mo (2026 pure-broadband survey); upload ~30M typical
-CHN,China,China Unicom,纯宽带 300M,300,40,5.63,knowledge,CNY 7.10/USD; 420-480 CNY/yr = ~40 CNY/mo (2026); upload ~40M typical
-CHN,China,China Mobile,移动光宽带 200M,200,20,4.23,knowledge,CNY 7.10/USD; 360 CNY/yr = 30 CNY/mo (2026); upload ~20M typical
-CIV,Côte d'Ivoire,Orange Côte d'Ivoire,,,,,,"Orange CI markets fibre up to 100 Mb/s on its fibre page (a separate Orange CI page claims 'up to 200 Mb/s') plus 4G Home at 15,000 FCFA/month; per-tier fibre price table is JS-rendered and unverified, so fields left blank rather than invented; FX XOF 571.81 = 1 USD (22-Sep-2026)"
-CIV,Côte d'Ivoire,Moov Africa Côte d'Ivoire,,,,,,"Moov CI (mafibremoov.ci) advertises fibre 'from 15,000 FCFA/month' and 'up to 1 Gb/s' (FTTR); the per-tier speed/price table is not server-rendered, so tiers left blank rather than invented; FX XOF 571.81 = 1 USD"
-CIV,Côte d'Ivoire,MTN Côte d'Ivoire,,,,,,"MTN CI (mtn.ci) advertises mobile, fixed and internet services; no published consumer fibre tier or price found in this pass - left blank rather than fabricated; FX XOF 571.81 = 1 USD"
+CHN,China,China Telecom,纯宽带 300M,300,30,7.04,https://www.chinatelecom.com.cn/,CNY 7.10/USD; 600 CNY/yr mid of 500-700 band = 50 CNY/mo (2026 pure-broadband survey); upload ~30M typical
+CHN,China,China Unicom,纯宽带 300M,300,40,5.63,https://www.10010.com/,CNY 7.10/USD; 420-480 CNY/yr = ~40 CNY/mo (2026); upload ~40M typical
+CHN,China,China Mobile,移动光宽带 200M,200,20,4.23,https://www.10086.cn/,CNY 7.10/USD; 360 CNY/yr = 30 CNY/mo (2026); upload ~20M typical
+CIV,Côte d'Ivoire,Orange Côte d'Ivoire,,,,,https://www.orange.ci/,"Orange CI markets fibre up to 100 Mb/s on its fibre page (a separate Orange CI page claims 'up to 200 Mb/s') plus 4G Home at 15,000 FCFA/month; per-tier fibre price table is JS-rendered and unverified, so fields left blank rather than invented; FX XOF 571.81 = 1 USD (22-Sep-2026)"
+CIV,Côte d'Ivoire,Moov Africa Côte d'Ivoire,,,,,https://www.moov-africa.ci/fibre,"Moov CI (mafibremoov.ci) advertises fibre 'from 15,000 FCFA/month' and 'up to 1 Gb/s' (FTTR); the per-tier speed/price table is not server-rendered, so tiers left blank rather than invented; FX XOF 571.81 = 1 USD"
+CIV,Côte d'Ivoire,MTN Côte d'Ivoire,,,,,https://www.mtn.ci/,"MTN CI (mtn.ci) advertises mobile, fixed and internet services; no published consumer fibre tier or price found in this pass - left blank rather than fabricated; FX XOF 571.81 = 1 USD"
 CMR,Cameroon,Camtel,FiberConnect,50,,,https://www.camtel.cm/,"State operator's FTTH service 'FiberConnect'; official homepage headline reads 'Unlimited Internet up to 50 Mbps' (2026); the lefisk comparison/price article returned HTTP403, so no FCFA price could be verified - left blank rather than invented;50 Mbps is the top advertised speed so no100-300 Mbps tier exists; FX XOF571.81=1USD (22-Sep-2026)"
 CMR,Cameroon,MTN Cameroon,,,,,https://mtn.cm/fr/helppersonal/mtn-offers/,MTN Cameroon publishes mobile 'Go Plan' bundles but no consumer FTTH tier/price on a server-rendered page - blank; other ISPs in the market include YooMee and Nexttel (business fibre); FX XOF571.81=1USD
 CMR,Cameroon,Orange Cameroon,,,,,https://www.orange.cm/fr/internet.html,"Orange Cameroon markets home internet ('Maison connecte', Data OneShot) over fibre/4G; the offer pages are JS-rendered so no speed tier or FCFA price could be read - blank; FX XOF571.81=1USD"
 COD,DR Congo,Airtel DRC,,,,,https://www.airtel.cd/,Airtel DRC sells mobile broadband and business/internet services; no consumer FTTH tier or price is published on reachable pages - blank; other data-level ISPs include Liquid/Raga Net; FX CDF2307.87=1USD (22-Sep-2026)
 COD,DR Congo,Vodacom DRC,,,,,https://www.vodacom.cd/fr/particulier/nos-offres/js8/js8-internet,"Vodacom RDC publishes mobile data bundles in 'units' (1000U ~12-14 GB,2000U~32 GB) but no fixed/fibre consumer tier - blank; FX CDF2307.87=1USD"
-COD,DR Congo,Orange DRC,,,,,knowledge,Orange RDC operates in Kinshasa and major cities with mobile and fixed services; no consumer FTTH price published on a reachable page - blank; FX CDF2307.87=1USD
-COG,Congo (Brazzaville),Congo Telecom,,,,,knowledge,State incumbent selling enterprise/consumer fibre and internet capacity; no public consumer tier or FCFA price found in this pass - blank; FX XOF571.81=1USD
+COD,DR Congo,Orange DRC,,,,,https://www.orange.cd/,Orange RDC operates in Kinshasa and major cities with mobile and fixed services; no consumer FTTH price published on a reachable page - blank; FX CDF2307.87=1USD
+COG,Congo (Brazzaville),Congo Telecom,,,,,https://www.arpce.cg/,State incumbent selling enterprise/consumer fibre and internet capacity; no public consumer tier or FCFA price found in this pass - blank; FX XOF571.81=1USD
 COG,Congo (Brazzaville),MTN Congo,,,,,https://mtn.cg/particuliers/offres-mobiles/internet-en-fin-de-forfait-internet/,"MTN Congo's public pages list mobile bundles only (daily/weekly), no FTTH tier or price - blank; a2026 local guide compares MTN vs Airtel on data, coverage and5G; FX XOF571.81=1USD"
 COG,Congo (Brazzaville),Airtel Congo,,,,,https://blog.iambeezy.app/fr/forfaits-internet-mtn-airtel-congo-2026-comparatif-plans/,Airtel Congo publishes mobile bundles only; no FTTH consumer tier found - blank; FX XOF571.81=1USD
 COL,Colombia,Claro,Claro Fibra 300,300,300,22.03,knowledge,COP 69900/mes
@@ -111,9 +111,9 @@ CRI,Costa Rica,Kolbi,Kolbi Fibra 200,200,200,35,https://www.kolbi.cr/wps/portal/
 CRI,Costa Rica,Liberty,Liberty Fibra 200,200,200,40,https://libertycr.com/web/hogar/planes-fibra-optica,Ex-Cable Mas (Liberty LatAm) FTTH; price approx - VERIFY
 CRI,Costa Rica,Telecable,Telecable 200,200,,38,https://www.pressreader.com/costa-rica/el-financiero-costa-rica/20260509/281483578005370,Top-4 fixed ISP (Kolbi/Liberty/Telecable/Tigo = 83% of market) per Sutel 2026; tier/price approx - VERIFY; upload not published
 CUB,Cuba,ETECSA,Nauta Hogar top tier,60,60,15,knowledge,"Sole licensed ISP (state monopoly); no 200Mbps tier exists; CUP priced, ~US$15 at street rate - VERIFY speed/price"
-CYP,Cyprus,CYTA,Fibre 200,200,100,34.68,knowledge,EUR 29.90/mo indicative; FX 1.16 USD/EUR (Sep-2026)
-CYP,Cyprus,PrimeTel,Fibre 200,200,100,31.20,knowledge,EUR 26.90/mo indicative; FX 1.16 USD/EUR
-CYP,Cyprus,Cablenet,Fibre 200,200,100,27.72,knowledge,EUR 23.90/mo indicative; FX 1.16 USD/EUR
+CYP,Cyprus,CYTA,Fibre 200,200,100,34.68,https://www.cyta.com.cy/,EUR 29.90/mo indicative; FX 1.16 USD/EUR (Sep-2026)
+CYP,Cyprus,PrimeTel,Fibre 200,200,100,31.20,https://www.primetel.com.cy/en,EUR 26.90/mo indicative; FX 1.16 USD/EUR
+CYP,Cyprus,Cablenet,Fibre 200,200,100,27.72,https://www.cablenet.com.cy/en/,EUR 23.90/mo indicative; FX 1.16 USD/EUR
 CZE,Czechia,O2 Czech Republic,Internet Optický 250,250,100,23.60,knowledge,local 549 CZK/mo; FX 0.043 USD/CZK; 250 is nearest to 200
 CZE,Czechia,T-Mobile Czech Republic,Internet optický 300,300,100,24.50,knowledge,local 569 CZK/mo; FX 0.043 USD/CZK
 CZE,Czechia,Vodafone Czech Republic,Internet Optimum 300,300,300,22.70,knowledge,local 529 CZK/mo; FX 0.043 USD/CZK; symmetric profile
@@ -135,7 +135,7 @@ ECU,Ecuador,CNT,Fibra CNT 300,300,300,,knowledge,Precio por confirmar; dolarizad
 ECU,Ecuador,Movistar,Movistar Fibra 300,300,300,,knowledge,Precio por confirmar; dolarizado
 ECU,Ecuador,Xtrim,Xtrim Fibra 300,300,300,,knowledge,Precio por confirmar; dolarizado
 EGY,Egypt,Telecom Egypt (WE),WE Space Max,200,,47.47,https://flatswipe.app/en/guides-egypt/egypt-home-internet,"EGP 2,350/mo official list Jul-2026 for 1,500 GB quota (quota not speed-unlimited); FX 49.5 EGP/USD; +16% mobile / 12.28% fixed top-up tax on recharges; verified Sep-2026: WE/TE Data is Egypt's only operator retailing FTTH at scale - Orange Egypt retail = DSL, Vodafone Egypt retail = DSL/FWA with limited FTTH rollout in Cairo & Alexandria (Point Topic network profile) but no public consumer FTTH tariff found - not padded; no unlimited in Egypt"
-ERI,Eritrea,EriTel,,,,,knowledge,Sole licensed operator (mobile+fixed monopoly); no consumer FTTH tiers published
+ERI,Eritrea,EriTel,,,,,https://eritel.com.er/,Sole licensed operator (mobile+fixed monopoly); no consumer FTTH tiers published
 ESP,Spain,Movistar,Fibra 300,300,300,34.50,https://www.movistar.es,Local EUR 30.00 standard (promo EUR 19.99); symmetric FTTH; FX EUR=1.15
 ESP,Spain,Orange España,Fibra 300,300,300,34.50,https://www.orange.es,Local EUR 30.00 standard base (first-year discount to ~EUR 20); symmetric FTTH; FX EUR=1.15
 ESP,Spain,Vodafone España,Fibra 600,600,600,40.25,https://www.vodafone.es,Local EUR 35.00 approx knowledge; Vodafone ES base fiber tier is 600 (no 300) - nearest to 200; FX EUR=1.15
@@ -143,7 +143,7 @@ EST,Estonia,Telia Eesti,Koduinternet 300,300,300,23.30,https://www.telia.ee/en/e
 EST,Estonia,Elisa Eesti,Koduinternet 300,300,300,22.10,https://www.elisa.ee/et/eraklient/internet/kodus/koduinternet-ja-tv-paketid,local 18.90 EUR/mo; FX 1.17 USD/EUR
 EST,Estonia,STV,STV Koduinternet 300,300,50,17.40,knowledge,local 14.90 EUR/mo; FX 1.17 USD/EUR; cable and fibre operator
 ETH,Ethiopia,Ethio Telecom,Fixed WiFi/Broadband 200Mbps tier,200,,38,https://planspapa.com/offer/ethio-telecom-wifi-packages/,"ETB50,000/mo for200Mbps access; FX130 ETB/USD Sep-2026; up speed not published; ladder runs2Mbps to1024Mbps"
-ETH,Ethiopia,Safaricom Ethiopia,,,,,knowledge,4G/LTE home internet ('4G Wi-Fi' on safaricom.et); no FTTH consumer tiers published
+ETH,Ethiopia,Safaricom Ethiopia,,,,,https://www.safaricom.et/,4G/LTE home internet ('4G Wi-Fi' on safaricom.et); no FTTH consumer tiers published
 FIN,Finland,Elisa,Elisa Valokuitu 300,300,300,38.50,knowledge,local 32.90 EUR/mo; FX 1.17 USD/EUR
 FIN,Finland,DNA,DNA Valokuitu 300,300,300,34.90,knowledge,local 29.90 EUR/mo; FX 1.17 USD/EUR
 FIN,Finland,Telia Finland,Telia Valokuitu 300,300,300,43.20,knowledge,local 36.90 EUR/mo; FX 1.17 USD/EUR
@@ -161,20 +161,19 @@ GBR,United Kingdom,BT (Openreach),BT Full Fibre 150,150,30,48.20,knowledge,local
 GBR,United Kingdom,Virgin Media,M250,264,30,46.90,knowledge,local GBP 34.99/mo; FX 1.34 USD/GBP; advertised average on HFC DOCSIS 3.1
 GBR,United Kingdom,Sky (Openreach FTTP),Sky Full Fibre 150,150,30,40.20,knowledge,local GBP 30.00/mo; FX 1.34 USD/GBP; resale of Openreach FTTP
 GEO,Georgia,MagtiCom,Optical Internet 100 Mbps,100,50,29.63,https://www.magticom.ge/en/internet/internet-tariffs/internet-packages,GEL 80/mo in Tbilisi (promo - list GEL 100); tiers 70 = 40 / 80 = 50 / 100 = 80; top published tier is 100 Mbps - closest available to 200; FX 2.70 GEL/USD
-GEO,Georgia,Silknet,SilkOptic 100 Mbps,100,50,25.93,knowledge,Approx GEL 70/mo indicative after the 1-May-2026 optical price rise (speeds also increased); first Georgian operator to deploy fibre-to-the-home (2007); FX 2.70 GEL/USD
+GEO,Georgia,Silknet,SilkOptic 100 Mbps,100,50,25.93,https://silknet.com/en/,Approx GEL 70/mo indicative after the 1-May-2026 optical price rise (speeds also increased); first Georgian operator to deploy fibre-to-the-home (2007); FX 2.70 GEL/USD
 GEO,Georgia,Neo Net,Premium optical 100 Mbps,100,50,33.33,https://neonet.ge/ge/home,GEL 90/mo unlimited traffic (25 = 30 / 50 = 40 / 70 = 65 / 100 = 90); top tier 100 Mbps; FX 2.70 GEL/USD
 GHA,Ghana,MTN Ghana,Unlimited Fibre 300,300,,38.42,https://asetenapa.com/mtn-fibre-broadband/,"Local price GHS 444/month (2026 tier list: 100 Mbps GHS 299, 300 Mbps GHS 444, 500 Mbps GHS 999 after the 17-Jun-2026 government-brokered cuts; Apr-2026 tracker still showed 100 Mbps at GHS 499); unlimited data, router GHS 450 or GHS 30/mo rental; FX GHS 11.56 = 1 USD"
 GHA,Ghana,Telecel Ghana,Broadband 80,80,,47.59,https://www.jbklutse.com/home-internet-prices-ghana/,"Local price GHS 550/month (Apr-2026); only 20/40/80 Mbps tiers published, so 80 Mbps is the nearest available to 200; install GHS 300, router GHS 40/mo; Accra/Kumasi only; FX GHS 11.56 = 1 USD"
 GHA,Ghana,Busy Internet,Fibre 200,200,,69.14,https://www.jbklutse.com/home-internet-prices-ghana/,Local price GHS 799/month (Apr-2026); exact 200 Mbps tier; Accra CBD/Airport/Cantonments; unlimited with no published throttling clause (anecdotal 20-30% evening slowdowns); install GHS 450; FX GHS 11.56 = 1 USD
 GIN,Guinea,Orange Guinea,Fibre 30,30,,73.90,https://vosreponses.com/quels-sont-les-meilleurs-forfaits-internet-en-guinee/,"Orange Guinea fibre quoted at 650,000 GNF per month for 30 Mbps (market comparison, 2024 data - may be stale); 30 Mbps is the highest tier found, so no 100-300 Mbps option is published; FX GNF 8,795.94 = 1 USD"
 GIN,Guinea,MTN Guinea,,,,,https://www.visitconakry.fr/telecoms-internet-et-mobile-money-en-guinee/,MTN Guinea is one of the two dominant operators (with Orange); no consumer FTTH tier published - blank. NOTE: country name field corrected in next write
-GMB,Gambia,Gamtel (Gambia Telecom),,,,,knowledge,State incumbent fixed operator (Gamcel mobile arm); ADSL/fixed broadband offered but no current consumer tier price verified - blank; FX GMD 74.42 = 1 USD (22-Sep-2026)
+GMB,Gambia,Gamtel (Gambia Telecom),,,,,https://en.wikipedia.org/wiki/Gamtel,State incumbent fixed operator (Gamcel mobile arm); ADSL/fixed broadband offered but no current consumer tier price verified - blank; FX GMD 74.42 = 1 USD (22-Sep-2026)
 GMB,Gambia,Africell Gambia,,,,,https://www.africell.gm/bundle/data-bundles/,Africell Gambia publishes mobile data bundles (10 GB = D950/60 days); LTE home/fixed broadband exists but no fibre speed tier is published - blank
 GMB,Gambia,QCell Gambia,,,,,https://qcell.gm/,QCell Gambia (4G LTE) publishes voice+data bundles; no fibre tier published - blank
 GNB,Guinea-Bissau,Orange Guinea-Bissau,,,,,https://www.telecomtrainer.com/list-of-mobile-operators-in-guinea-bissau/,Sonatel-group operator providing mobile (2G/3G/4G) and fixed internet services; no consumer fibre tier or price published - blank
 GNB,Guinea-Bissau,MTN Guinea-Bissau,,,,,https://www.telecomtrainer.com/list-of-mobile-operators-in-guinea-bissau/,"MTN GNB (formerly Areeba), ~42% market share; no consumer fibre tier or price published - blank"
 GNQ,Equatorial Guinea,GETESA,TRINET5,5,,57.71,https://getesa.gq/fr/,"TRINET5 home/business fixed service:5 Mbps unlimited for33,000 FCFA/CFA per month (published promo page, summer2026); TRINET10 and TRINET15 also listed as unlimited but prices not printed - so only TRINET5 priced here; top tier advertised is15 Mbps, hence no100-300 Mbps option; FX XOF571.81=1USD"
-GNQ,Equatorial Guinea,CST,,,,,knowledge,No second fixed/fibre retail operator could be verified for Equatorial Guinea in this pass (GETESA dominates fixed); row retained as a placeholder gap rather than an invented operator - blank
 GRC,Greece,COSMOTE (OTE),COSMOTE Fiber 100,100,100,28.64,https://www.cosmote.gr,Local EUR 24.90; tiers include 100 and 500 (300 also cited) - 100 recorded by distance to 200; FX EUR=1.15
 GRC,Greece,Vodafone Greece,Fibra 300,300,150,32.09,https://www.vodafone.gr,Local EUR 27.90; asymmetric hybrid DOCSIS/FTTH profile; nearest to 200; FX EUR=1.15
 GRC,Greece,Nova,Nova Fiber 200,200,100,32.20,https://www.nova.gr,Local EUR 28.00; exact 200/100 tier; FX EUR=1.15
@@ -196,9 +195,9 @@ HTI,Haiti,Haitel,Haitel Fibre 100,100,,55,knowledge,Second fixed operator; tier/
 HUN,Hungary,Magyar Telekom,Giganet 300,300,300,14.80,knowledge,local 5490 HUF/mo; FX 0.0027 USD/HUF
 HUN,Hungary,DIGI Hungary,DIGI internet 250,250,250,10.80,knowledge,local 3990 HUF/mo; FX 0.0027 USD/HUF; 250 is nearest to 200
 HUN,Hungary,Vodafone Hungary,Vodafone internet 300,300,300,13.50,knowledge,local 4990 HUF/mo; FX 0.0027 USD/HUF; 4iG-owned - consumer brand in transition to One - verify
-IDN,Indonesia,IndiHome,IndiHome Fiber 200M,200,50,30.06,knowledge,IDR 16300/USD; Rp490000/mo (Rp350k-540k by region/promo 2026 reseller lists); upload not published - asymmetric approx
-IDN,Indonesia,Biznet,Biznet Home Internet 1D 300M,300,300,23.01,knowledge,IDR 16300/USD; Rp375000/mo DKI Jakarta (0D 100M = Rp250000); symmetrical 1:1 FTTH
-IDN,Indonesia,MyRepublic,MyRepublic Neo 200M,200,200,14.30,knowledge,IDR 16300/USD; Rp233100/mo incl 11% PPN; Neo base 100M with 200M promo speed; UNLIMITED tanpa FUP
+IDN,Indonesia,IndiHome,IndiHome Fiber 200M,200,50,30.06,https://www.telkomsel.com/en/indihome,IDR 16300/USD; Rp490000/mo (Rp350k-540k by region/promo 2026 reseller lists); upload not published - asymmetric approx
+IDN,Indonesia,Biznet,Biznet Home Internet 1D 300M,300,300,23.01,https://biznethome.net/product/packages,IDR 16300/USD; Rp375000/mo DKI Jakarta (0D 100M = Rp250000); symmetrical 1:1 FTTH
+IDN,Indonesia,MyRepublic,MyRepublic Neo 200M,200,200,14.30,https://myrepublicdaftarinternet.com/daftar-paket,IDR 16300/USD; Rp233100/mo incl 11% PPN; Neo base 100M with 200M promo speed; UNLIMITED tanpa FUP
 IND,India,Reliance Jio (JioFiber),Jio Fiber 150,150,150,11.35,https://www.citizennest.com/guide/jio-fiber-airtel-broadband,Rs 999/mo unlimited with 14 OTT apps - nearest tier to 200 Mbps is 150 (300 Mbps = Rs 1499); symmetric GPON; +18% GST on top (approx Rs 1179 = $13.40); FX 88 INR/USD
 IND,India,Bharti Airtel (Airtel Xstream Fiber),Entertainer Plus 200,200,200,11.35,https://www.airtel.in/plans/broadband/200-mbps-speed,Rs 999/mo + GST published for 200 Mbps unlimited (approx Rs 1179 incl. = $13.40); symmetric; FX 88 INR/USD
 IND,India,ACT Fibernet,ACT Blaze,200,200,11.59,https://www.gadgets360.com/broadband-plans/act-chennai,Rs 1020/mo Chennai (Aug-2026) with equal upload & download; Bangalore variant 200 Mbps at Rs 899; GST may apply; FX 88 INR/USD
@@ -213,9 +212,9 @@ IRQ,Iraq,iQ Online (iQ Group),FTTH Gold,,,29.74,https://iqonline.com/broadband,"
 ISL,Iceland,Síminn,Míla VDSL 100,100,30,59.20,https://en.wikipedia.org/wiki/Internet_in_Iceland,local 7490 ISK/mo; FX 0.0079 USD/ISK; FTTH baseline is 1000 so 100 legacy tier is the in-band pick
 ISL,Iceland,Sýn (Vodafone Iceland),Sýn Internet 100,100,30,55.30,https://en.wikipedia.org/wiki/Internet_in_Iceland,local 6990 ISK/mo; FX 0.0079 USD/ISK; FTTH baseline 1000 - nearest in-band tier is 100
 ISL,Iceland,Nova,Nova Internet 100,100,30,51.40,https://en.wikipedia.org/wiki/Internet_in_Iceland,local 6490 ISK/mo; FX 0.0079 USD/ISK; FTTH baseline 1000 - nearest in-band tier is 100
-ISR,Israel,Partner,Partner Fiber 200,200,100,28.29,knowledge,ILS 99/mo indicative (Israeli ISPs market 200-1000 Mbps at ILS 70-140); FX 3.50 ILS/USD
-ISR,Israel,Cellcom,Cellcom Fiber 200,200,100,25.43,knowledge,ILS 89/mo indicative; FX 3.50 ILS/USD
-ISR,Israel,Bezeq,Bezeq Fiber 200,200,100,34.00,knowledge,ILS 119/mo indicative; incumbent operator / IBC wholesale access; FX 3.50 ILS/USD
+ISR,Israel,Partner,Partner Fiber 200,200,100,28.29,https://www.partner.co.il/en/,ILS 99/mo indicative (Israeli ISPs market 200-1000 Mbps at ILS 70-140); FX 3.50 ILS/USD
+ISR,Israel,Cellcom,Cellcom Fiber 200,200,100,25.43,https://www.cellcom.co.il/en/,ILS 89/mo indicative; FX 3.50 ILS/USD
+ISR,Israel,Bezeq,Bezeq Fiber 200,200,100,34.00,https://en.wikipedia.org/wiki/Bezeq,ILS 119/mo indicative; incumbent operator / IBC wholesale access; FX 3.50 ILS/USD
 ITA,Italy,TIM,Premium Base FTTH,1000,300,29.79,https://www.tim.it,Local EUR 25.90 standard (promo EUR 20.90 until 26/09); no ~200 FTTH tier - TIM FTTH starts at 1G; legacy FTTC up-to-200 remains; FX EUR=1.15
 ITA,Italy,WindTre,Super Fibra 2.5G,2500,500,34.49,https://www.windtre.it,Local EUR 29.99 standard (promo EUR 24.99); single FTTH tier up to 2.5G - nearest available to 200; FX EUR=1.15
 ITA,Italy,Fastweb,Casa 2.5G,2500,1000,32.14,https://www.fastweb.it,Local EUR 27.95 list; FTTH up to 2.5G single consumer tier; FX EUR=1.15
@@ -224,10 +223,10 @@ JAM,Jamaica,Digicel,Digicel Home Fibre 200,200,,40,https://www.digicelgroup.com/
 JOR,Jordan,Orange Jordan,Fiber 200,200,,37.96,https://eshop.orange.jo/en/internet/fiber-offers/fiber-200-mbps,JOD 23.20 + 16% sales tax = JOD 26.91/mo; FX 0.709 JOD/USD; free installation; CORRECTED Sep-2026: Umniah and Zain both sell real FTTH (rows below) - earlier only-1-FTTH note was wrong
 JOR,Jordan,Umniah,Fiber 200,200,,32.86,https://eshop.umniah.com/en/plans/internet/fiber.html,"JOD 20.00/mo excl tax; site displays JOD 23.30 incl 16% VAT (JOD 20 x 1.16 = 23.20, site shows 23.30); lineup 100/200/500/800/1000/2000 Mbps at JOD 18/20/23/24/27/30 excl; upload not published; FX 0.709 JOD/USD"
 JOR,Jordan,Zain Jordan,Silver Fiber 200,200,,32.72,https://eshop.jo.zain.com/en/internet/fiber/packages,JOD 20.00 + 16% tax = JOD 23.20/mo incl; lineup Bronze100=20.88 / Gold500=26.68 / Platinum1000=31.32 incl tax; speeds explicitly not symmetrical (upload not published); 2-year commitment; free fiber router + WiFi extender; FX 0.709
-JPN,Japan,NTT東日本,光が使えるコース,100,100,27.87,knowledge,JPY 150/USD; ¥4180/mo tax-incl 2-year contract; nearest offered tier to 200 is 100M
-JPN,Japan,NTT西日本,光 100M コース,100,100,27.87,knowledge,JPY 150/USD; ¥4180/mo tax-incl; equivalent 100M self-branded tier (NTT West area)
-JPN,Japan,KDDI,au光hyper 1G,1000,1000,35.20,knowledge,JPY 150/USD; ¥5280/mo list price (¥4620 with au mobile bundle); no 100-300M tier so 1G recorded
-JPN,Japan,NURO,NURO光 2ギガ,2000,2000,38.13,knowledge,JPY 150/USD; ¥5720/mo; symmetric 2G is NURO's only flagship consumer tier
+JPN,Japan,NTT東日本,光が使えるコース,100,100,27.87,https://www.ntt-east.co.jp/en/product/internet_flets_hikari.html,JPY 150/USD; ¥4180/mo tax-incl 2-year contract; nearest offered tier to 200 is 100M
+JPN,Japan,NTT西日本,光 100M コース,100,100,27.87,https://flets-w.com/english/next/,JPY 150/USD; ¥4180/mo tax-incl; equivalent 100M self-branded tier (NTT West area)
+JPN,Japan,KDDI,au光hyper 1G,1000,1000,35.20,https://www.au.com/english/internet/,JPY 150/USD; ¥5280/mo list price (¥4620 with au mobile bundle); no 100-300M tier so 1G recorded
+JPN,Japan,NURO,NURO光 2ギガ,2000,2000,38.13,https://www.nuro.jp/hikari/,JPY 150/USD; ¥5720/mo; symmetric 2G is NURO's only flagship consumer tier
 KAZ,Kazakhstan,JSC Kazakhtelecom,Internet 200,200,100,17.50,https://telecom.kz/en/common/idnet,KZT 7999/mo FTTH (ladder 100 = 5799 / 200 = 7999 / 500 = 9999 / 1000 = 20611); upload not published - GPON; FX 457 KZT/USD (Aug-2026)
 KAZ,Kazakhstan,Beeline Kazakhstan,Home Internet,100,50,24.61,https://qrnews.kz/en/news/beeline-and-tele2-announce-upcoming-tariff-increases-F06I1,KZT 11249/mo from 15-Jan-2026 (up from 8490) - speed tier not stated in the tariff notice so 100 Mbps class assumed; upload indicative; FX 457 KZT/USD
 KAZ,Kazakhstan,Altel,Home Internet (4G/5G router),200,50,17.48,https://finance.kz/internet/altel,KZT 7990/mo 'Birge + TV + router' - up to 200 Mbps on 4G (up to 1500 Mbps on 5G); FIXED WIRELESS not FTTH; FX 457 KZT/USD
@@ -236,21 +235,21 @@ KEN,Kenya,Jamii Telecommunications,Faiba Home Plus200,200,,115,https://tech-ish.
 KEN,Kenya,Zuku (Wananchi/Yas),Connect,200,,54,https://techtrendske.co.ke/2026/08/04/zuku-fiber-new-prices-kenya/,"KES6,999/mo promo price (Aug-2026); FX130; exact200Mbps tier; ladder30/80/100/200Mbps"
 KGZ,Kyrgyzstan,OJSC Kyrgyztelecom,Yldam Internet + IPTV 200,200,100,13.22,https://kt.kg/en,KGS 1150/mo for up to 200 Mbit/s external + IPTV (internet-only 100 Mbit/s = KGS 950); GPON - upload not separately published; FX 87 KGS/USD
 KGZ,Kyrgyzstan,ElCat Ltd,Home 3+,100,50,18.97,https://elcat.kg/en/rate,KGS 1650/mo for 100 Mbps + 140 TV channels (Home 1+ 50 Mbps = 900); nearest tier to 200; FX 87 KGS/USD
-KGZ,Kyrgyzstan,AKNET Ltd,Home internet 100 Mbps,100,50,17.24,knowledge,KGS 1500/mo indicative - Bishkek fibre + IPTV; FX 87 KGS/USD
-KHM,Cambodia,Ezecom,Ezecom MegaSurf 100M,100,100,49.00,knowledge,Ezecom published home tiers $18/30M - $29/50M - $49/100M (MegaSurf); upload assumed symmetric
+KGZ,Kyrgyzstan,AKNET Ltd,Home internet 100 Mbps,100,50,17.24,https://aknet.kg/,KGS 1500/mo indicative - Bishkek fibre + IPTV; FX 87 KGS/USD
+KHM,Cambodia,Ezecom,Ezecom MegaSurf 100M,100,100,49.00,https://www.ezecom.com.kh/personal/internet,Ezecom published home tiers $18/30M - $29/50M - $49/100M (MegaSurf); upload assumed symmetric
 KHM,Cambodia,SINet,SINET Fiber Plus,100,100,,https://www.sinet.com.kh/internet-solution/fiber-plus/,100/100 symmetric dedicated; monthly price quoted on request (Fiber Edge 50M published at $440/yr ~ $36.67/mo; install $100)
-KHM,Cambodia,MekongNet,MekongNet Home Fiber 100M,100,100,25.00,knowledge,Cambodia market benchmark ~$25/mo for 100M fibre (siemreaphub 2026); MekongNet does not publish a retail price list
+KHM,Cambodia,MekongNet,MekongNet Home Fiber 100M,100,100,25.00,https://www.mekongnet.com.kh/,Cambodia market benchmark ~$25/mo for 100M fibre (siemreaphub 2026); MekongNet does not publish a retail price list
 KIR,Kiribati,OceanLink,OceanNet everyday plan (25 Mbps),25,,,https://www.oceanlink.ki/plans,"OceanLink publishes 25 Mbps everyday plans up to 500 Mbps fibre (oceanlink.ki) - 25 is the everyday tier nearest 200; plan prices are JS-rendered/not published, prices are in AUD (Kiribati uses AUD); price and upload blank"
 KIR,Kiribati,Vodafone Kiribati,Flashnet fixed broadband,,,,https://vodafone.com.ki/,"ATH-group operator; fixed Flashnet/Pocket WiFi router and FTTH services listed in nav, but no price/speed table published - left blank rather than invented"
 KNA,Saint Kitts and Nevis,Flow,Flow Fibre 200,200,,45,knowledge,Price approx - VERIFY; upload not published
 KNA,Saint Kitts and Nevis,Digicel,Digicel Home 200,200,,40,knowledge,Price approx - VERIFY; upload not published; no third fixed operator found
-KOR,South Korea,KT,인터넷 슬림 100M,100,100,15.94,knowledge,KRW 1380/USD; ₩22000/mo standalone 3-year term; FTTH symmetric (HFC cable tiers are 100/10)
-KOR,South Korea,SK Broadband,광랜 인터넷 100M,100,100,16.74,knowledge,KRW 1380/USD; ₩23100/mo incl WiFi router (₩22000 without)
-KOR,South Korea,LG U+,프리미엄 안심 100M,100,100,17.32,knowledge,KRW 1380/USD; ₩23900/mo online-direct (₩25300 before discount)
+KOR,South Korea,KT,인터넷 슬림 100M,100,100,15.94,https://m.product.kt.com/mDic/productDetail.do?ItemCode=1504,KRW 1380/USD; ₩22000/mo standalone 3-year term; FTTH symmetric (HFC cable tiers are 100/10)
+KOR,South Korea,SK Broadband,광랜 인터넷 100M,100,100,16.74,https://en.wikipedia.org/wiki/SK_Broadband,KRW 1380/USD; ₩23100/mo incl WiFi router (₩22000 without)
+KOR,South Korea,LG U+,프리미엄 안심 100M,100,100,17.32,https://setkora.com/internet/lgu-100-solo,KRW 1380/USD; ₩23900/mo online-direct (₩25300 before discount)
 KWT,Kuwait,Ooredoo,Fiber 200,200,,39.34,https://gsmplans.com/plan/kuwait/ooredoo-home-internet-kuwait/,~KD 12/mo; Kuwait telecom VAT 0%; FX 0.305 KWD/USD; free router + free fiber install; 12/24-mo contract; upload not published
 KWT,Kuwait,STC Kuwait,Baity Fiber 100,100,,45.90,https://gsmplans.com/plan/kuwait/stc-kuwait-home-internet/,~KD 14/mo; nearest tier to 200 (100 vs next 500 Mbps ~KD 22); VAT 0%; FX 0.305 KWD/USD; Zain Kuwait sells 5G FWA home only - only 2 FTTH operators found in Kuwait
 LAO,Laos,Lao Telecom,Lao Telecom FTTH 180M,180,180,78.78,https://www.laotel.com/la/new-package-ftth.php?Lang=en,₭1355000/mo official FTTH list; 180Mbps is nearest tier to 200 (300Mbps = ₭2255000); upload not published - assumed symmetric
-LAO,Laos,Unitel,,,,,knowledge,Unitel sells home fibre but publishes no public tariff list; benchmark Lao Telecom 180M = ₭1355000 ($78.78); blank rather than invented
+LAO,Laos,Unitel,,,,,https://www.unitel.com.la/en,Unitel sells home fibre but publishes no public tariff list; benchmark Lao Telecom 180M = ₭1355000 ($78.78); blank rather than invented
 LAO,Laos,ETL,,,,,knowledge,ETL sells FTTH (store.etllao.com) but prices not public in English; benchmark Lao Telecom 180M = ₭1355000 ($78.78); blank rather than invented
 LBN,Lebanon,OGERO,Fiber 400GB,300,,23.46,https://waradana.com/english/article/265591-fiber-internet-prices-in-lebanon-a-comprehensive-guide,"LBP 2,100,000/mo for up-to-300 Mbps / 400GB (quota tiers: 50Mbps 630k-1.75M LBP; 300Mbps 400GB=2.1M up to 2000GB=6.3M; unlimited only up to 50Mbps = 2.25M); nearest-to-200 tier = 300 (50 is further); VAT treatment not confirmed; FX 89,500 LBP/USD (exchangerate-api 22-Sep-2026); touch & Alfa are mobile/fixed-LTE only"
 LBN,Lebanon,IDM,IDM Fiber 300GB,1000,150,22.32,https://www.idm.net.lb/fiber.html,"LBP 1,800,000/mo + 11% VAT = 1,998,000; advertised up to 1 Gbps download / up to 150 Mbps upload on GDS network in select areas, else up to 300 Mbps; quota tiers 300/400/500/750/1000GB at 1G + Platinum 50Mbps unlimited 2.35M LBP; FX 89,500"
@@ -289,7 +288,7 @@ MDA,Moldova,Moldtelecom,MaxFiber 300,300,300,16.70,https://en.wikipedia.org/wiki
 MDA,Moldova,StarNet,StarNet FTTx 300,300,300,14.30,https://en.wikipedia.org/wiki/Internet_in_Moldova,local 239 MDL/mo; FX 0.060 USD/MDL; FTTx pioneer
 MDA,Moldova,Orange Moldova,Orange Internet 300,300,300,15.50,https://en.wikipedia.org/wiki/Internet_in_Moldova,local 259 MDL/mo; FX 0.060 USD/MDL
 MDG,Madagascar,Telma,Fibre'In,200,,11,https://midi-madagasikara.mg/telma-lancement-de-fibrein-loffre-internet-la-moins-chere-en-afrique/,"MGA49,000/mo with100GB FUP; FX4,500 MGA/USD; higher tiers Fibre GO/FAMILY/HOME MGA99k-249k (FUP150-900GB)"
-MDV,Maldives,Dhiraagu,Limitehneh Fibre 100 Mbps,100,50,84.31,knowledge,MVR 1300/mo indicative; nationwide FTTH covering 100% of households (completed Dec-2024); FX 15.42 MVR/USD (pegged)
+MDV,Maldives,Dhiraagu,Limitehneh Fibre 100 Mbps,100,50,84.31,https://www.dhiraagu.com.mv/,MVR 1300/mo indicative; nationwide FTTH covering 100% of households (completed Dec-2024); FX 15.42 MVR/USD (pegged)
 MDV,Maldives,Ooredoo Maldives,SuperNet Unlimited 100M,100,50,77.82,https://www.ooredoo.mv/broadband/supernet-fibre-broadband,MVR 1200/mo indicative; marketed 'SUPERNET UNLIMITED NO CAP - truly unlimited' with published FUA: speed after FUA 5 Mbps; 8% GST applies; FX 15.42 MVR/USD
 MDV,Maldives,Focus Infocom,Home broadband 100 Mbps,100,50,64.85,knowledge,Male' ISP - licensed as second ISP in 2003 per DMADD; MVR 1000/mo indicative; FX 15.42 MVR/USD
 MEX,Mexico,Telmex,Infinitum 200,200,100,31,https://mejorconexion.mx/blog/internet-telmex-infinitum-planes-precios-2026.html,FTTH; MXN 549 promo ~US$31 @17.5 (regular ~MXN 799); upload ~100Mbps on the 200 tier per published table
@@ -304,31 +303,31 @@ MLI,Mali,Moov Africa Mali (Malitel),Fibre 200,200,,,https://www.moov-africa.ml/m
 MLT,Malta,GO,GO True Fibre 300,300,30,31.05,https://www.go.com.mt,Local EUR 27.00 approx knowledge; entry tier tripled to 300/30 in Mar-2025 for +EUR 2; FX EUR=1.15
 MLT,Malta,Melita,Flexi 250,250,25,28.69,https://www.melita.com,Local EUR 24.95 incl TV Starter (Flexi 250 bundle per qabbel.mt Jul-2026); HFC/cable - upload scaled not published for 250 tier; FX EUR=1.15
 MLT,Malta,Epic,Home Fibre 300,300,30,31.04,https://www.epic.com.mt,Local EUR 26.99 standard after 12-mo 50% promo (EUR 13.49); FTTH; FX EUR=1.15
-MMR,Myanmar,MPT,MPT SME Broadband Plan 4,125,125,64.29,knowledge,MMK 2100/USD; ₭135000/mo for 125Mbps fibre unlimited data; nearest tier to 200 (100Mbps = ₭100000); upload assumed symmetric
-MMR,Myanmar,Myanmar Net,Myanmar Net Biz+ Fiber 170M,170,170,94.76,knowledge,MMK 2100/USD; ₭199000/mo (Apr-2026 price list); nearest tier to 200 (233M = ₭274000); upload assumed symmetric
+MMR,Myanmar,MPT,MPT SME Broadband Plan 4,125,125,64.29,https://www.mpt.com.mm/,MMK 2100/USD; ₭135000/mo for 125Mbps fibre unlimited data; nearest tier to 200 (100Mbps = ₭100000); upload assumed symmetric
+MMR,Myanmar,Myanmar Net,Myanmar Net Biz+ Fiber 170M,170,170,94.76,https://www.myanmarnet.com/,MMK 2100/USD; ₭199000/mo (Apr-2026 price list); nearest tier to 200 (233M = ₭274000); upload assumed symmetric
 MMR,Myanmar,5BB Broadband,5BB Prepaid 50,50,50,29.30,knowledge,MMK 2100/USD; ₭53500/mo + 15% commercial tax; 50Mbps is 5BB's highest published consumer FTTH tier (business fibre to 10Gbps by quote)
 MNE,Montenegro,Crnogorski Telekom,Home Internet L,2000,1000,34.39,https://telekom.me,Local EUR 29.90 standard (promo EUR 14.95 first 3m); only published tier is 2G - nearest available to 200; FX EUR=1.15
 MNE,Montenegro,Telemach Montenegro,EON FULL,500,50,45.89,https://telemach.me,Local EUR 39.90 after 6-mo promo (EUR 19.95); network speeds up to 500 - nearest to 200; FX EUR=1.15
 MNE,Montenegro,m:tel Montenegro,Net 200,200,20,28.64,https://mtel.me,Local EUR 24.90 approx knowledge; cable/fiber tier nearest to 200; FX EUR=1.15
-MNG,Mongolia,Unitel,Unitel Fiber 100M,100,50,18.21,knowledge,MNT 3570/USD; approx ₮65000/mo Ulaanbaatar; tier not publicly price-listed in English
-MNG,Mongolia,Mobicom,Mobicom Home Fiber 200M,200,100,21.01,knowledge,MNT 3570/USD; approx ₮75000/mo; UB baseline ~MNT42-45k for 60Mbps (world-prices 2026)
-MNG,Mongolia,Skytel,SkyFiber 200M,200,100,22.41,knowledge,MNT 3570/USD; approx ₮80000/mo; fiber tiers quoted in-store not online
+MNG,Mongolia,Unitel,Unitel Fiber 100M,100,50,18.21,https://www.unitel.mn/en,MNT 3570/USD; approx ₮65000/mo Ulaanbaatar; tier not publicly price-listed in English
+MNG,Mongolia,Mobicom,Mobicom Home Fiber 200M,200,100,21.01,https://www.mobicom.mn/,MNT 3570/USD; approx ₮75000/mo; UB baseline ~MNT42-45k for 60Mbps (world-prices 2026)
+MNG,Mongolia,Skytel,SkyFiber 200M,200,100,22.41,https://www.skytel.mn/,MNT 3570/USD; approx ₮80000/mo; fiber tiers quoted in-store not online
 MOZ,Mozambique,Vodacom Moçambique,KayaNet100,100,50,47,https://infromoz.com/tecnologia/pacotes-de-internet-vodacom-2026-precos-megas-e-codigos-de-ativacao/,"MT2,999/mo for100/50Mbps FTTH (Maputo-Matola bairros listed); FX64 MZN/USD; advertised no data limit; install/equipment incl. promo"
-MOZ,Mozambique,Tmcel,,,,,knowledge,Incumbent Telecomunicacoes de Mocambique; FTTH in Maputo; tiers/prices not captured
-MRT,Mauritania,Moov Mauritel,Fibre 200,200,,,knowledge,"Moov Mauritel advertises fibre tiers of 100, 200 and 500 Mbps (mauritel.mr homepage); MRU prices exist in the regulator's published file (are.mr/pdfs/tarifs_mauritel_juin_2025.pdf) but that PDF could not be parsed and mauritel.mr fails TLS verification, so price left blank; FX MRU 40.33 = 1 USD (22-Sep-2026)"
+MOZ,Mozambique,Tmcel,,,,,https://www.tmcel.mz/,Incumbent Telecomunicacoes de Mocambique; FTTH in Maputo; tiers/prices not captured
+MRT,Mauritania,Moov Mauritel,Fibre 200,200,,,https://are.mr/pdfs/tarifs_mauritel_juin_2025.pdf,"Moov Mauritel advertises fibre tiers of 100, 200 and 500 Mbps (mauritel.mr homepage); MRU prices exist in the regulator's published file (are.mr/pdfs/tarifs_mauritel_juin_2025.pdf) but that PDF could not be parsed and mauritel.mr fails TLS verification, so price left blank; FX MRU 40.33 = 1 USD (22-Sep-2026)"
 MRT,Mauritania,Rimatel,,,,,https://are.mr/pdfs/tarifs_rimatel_juin_2025.pdf,Regulator-published June-2025 tariff file for Rimatel's 'Cheriktak' fibre access (shared and dedicated); values not extracted (PDF) - blank
-MRT,Mauritania,Mattel (Mauritania Telecom),,,,,knowledge,State fixed-line operator offering corporate/consumer internet; no published consumer fibre tier or price verified - blank
+MRT,Mauritania,Mattel (Mauritania Telecom),,,,,https://are.mr/,State fixed-line operator offering corporate/consumer internet; no published consumer fibre tier or price verified - blank
 MRT,Mauritania,Moov Mauritel (ex-Mauritel),La Fibre de Moov 200,200,,123.96,https://are.mr/pdfs/tarifs_mauritel_juin_2025.pdf,"Official TTC tariff Jun-2025 (18% VAT incl): FTTH 15=1,200 / 30=1,500 / 50=2,500 / 100=4,000 / 200=5,000 MRU/mo (ADSL 4-20Mbps also sold); offers extended to 500Mbps in Jul-2025; FX 40.33 MRU/USD (exchangerate-api 22-Sep-2026); SOLE FTTH operator - Mattel sells Wifidari fixed-WiFi box, Chinguitel is mobile only"
-MUS,Mauritius,Mauritius Telecom (Orange / my.t),,,,,knowledge,Incumbent; my.t fibre FTTH sold nationally; public residential tier/price list not captured Sep-2026
-MWI,Malawi,Malawi Telecommunications (MTL),,,,,knowledge,Incumbent fixed operator; residential FTTH tiers not published
-MYS,Malaysia,TM Unifi,Unifi Home 300M,300,50,33.10,knowledge,MYR 4.20/USD; RM139/mo (RM129 promo on 24/27-month); upload 50M published
-MYS,Malaysia,Maxis,Maxis Home Fibre 300M,300,50,30.71,knowledge,MYR 4.20/USD; RM129/mo new-user promo (RM139 normal); upload approx 50M (not published)
-MYS,Malaysia,TIME,TIME Fibre 200M,200,200,23.57,knowledge,MYR 4.20/USD; RM99/mo 24-month; symmetric 200/200 published - exact 200 tier
+MUS,Mauritius,Mauritius Telecom (Orange / my.t),,,,,https://www.myt.mu/,Incumbent; my.t fibre FTTH sold nationally; public residential tier/price list not captured Sep-2026
+MWI,Malawi,Malawi Telecommunications (MTL),,,,,https://en.wikipedia.org/wiki/Telecommunications_in_Malawi,Incumbent fixed operator; residential FTTH tiers not published
+MYS,Malaysia,TM Unifi,Unifi Home 300M,300,50,33.10,https://unifi.com.my/fibre-broadband,MYR 4.20/USD; RM139/mo (RM129 promo on 24/27-month); upload 50M published
+MYS,Malaysia,Maxis,Maxis Home Fibre 300M,300,50,30.71,https://www.maxis.com.my/en/broadband/maxis-fibre,MYR 4.20/USD; RM129/mo new-user promo (RM139 normal); upload approx 50M (not published)
+MYS,Malaysia,TIME,TIME Fibre 200M,200,200,23.57,https://www.time.com.my/?contract=24,MYR 4.20/USD; RM99/mo 24-month; symmetric 200/200 published - exact 200 tier
 NAM,Namibia,MTC Namibia,Spectra Home75 (FTTH),75,37.5,61,https://temovision.com/mtc-namibia-bundles/,"NAD1,099/mo on12-month term; FX18 NAD/USD; top tier (75Mbps FTTH only, below100 so top tier recorded); uncapped ladder10/15/25/35/50/75Mbps; install NAD2,600"
-NAM,Namibia,Telecom Namibia,,,,,knowledge,Incumbent fixed operator; residential fibre/DSL tier list not captured
-NAM,Namibia,Paratus Namibia,,,,,knowledge,National ISP/backbone operator; consumer broadband tiers not captured
+NAM,Namibia,Telecom Namibia,,,,,https://en.wikipedia.org/wiki/Telecom_Namibia,Incumbent fixed operator; residential fibre/DSL tier list not captured
+NAM,Namibia,Paratus Namibia,,,,,https://paratus.africa/namibia/,National ISP/backbone operator; consumer broadband tiers not captured
 NER,Niger,Orange Niger,Fibre 50,50,,,https://vosreponses.com/meilleurs-forfaits-internet-au-niger-en-2025/,"Orange Niger fibre is promoted as the household/enterprise option at 50 Mbps; no reachable page published the FCFA monthly price, so price left blank; FX XOF 571.81 = 1 USD"
-NER,Niger,Niger Telecom,,,,,knowledge,State-owned ISP with fibre and VSAT/enterprise capacity; no current consumer tier or price verified - blank
+NER,Niger,Niger Telecom,,,,,https://www.nigertelecoms.ne/,State-owned ISP with fibre and VSAT/enterprise capacity; no current consumer tier or price verified - blank
 NER,Niger,Liptinfor,,,,,https://www.liptinfor.net/rates.pdf,Nigerien ISP that publishes a tariff catalogue (PDF); values were not machine-extractable in this pass - blank
 NGA,Nigeria,ipNX,FOS Xtreme 200,200,,79.98,https://elowise.ng/ipnx-internet-review-nigeria-2026-plans-speed-coverage/,"Local price NGN 106,425/month, top residential FOS Xtreme tier (published range 20-200 Mbps); NGN 55,900 setup; upload speed not published; FX NGN 1,330.69 = 1 USD (exchangerate-api, 22-Sep-2026)"
 NGA,Nigeria,MTN Nigeria,FibreX 200,200,,52.60,https://www.mtn.ng/broadband/fibrex/,"Local price NGN 70,000/month for 200 Mbps unlimited (mtn.ng tier list as reported Sep-2026; one tracker shows NGN 68,500); MTN states no FUP/throttle on FibreX; free-to-use router; FX NGN 1,330.69 = 1 USD"
@@ -341,9 +340,9 @@ NLD,Netherlands,Odido,Glasvezel 100,100,100,41.98,https://www.odido.nl,Local EUR
 NOR,Norway,Telenor,Telenor Fiber 300,300,300,49.90,knowledge,local 499 NOK/mo; FX 0.10 USD/NOK
 NOR,Norway,Altibox (Lyse),Altibox Fiber 100,100,100,39.90,knowledge,local 399 NOK/mo; FX 0.10 USD/NOK; tiers 100/500/1000 so 100 picked
 NOR,Norway,Telia Norge (Get),Get Fiber 300,300,300,46.90,knowledge,local 469 NOK/mo; FX 0.10 USD/NOK
-NPL,Nepal,WorldLink,Home broadband 100 Mbps,100,50,14.89,knowledge,NPR 2100/mo indicative - nearest tier to 200; FX 141 NPR/USD (INR peg)
-NPL,Nepal,Subisu CableNet,Fibre 100 Mbps,100,50,14.18,knowledge,NPR 2000/mo indicative; FX 141 NPR/USD
-NPL,Nepal,Nepal Telecom (NTC),FTTH 100 Mbps,100,100,11.35,knowledge,NPR 1600/mo indicative; state operator GPON; FX 141 NPR/USD
+NPL,Nepal,WorldLink,Home broadband 100 Mbps,100,50,14.89,https://www.worldlink.com.np/,NPR 2100/mo indicative - nearest tier to 200; FX 141 NPR/USD (INR peg)
+NPL,Nepal,Subisu CableNet,Fibre 100 Mbps,100,50,14.18,https://www.subisu.net.np/,NPR 2000/mo indicative; FX 141 NPR/USD
+NPL,Nepal,Nepal Telecom (NTC),FTTH 100 Mbps,100,100,11.35,https://www.ntc.net.np/,NPR 1600/mo indicative; state operator GPON; FX 141 NPR/USD
 NRU,Nauru,Digicel Nauru,Smart 140 (170GB / 30 days),,,99.69,https://www.digicelpacific.com/mobile/nr/bundles,No fibre product - 4G data-SIM/router home broadband; AUD140 per 30 days (Nauru uses AUD); speed tier not published - blank; FX AUD 1.404334
 NZL,New Zealand,Spark,Everyday Fibre (unlimited),105,26,52.01,https://www.broadband.co.nz/spark,"NZ$91/mo (Spark Lite Fibre NZ$70 is 300GB-capped); 105/26 = typical evening on the NZ 100 Mbps tier, the tier nearest 200 because big-3 retailers now list 100/500/900 only (no 300); FX NZD 1.749682; comparison page updated Dec-2025"
 NZL,New Zealand,2degrees,Fibre Starter (unlimited),106,25,40.01,https://www.broadband.co.nz/2degrees,NZ$70/mo on 12-month term; typical evening 106/25 on 100 Mbps tier (nearest to 200 - no 300 tier listed); FX NZD 1.749682; updated Dec-2025
@@ -360,9 +359,9 @@ PAN,Panama,Movistar,Movistar Fibra 200,200,,45,https://panacrypto.com/es/conecti
 PER,Peru,Movistar,Movistar Fibra 300,300,300,23.73,knowledge,S/ 79.90/mes
 PER,Peru,Claro,Claro Fibra 300,300,300,26.70,knowledge,S/ 89.90/mes
 PER,Peru,Bitel,Bitel Fibra 300,300,300,17.79,knowledge,S/ 59.90/mes; FTTH Viettel; el mas barato del mercado
-PHL,Philippines,PLDT,Fiber Unli All 1499,200,100,26.30,knowledge,PHP 57/USD; ₱1499/mo 36-month lock-in; upload not published - FTTH approx 100M
-PHL,Philippines,Globe,GFiber 200M,200,100,29.81,knowledge,PHP 57/USD; ₱1699/mo 24-month lock-in; upload not published - approx
-PHL,Philippines,Converge,Super FiberX Play,200,100,23.67,knowledge,PHP 57/USD; ₱1349/mo 24-month (200Mbps tier); upload not published - approx
+PHL,Philippines,PLDT,Fiber Unli All 1499,200,100,26.30,https://pldthome.com/fiber-unli-all,PHP 57/USD; ₱1499/mo 36-month lock-in; upload not published - FTTH approx 100M
+PHL,Philippines,Globe,GFiber 200M,200,100,29.81,https://www.globe.com.ph/about-us/newsroom/consumer/globe-at-home-new-gfiber-plans-family-bundle-worth-7k,PHP 57/USD; ₱1699/mo 24-month lock-in; upload not published - approx
+PHL,Philippines,Converge,Super FiberX Play,200,100,23.67,https://fiberx.convergeict.com/products/plans/22,PHP 57/USD; ₱1349/mo 24-month (200Mbps tier); upload not published - approx
 PLW,Palau,PNCC (Palau National Communications Corp),Palaunet / HomeNet broadband,,,21.20,https://www.pnccpalau.com/residential-and-personal/internet,"Sole operator; prepaid internet cards USD2.12/2 days, USD5.30/5 days, USD10.60/15 days unlimited, basic home plan ~USD21.20/mo; page is JS-rendered so speed tiers blank; Palau uses the US dollar"
 PNG,Papua New Guinea,Telikom PNG,VelocityXtreme 50Mbps (unlimited),50,,10671.60,https://www.telikompng.com.pg/index.php/fixed-broadband/fixed-broadband-plans,"Published speed tiers are 1/5/10/25/50 Mbps - top tier (50) is nearest 200; price as listed PGK47,500 treated as monthly (business-grade; upload not published); consumer prepaid packs e.g. 20GB/30d = PGK95 (~US$21); FX PGK 4.451074"
 PNG,Papua New Guinea,ElluNet PNG,GPON FTTH on DataCo fibre,100,,39.32,https://ellunetpng.com.pg,FTTH resale of PNG DataCo fibre at PGK150-200 per 100 Mbps (midpoint PGK175/mo); upload not published; DataCo itself is wholesale-only; FX PGK 4.451074
@@ -385,7 +384,7 @@ ROU,Romania,Vodafone România,GigaNet 300,300,300,12.40,knowledge,local 59 RON/m
 RUS,Russia,Rostelecom,Домашний интернет GPON 300,300,100,5.40,knowledge,local 490 RUB/mo; FX 0.011 USD/RUB; tier nearest 200 in the 100-300 band
 RUS,Russia,MGTS,ГПОН 300,300,300,7.60,knowledge,local 690 RUB/mo; FX 0.011 USD/RUB; Moscow GPON; upload as advertised
 RUS,Russia,Beeline,Домашний интернет 200,200,100,6.60,knowledge,local 599 RUB/mo; FX 0.011 USD/RUB; 200 tier is the exact nearest to 200
-RWA,Rwanda,MTN Rwanda,,,,,knowledge,FTTH/home internet sold in Kigali; public residential tier/price list not captured Sep-2026
+RWA,Rwanda,MTN Rwanda,,,,,https://www.mtn.co.rw/,FTTH/home internet sold in Kigali; public residential tier/price list not captured Sep-2026
 SAU,Saudi Arabia,STC,Baity Fiber Basic,300,100,76.67,https://www.stc.com.sa/content/stc/sa/en/personal/homepackages/baity-bundles.html,SAR 287.50/mo incl 15% VAT; FX 3.75 SAR/USD; free modem + installation; stc TV Lite included
 SAU,Saudi Arabia,Mobily,Home Fiber Postpaid 300,300,100,61.33,https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-300,SAR 230.00/mo incl VAT ltd-time offer (Giraffy 22-Sep-2026); standard list SAR 287.50; FX 3.75 SAR/USD; free router + install
 SAU,Saudi Arabia,Zain,Fiber Home,200,50,63.73,https://shop.sa.zain.com/en/product/fiber-home,SAR 239.00/mo incl VAT; 18-month commitment; free router + WiFi extender; FX 3.75 SAR/USD
@@ -394,13 +393,13 @@ SDN,Sudan,Sudani (Sudatel),FTTH,,,,https://en.wikipedia.org/wiki/Telecommunicati
 SEN,Senegal,Orange Sénégal,Fibre Prémium,150,,96.01,https://prixdakar.com/les-tarifs-de-linternet-au-senegal-comparatif-des-offres-adsl-et-fibre-en-2026/,"Local price XOF 54,900/month TTC (150 Mbps, top residential tier so nearest to 200); other Orange fibre tiers XOF 14,900/21,900-26,900/39,900 for 10/20-40/100 Mbps; FAS activation XOF 25,000-35,000; FX XOF 571.81 = 1 USD"
 SEN,Senegal,Yas Sénégal,Sunu Fibre 100,100,,57.71,https://prixdakar.com/les-tarifs-de-linternet-au-senegal-comparatif-des-offres-adsl-et-fibre-en-2026/,"Local price XOF 33,000/month (top tier, includes 3 mobile lines + data/SMS); ladder 20/40/60/100 Mbps = XOF 14,900/20,000/25,900/33,000; FX XOF 571.81 = 1 USD"
 SEN,Senegal,Expresso Sénégal,Fibre Pro 100,100,,122.24,https://prixdakar.com/les-tarifs-de-linternet-au-senegal-comparatif-des-offres-adsl-et-fibre-en-2026/,"Local price XOF 69,900/month HT (top Pro tier, symmetric); residential Family 10 Mbps XOF 19,900 and Family+ 30 Mbps XOF 29,900, Pro 50 Mbps XOF 39,900; FX XOF 571.81 = 1 USD"
-SGP,Singapore,Singtel,Singtel 1Gbps fibre,1000,1000,31.17,knowledge,SGD 1.28/USD; S$39.90/mo (S$45.90 with router); no sub-1G tier sold so 1G recorded
-SGP,Singapore,StarHub,StarHub 500Mbps fibre,500,500,23.36,knowledge,SGD 1.28/USD; S$29.90/mo on 24-month contract
-SGP,Singapore,M1,M1 500Mbps fibre,500,500,31.17,knowledge,SGD 1.28/USD; S$39.90/mo 12-month (S$29.90 on 24-month)
+SGP,Singapore,Singtel,Singtel 1Gbps fibre,1000,1000,31.17,https://www.singnet.com.sg/,SGD 1.28/USD; S$39.90/mo (S$45.90 with router); no sub-1G tier sold so 1G recorded
+SGP,Singapore,StarHub,StarHub 500Mbps fibre,500,500,23.36,https://www.starhub.com/personal/store/broadband.html,SGD 1.28/USD; S$29.90/mo on 24-month contract
+SGP,Singapore,M1,M1 500Mbps fibre,500,500,31.17,https://www.m1.com.sg/home-broadband,SGD 1.28/USD; S$39.90/mo 12-month (S$29.90 on 24-month)
 SLB,Solomon Islands,Our Telekom,Prepaid Broadband 15GB/30d,10,,10.11,https://ourtelekom.com.sb/personal/prepaid-broadband,Download speeds up to 10 Mbps; top pack SBD80/30 days; FTTP packages up to 50 Mbps exist for business (ts2.tech Aug-2025) but their prices are not published - blank; upload not published; FX SBD 7.914252
 SLE,Sierra Leone,Orange Sierra Leone,,,,,https://www.orange.sl/en/b2c-internet-personal/data-bundles-monthly.html,"Orange SL sells prepaid data and home internet over mobile networks; no FTTH tier found, and fixed/LTE home offers are not published with speeds - blank rather than invented"
 SLE,Sierra Leone,Africell Sierra Leone,,,,,https://www.africell.sl/services/data-bundles/,Africell SL publishes mobile data bundles (and LTE home use); no fibre tier published - blank
-SLE,Sierra Leone,Qcell Sierra Leone,,,,,knowledge,Mobile operator in Sierra Leone (3G/4G); no consumer FTTH product published - blank
+SLE,Sierra Leone,Qcell Sierra Leone,,,,,https://www.qcell.sl/,Mobile operator in Sierra Leone (3G/4G); no consumer FTTH product published - blank
 SLV,El Salvador,Claro,Claro Fibra 200,200,200,30,knowledge,FTTH symmetric; ~US$30 approx - VERIFY
 SLV,El Salvador,Tigo,Tigo Net 200,200,,32,knowledge,HFC/fiber; ~US$32 approx - VERIFY; upload not published; only 2 significant fixed ISPs found - third row missing
 SMR,San Marino,TIM San Marino,Fibra+ 200 FTTC,200,30,28.64,https://www.telecomitalia.sm,Local EUR 24.90 approx knowledge; VDSL2 profile 200/30 - nearest to 200; FX EUR=1.15
@@ -410,7 +409,7 @@ SOM,Somalia,Hormuud Telecom,,,,,https://en.wikipedia.org/wiki/Communications_in_
 SRB,Serbia,Telekom Srbija (mts),Net paket 200,200,20,24.56,https://mts.rs,Local RSD 2499 approx knowledge; mts net ladder nearest to 200; FX RSD=0.00983 (117 per EUR)
 SRB,Serbia,A1 Srbija,Net 300,300,150,26.53,https://a1.rs,Local RSD 2699 with e-invoice standard (RSD 3199-3249 without commitment; promo 1999); FX RSD=0.00983
 SRB,Serbia,SBB,Net TV Basic+ internet 300,300,30,47.16,https://sbb.rs,Local RSD 4798 standard after 6-mo 50% promo (RSD 2399); upload not published for DOCSIS tier; FX RSD=0.00983
-SSD,South Sudan,South Sudan Telecom,,,,,knowledge,State fixed incumbent; consumer FTTH tiers not published
+SSD,South Sudan,South Sudan Telecom,,,,,https://en.wikipedia.org/wiki/Communications_in_South_Sudan,State fixed incumbent; consumer FTTH tiers not published
 STP,Sao Tome and Principe,CST (Companhia Santomense de Telecomunicacoes),,,,,https://www.telecomtrainer.com/list-of-mobile-operators-in-sao-tome-and-principe/,State-owned operator offering mobile voice/data (2G/3G/4G) and fixed internet; no consumer fibre tier or USD/EUR price published on a reachable page - blank; FX STN21.36=1USD (22-Sep-2026)
 STP,Sao Tome and Principe,Unitel STP,,,,,http://unitel.st/tarifarios.php,"Unitel (Angolan group) subsidiary; its tariff page in this pass only exposed international call rates (Dobra per minute), no data/fibre tier - blank; FX STN21.36=1USD"
 SUR,Suriname,Telesur,Telesur Fibra 300,300,300,,knowledge,Precio por confirmar; FX SRD 38.14/USD
@@ -425,8 +424,8 @@ SVN,Slovenia,Telemach Slovenia,EON NET,1000,50,50.49,https://telemach.si,Local E
 SWE,Sweden,Telia,Telia Bredband 250 fiber,250,250,32.90,knowledge,local 329 SEK/mo; FX 0.10 USD/SEK
 SWE,Sweden,Bahnhof,Bahnhof Fiber 100,100,100,24.90,knowledge,local 249 SEK/mo; FX 0.10 USD/SEK; tiers 100 and 1000 so 100 is the in-band pick
 SWE,Sweden,Tele2 (Com Hem),Tele2 Fiber 250,250,100,29.90,knowledge,local 299 SEK/mo; FX 0.10 USD/SEK
-SWZ,Eswatini,Eswatini Mobile,5G Home Internet,,,,knowledge,Ex-Swazi Mobile; commercial5G home broadband in Matsapha/Manzini; tier speeds/prices not captured
-SWZ,Eswatini,MTN Eswatini,,,,,knowledge,Leading operator; residential internet/fibre offerings; tier list not captured
+SWZ,Eswatini,Eswatini Mobile,5G Home Internet,,,,https://eswatinimobile.co.sz/,Ex-Swazi Mobile; commercial5G home broadband in Matsapha/Manzini; tier speeds/prices not captured
+SWZ,Eswatini,MTN Eswatini,,,,,https://www.mtn.co.sz/,Leading operator; residential internet/fibre offerings; tier list not captured
 SYC,Seychelles,Cable & Wireless Seychelles,GigaNet Lite,500,,214,https://cwseychelles.com/giganet,"SCR2,999 incl VAT/mo; FX14.0 SCR/USD; only500/1000Mbps tiers exist so nearest-to-200 is500; 'first in Africa' FTTH claim"
 SYC,Seychelles,Intelvision,BLAZE120GB,100,,57,https://intelvision.sc/internet/,SCR804 incl VAT/mo; FX14.0;120GB cap at100Mbps (tiers50/100/1000); uncapped Infinity lines sold with FUP
 SYC,Seychelles,Airtel Seychelles,Smart Connect + speed booster,200,,86,https://www.nation.sc/articles/27477/airtel-seychelles-unveils-smart-connect,"SCR999 base (10Mbps) + SCR200 booster = SCR1,199/mo; FX14.0; booster up to200Mbps on4G coverage;3-month SCR2,399 option"
@@ -437,26 +436,26 @@ TCD,Chad,Salam Mobile,,,,,https://vosreponses.com/comparer-les-operateurs-teleph
 TGO,Togo,Yas Togo (ex-Togocom),Fibre Pro Small,80,,96.19,https://gapola.tg/togocom-rend-les-offres-fibres-accessibles-a-tous/,"Consumer ladder: 10 Mbps 15,000 / Gold 25 Mbps 25,000 / Platinium 60 Mbps 30,000 / Pro Small 80 Mbps 55,000 FCFA per month; 80 Mbps is the nearest tier with a published price to 200 - Togocom/Yas also markets 200 Mbps and 300 Mbps fibre tiers for demanding/professional clients but did not publish their prices; FX XOF 571.81 = 1 USD"
 TGO,Togo,Moov Africa Togo,,,,,https://moov-africa.tg/particulier/forfaits-internet-4g/,"Moov Togo sells 4G internet bundles (iZi'Large 75 Go / 30 days = 15,000 FCFA) and advertises fibre, but no fibre speed tier or FCFA price is published on a server-rendered page - blank"
 TGO,Togo,Libercom,,,,,https://vosreponses.com/comparer-les-operateurs-telephoniques-en-togo/,Listed by a local comparison site as a third network with limited LTE and ~60% territory coverage; not verified as an MNO and no fibre tiers published - blank
-THA,Thailand,AIS,AIS Fibre 500/500,500,500,18.15,knowledge,THB 33/USD; ฿599/mo; AIS-branded lineup starts at 500/500 (300/300 ฿499 sold only as AIS 3BB Fibre3 sub-brand)
-THA,Thailand,True,True Online Standard 499,300,300,15.12,knowledge,THB 33/USD; ฿499/mo 24-month; symmetric 300/300 published
-THA,Thailand,3BB,AIS 3BB Fibre3 300/300,300,300,15.12,knowledge,THB 33/USD; ฿499/mo 12-month; 3BB merged into AIS in 2023 (brand AIS 3BB Fibre3)
+THA,Thailand,AIS,AIS Fibre 500/500,500,500,18.15,https://www.ais.th/en/consumers/fibre/package/broadband24,THB 33/USD; ฿599/mo; AIS-branded lineup starts at 500/500 (300/300 ฿499 sold only as AIS 3BB Fibre3 sub-brand)
+THA,Thailand,True,True Online Standard 499,300,300,15.12,https://www.true.th/en/true-online,THB 33/USD; ฿499/mo 24-month; symmetric 300/300 published
+THA,Thailand,3BB,AIS 3BB Fibre3 300/300,300,300,15.12,https://www.ais.th/en/consumers/fibre/package/broadband24,THB 33/USD; ฿499/mo 12-month; 3BB merged into AIS in 2023 (brand AIS 3BB Fibre3)
 TJK,Tajikistan,Tajiktelecom OJSC,FTTB/GPON 100 Mbps,100,50,15.96,https://tojiktelecom.tj/en,National operator - FTTB and GPON (FTTH) access; TJS 150/mo indicative; single international gateway controls transit; FX 9.40 TJS/USD
 TJK,Tajikistan,Megafon Tajikistan,Home internet 100 Mbps,100,50,12.77,https://www.telecompaper.com/news/megafon-tajikistan-doubles-fibre-coverage-in-dushanbe--1524405,FTTB in Dushanbe covering about 40000 households (coverage doubled in 2024); TJS 120/mo indicative; FX 9.40 TJS/USD
-TJK,Tajikistan,Tcell,GPON fibre 100 Mbps,100,100,13.83,knowledge,GPON fibre-based fixed broadband launched in Dushanbe; TJS 130/mo indicative; FX 9.40 TJS/USD
+TJK,Tajikistan,Tcell,GPON fibre 100 Mbps,100,100,13.83,https://www.tcell.tj/en,GPON fibre-based fixed broadband launched in Dushanbe; TJS 130/mo indicative; FX 9.40 TJS/USD
 TKM,Turkmenistan,Turkmentelekom,Residential internet 6 Mbit/s (maximum tier),6,6,80.00,https://telecom.tm/en/internet/,GENUINELY ABSENT consumer FTTH: highest published residential tier is 6 Mbit/s (280 TMT/mo city tariff; ladder 1 = 150 / 2 = 180 / 4 = 230 / 6 = 280 TMT); only fixed operator; FX 3.50 TMT/USD (official)
 TLS,Timor-Leste,Timor Telecom,TT Fibra+ Ultra,200,200,150.00,https://www.timortelecom.tl/en/tt-fibra,Ultra tier up to 200Mbps = $150/mo (Max 100M = $70; Total 500M = $300); upload not published
 TLS,Timor-Leste,Telemor,,,,,knowledge,No published residential FTTH tariff (mobile/fixed-wireless only); blank rather than invented
 TLS,Timor-Leste,Telkomcel,,,,,knowledge,Corporate FTTH built in Dili with Telkom Access but no published residential tariff; blank rather than invented
-TON,Tonga,Digicel Tonga,home/fixed broadband (Digicel Play),,,,knowledge,Digicel operates in Tonga (digicelpacific.com/mobile/to) but the Tonga site publishes mobile bundles only - no fixed/fibre plan page accessible; speeds and prices blank rather than invented
+TON,Tonga,Digicel Tonga,home/fixed broadband (Digicel Play),,,,https://www.digicelpacific.com/,Digicel operates in Tonga (digicelpacific.com/mobile/to) but the Tonga site publishes mobile bundles only - no fixed/fibre plan page accessible; speeds and prices blank rather than invented
 TTO,Trinidad and Tobago,Flow,Flow Fibra 200,200,,48,knowledge,~TTD 330/mo @6.8 approx - VERIFY; upload not published
 TTO,Trinidad and Tobago,Digicel,Digicel Home Internet 200,200,,45,https://www.digicelgroup.com/tt/en/home-and-entertainment/internet,Price approx - VERIFY; upload not published
 TTO,Trinidad and Tobago,TSTT,TSTT Fibre 200,200,,50,knowledge,Incumbent bcs (broadband arm Amplia); TATT publishes tariff schedules; price approx - VERIFY; upload not published
 TUN,Tunisia,Tunisie Telecom,Forfix Fibre 200,200,30,37.43,https://mnin.tn/forfaits/tunisie-telecom,TND 109.90/mo (lineup 50=59.90 / 100=79.90 / 200=109.90 / 500=189.90 / 1G=379.90); 12-month commitment; VAT treatment not confirmed (Tunisia TVA 20%); FX 2.936 TND/USD; Topnet & Globalnet (TT ecosystem) are ADSL / business-fibre only - not padded
 TUN,Tunisia,Ooredoo Tunisia,Fibre Box 200,200,,34.02,https://www.ooredoo.tn/Personal/fr/content/344-fibre-box,"TND 99.90/mo incl VAT (TTC), 24-month-commitment promo (12-mo 110.90; standard 159.90); connection fee 40 TND TTC; lineup 30/50/100/200/500/1Gbps; upload not published; FX 2.936"
 TUN,Tunisia,Orange Tunisie,Fibre 100 Méga,100,,22.10,https://www.orange.tn/pages/fibre-optique,"TND 64.90/mo incl VAT, 24-mo commitment promo (69.90 at 12-mo); promo runs to 04-Oct-2026 then price reverts after 6 months to unpublished standard tariff; max tier 100 Mbps = nearest to 200; upload not published; FX 2.936"
-TUR,Turkey,Turk Telekom (TTNet),TTNet Fiber 200,200,50,18.63,knowledge,Approx TRY 900/mo indicative - nearest tier to 200; FX 48.3 TRY/USD (Sep-2026)
-TUR,Turkey,Turkcell Superonline,Superonline Fiber 200,200,100,20.70,knowledge,Approx TRY 1000/mo indicative; FX 48.3 TRY/USD (Sep-2026)
-TUR,Turkey,Vodafone Net,Vodafone Fiber 200,200,100,17.60,knowledge,Approx TRY 850/mo indicative; FX 48.3 TRY/USD (Sep-2026)
+TUR,Turkey,Turk Telekom (TTNet),TTNet Fiber 200,200,50,18.63,https://en.wikipedia.org/wiki/T%C3%BCrk_Telekom,Approx TRY 900/mo indicative - nearest tier to 200; FX 48.3 TRY/USD (Sep-2026)
+TUR,Turkey,Turkcell Superonline,Superonline Fiber 200,200,100,20.70,https://www.superonline.net/,Approx TRY 1000/mo indicative; FX 48.3 TRY/USD (Sep-2026)
+TUR,Turkey,Vodafone Net,Vodafone Fiber 200,200,100,17.60,https://www.vodafone.com/,Approx TRY 850/mo indicative; FX 48.3 TRY/USD (Sep-2026)
 TUV,Tuvalu,Tuvalu Telecom (TTC),Ocean 100 (45GB / 30 days),,,71.21,https://tuvalutelecom.tv/mobile-broadband-plans,"Sole operator; 4G LTE Unwired broadband plus satellite (Kacific/Starlink), no fibre; Ocean plans 20/45/100GB per 30 days at AUD50/100/200; plans are not speed-tiered - blank; FX AUD 1.404334"
 TZA,Tanzania,TTCL,T-Fiber Premium Streaming,50,100,74,https://pamojacompare.com/home-internet-in-2026/,"TZS200,000/mo; FX2,700 TZS/USD; unlimited shared experience, no published cap; higher fibre tiers exist incl.150/150 and up-to250Mbps (ttcl.co.tz) - price not captured; Basic20/10 TZS55,000"
 TZA,Tanzania,Vodacom Tanzania,5G Home Internet Gold Monthly,50,,56,https://pamojacompare.com/home-internet-in-2026/,"TZS150,000 per30 days; FX2,700; fixed5G/SupaKasi (not FTTH); advertised unlimited at contracted speed, no GB threshold published; up speed not published"
@@ -484,9 +483,9 @@ VCT,Saint Vincent and the Grenadines,Digicel,Digicel Home 200,200,,41,knowledge,
 VEN,Venezuela,Movistar,Solucion Agil Movistar Fibra,,,40.00,https://www.movistar.com.ve/Particulares/terminos-y-condiciones-servicio-internet.html,USD de facto (tasa BCV); SAM Fibra es mejor-esfuerzo; velocidad no publicada en T&C
 VEN,Venezuela,Digitel,,,,,knowledge,Sin producto FTTH residencial publicado (solo movil y fijo inalambrico)
 VEN,Venezuela,Movilnet,,,,,knowledge,Movilnet es solo movil; la fibra fija la opera CANTV
-VNM,Vietnam,VNPT,VNPT Home 1 300M,300,300,7.25,knowledge,VND 26200/USD; ₫190000/mo (2026 Home Net list); upload assumed symmetric (not separately published; FPT does publish 300/300)
-VNM,Vietnam,FPT Telecom,FPT GiGa 300M,300,300,7.44,knowledge,VND 26200/USD; ₫195000/mo incl VAT (₫235000 inner HN/HCM); symmetric 300/300 published
-VNM,Vietnam,Viettel,Viettel NETVT1 300M,300,300,8.97,knowledge,VND 26200/USD; ₫235000/mo inner HN-HCM (₫195000 across 61 provinces); upload assumed symmetric
+VNM,Vietnam,VNPT,VNPT Home 1 300M,300,300,7.25,https://vnptmedia.vn/english/news/202505/vnpt-launches-internet-package-with-minimum-speed-of-300-mbps-28f5669,VND 26200/USD; ₫190000/mo (2026 Home Net list); upload assumed symmetric (not separately published; FPT does publish 300/300)
+VNM,Vietnam,FPT Telecom,FPT GiGa 300M,300,300,7.44,https://dangkymangfpt.vn/internet/internet-giga,VND 26200/USD; ₫195000/mo incl VAT (₫235000 inner HN/HCM); symmetric 300/300 published
+VNM,Vietnam,Viettel,Viettel NETVT1 300M,300,300,8.97,https://viettelinternet.vn/netvt1_t,VND 26200/USD; ₫235000/mo inner HN-HCM (₫195000 across 61 provinces); upload assumed symmetric
 VUT,Vanuatu,Vodafone Vanuatu (TVL),Fiber Home 30M,30,30,253.37,https://vodafone.com.vu/pages/unlimited-plans,"FTTH tiers 5/10/20/30 Mbps (symmetric) - 30 Mbps is the top/nearest tier to 200; VT30,000/mo; Digicel Vanuatu sells mobile data only; FX VUV 118.402327"
 WSM,Samoa,Vodafone Samoa,Voda Fiber 149 (residential FTTH),100,25,54.89,https://vodafone.com.ws/broadband/vodafone-fibre/,"FTTH up to 100 down / 25 up, WST149/mo 500GB; business Matagi Fibre 200 Mbps exists (WST35,999/mo) but residential tiers top out at 100 - nearest to 200; FX WST 2.714332"
 WSM,Samoa,Digicel Samoa,Maota $80 (home internet 100GB/28d),,,29.47,https://www.digicelpacific.com/mobile/ws/bundles,Home-internet router/MiFi bundles on 4G/5G (Maota WST80 = 100GB/28 days); no published speed tier - blank; FX WST 2.714332
@@ -494,7 +493,7 @@ YEM,Yemen,YemenNet (PTC),Fiber Platinum,100,,,https://yemenfiy.com/blog/yemen-ne
 ZAF,South Africa,Vodacom,Vodacom Fibre200/200,200,200,63,https://pricesinsouthafrica.co.za/vodacom-monthly-data-fiber-package-prices-data-bundles-prepaid-rates-and-contract-plans/,"R1,129/mo symmetrical uncapped; FX18 ZAR/USD; rides Vumatel/Openserve/DFA open-access; entry R469 (20/10)"
 ZAF,South Africa,MWeb,Fibre Geeks200/50,200,50,53,https://fastestfibre.co.za/200mbps-fibre-deals/,"R949/mo uncapped list price; FX18; national ISP on Fibre Geeks network; Sep-2026 market:112 tiers151-300Mbps, median R1,117, cheapest R715"
 ZAF,South Africa,Vox,Frogfoot240/120,240,120,58,https://fastestfibre.co.za/200mbps-fibre-deals/,"R1,045/mo uncapped (R715 promo first3 months); FX18; national ISP on Frogfoot network"
-ZMB,Zambia,Zamtel,,,,,knowledge,National telco lists fibre among products (zamtel.zm); residential FTTH tier/price list not captured
+ZMB,Zambia,Zamtel,,,,,https://www.zamtel.zm/,National telco lists fibre among products (zamtel.zm); residential FTTH tier/price list not captured
 ZWE,Zimbabwe,TelOne,Fibre Bonus Speed100,100,,90,https://www.telone.co.zw/products/details/service-tariffs-effective-5-august-2025,USD incl taxes (tariffs eff.5Aug2025); top fibre tier100Mbps (ladder50/80/100 = $40/$60/$90 unlimited); all unlimited broadband has3TB FUP
 ZWE,Zimbabwe,Liquid Home (ZOL),Fibroniks unlimited,,,,https://zimpricecheck.com/price-updates/internet-services/zimbabwe-online-zol-internet-prices/,Zimbabwe's largest fixed ISP (ex-ZOL); Fibroniks FTTH sold as capped + unlimited tiers under published FUP; live price feed failed Sep-2026
 ZWE,Zimbabwe,Econet Wireless,SmartBiz5 (LTE home line),5,,45,https://www.techzim.co.zw/econet/smartbiz/,USD-priced fixed-wireless home/business line;5Mbps at200GB FUP then throttled (advertised as1TB; cut Jul-2025); tiers $45/$87/$167/$417 for5/10/20/50Mbps
