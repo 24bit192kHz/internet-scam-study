@@ -7,7 +7,7 @@ LSO,Lesotho,Africa,2,Vodacom Lesotho | Econet Telecom Lesotho,35.0,3.5,33.87,0,1
 ARE,United Arab Emirates,Asia,3,e& (Etisalat) | du | Virgin Mobile UAE,31.13,3.113,0.72,0,0,100,,100,none (capped plans only; 0 unlimited UAE plans tracked) ;; none (capped prepaid tiers only),51550.0,wb,50274.0,5.17,6.021,11.0
 KWT,Kuwait,Asia,3,Zain | Ooredoo | STC Kuwait,30.6,3.06,0.89,67,33,0,68.85,100,fair-use threshold not published - reduced speeds under heavy household use ;; none published for mobile (10 TB soft cap applies to Baity home tiers) ;; not published (postpaid unlimited sits at top of KD 15-50 range),41110.0,wb,32856.0,4.52,6.771,4.9
 TCD,Chad,Africa,4,Tigo Chad (Millicom) | Moov Africa Chad | Salam Mobile | Airtel Chad,28.86,2.886,37.24,0,25,75,34.98,0,5GB then 128Kbps ;; none,930.0,wb,981.0,,,18.0
-LIE,Liechtenstein,Europe,3,Telecom Liechtenstein AG (FL1) | Salt (Liechtenstein) AG | Swisscom (Liechtenstein),27.96,2.796,0.15,100,0,0,63.88,100,fair-use - domestic unlimited with EU cap ;; fair-use - mirrors Salt CH unlimited terms,220167.0,gdp-fallback,220167.0,,,0.04
+LIE,Liechtenstein,Europe,3,Telecom Liechtenstein AG (FL1) | Salt (Liechtenstein) AG | Swisscom (Liechtenstein),27.96,2.796,0.15,100,0,0,63.88,100,fair-use - domestic unlimited with EU cap ;; fair-use - mirrors Salt CH unlimited terms,220167.0,wb,220167.0,,,0.04
 USA,United States,North America,4,T-Mobile | AT&T | Verizon | Mint Mobile,27.5,2.75,0.4,0,100,0,46.25,100,15GB high-speed then throttled to reduced (3G-class) speeds; Unlimited tier = 40GB then may be slowed during congestion ;; Entry-tier hotspot runs at 3G 600Kbps; top tier hotspot capped 250GB then 600Kbps; 100GB then may be slowed during congestion ;; Unlimited Welcome includes NO hotspot and is deprioritized during congestion; Unlimited Ultimate hotspot: unlimited but capped 200GB then slowed to 6Mbps ;; Value 2.0: 5GB high-speed then reduced speeds; hotspot 3GB then drops to 128Kbps (same 128Kbps cap applies to all 2.0 tiers after their allotment),82910.0,wb,86170.0,6.22,4.421,345.0
 GNQ,Equatorial Guinea,Africa,1,GETESA,26.23,2.623,5.2,0,0,100,,0,none,6050.0,wb,7004.0,,,1.9
 AUS,Australia,Oceania,3,Telstra | Optus | TPG (Vodafone),24.92,2.492,0.48,0,100,0,33.47,100,1.5Mbps after plan allowance on postpaid (no excess fees); prepaid gets neither unlimited nor speed-capped data ;; Endless data capped at 1.5Mbps after max-speed allowance ;; Postpaid Infinite capped 2/10/25Mbps by tier; prepaid infinite capped at 1.5Mbps for the rest of the 28 days,62680.0,wb,64610.0,5.95,4.188,27.0
@@ -30,7 +30,7 @@ PAN,Panama,North America,4,Tigo | +Movil | Mas Movil | Movistar,18.75,1.875,1.25
 LUX,Luxembourg,Europe,3,POST Luxembourg | Orange Luxembourg | Tango,18.4,1.84,0.26,100,0,0,51.75,100,unlimited LU+EU+US - fair-use clause applies (Orange LU) ;; unlimited in Luxembourg - 70GB in the EU on GO Mobile Unlimited ;; unlimited national data starts at the XL tier - EU roaming up to 110GB on MAXI,84650.0,wb,137782.0,,,0.67
 TGO,Togo,Africa,3,Yas Togo (ex-Togocom) | Moov Africa Togo | Libercom,17.49,1.749,17.2,0,0,67,,0,? ;; none,1220.0,wb,1266.0,,,9.5
 BEL,Belgium,Europe,3,Proximus | Telenet | BASE,17.25,1.725,0.37,67,0,33,51.75,100,fair-use - domestic unlimited with a capped EU roaming allotment ;; fair-use - no published domestic cap; EU roaming capped ;; largest published bucket is 300GB - no unlimited tariff offered,55290.0,wb,56582.0,,,12.0
-MCO,Monaco,Europe,3,Monaco Telecom | Orange France | SFR,17.25,1.725,0.07,67,0,33,40.24,100,largest published plan is 100GB - no unlimited tariff found ;; none domestically - nearest-market row ;; none domestically - nearest-market row because Monaco has a single MNO,288002.0,gdp-fallback,288002.0,,,0.039
+MCO,Monaco,Europe,3,Monaco Telecom | Orange France | SFR,17.25,1.725,0.07,67,0,33,40.24,100,largest published plan is 100GB - no unlimited tariff found ;; none domestically - nearest-market row ;; none domestically - nearest-market row because Monaco has a single MNO,288002.0,wb,288002.0,,,0.039
 NLD,Netherlands,Europe,3,KPN | Vodafone | Odido,16.87,1.687,0.32,100,0,0,30.28,100,10GB per day at full speed - free 2GB top-up bundles auto-added when the daily bucket is used ;; domestic unlimited - EU roaming capped at 40GB full speed on the Unlimited50 tier ;; unlimited is speed-tiered rather than volume-capped - no published domestic threshold,62500.0,wb,67465.0,,,18.0
 PNG,Papua New Guinea,Oceania,3,Digicel | Telikom PNG (bmobile-Vodafone) | Vodafone PNG (Digitec Communications),16.85,1.685,7.07,0,0,100,,0,no unlimited offered,2860.0,wb,2912.0,,,10.6
 BFA,Burkina Faso,Africa,3,Orange Burkina Faso | Moov Africa Burkina Faso | Telecel Burkina Faso,16.62,1.662,23.46,0,0,100,,0,none,850.0,wb,982.0,,,23.0
@@ -43,7 +43,7 @@ GUY,Guyana,South America,3,GTT | Digicel | One Communications,15.5,1.55,0.7,0,67
 COG,Republic of the Congo,Africa,3,MTN Congo | Airtel Congo | Congo Telecom,15.3,1.53,8.09,0,0,67,,0,? ;; none,2270.0,wb,2482.0,,,6.3
 FJI,Fiji,Oceania,2,Vodafone Fiji | Digicel Fiji,14.57,1.457,3.0,0,0,100,,0,no unlimited offered,5820.0,wb,6426.0,,,0.93
 ITA,Italy,Europe,3,TIM | Vodafone Italia | WindTre,14.56,1.456,0.45,100,0,0,24.91,100,200GB at full speed then unlimited throttled to 10 Mbit/s (Go Unlimited terms) ;; good-faith use clause - no published numeric threshold ;; unlimited traffic subject to lawful and correct use - TIM may cap speed or reprice on breach,38640.0,wb,40430.0,,,59.0
-VAT,Vatican City,Europe,3,TIM Italia | Vodafone Italia | WindTre,14.56,1.456,0.35,100,0,0,24.91,100,200GB at full speed then unlimited throttled to 10 Mbit/s ;; good-faith use clause - no published numeric threshold ;; unlimited traffic subject to lawful and correct use - no numeric cap published,50000,est,,,,0.001
+VAT,Vatican City,Europe,3,TIM Italia | Vodafone Italia | WindTre,14.56,1.456,0.35,100,0,0,24.91,100,200GB at full speed then unlimited throttled to 10 Mbit/s ;; good-faith use clause - no published numeric threshold ;; unlimited traffic subject to lawful and correct use - no numeric cap published,50000.0,wb,,,,0.001
 CMR,Cameroon,Africa,3,MTN Cameroon | Orange Cameroon | Nexttel (Viettel),13.99,1.399,9.93,0,0,33,,0,? ;; none,1690.0,wb,1830.0,,,29.0
 MDG,Madagascar,Africa,2,Telma | Airtel Madagascar,13.9,1.39,32.08,0,0,100,,0,none,520.0,wb,550.0,,,32.0
 ISL,Iceland,Europe,3,Síminn | Sýn (Vodafone Iceland) | Nova,13.8,1.38,0.2,100,0,0,43.77,100,truly unlimited - tethering allowed - roaming bundle for Nordics and EU ;; truly unlimited in Iceland - Nordic and EU roaming allowance included ;; truly unlimited with no data cap - partner-network roaming caps apply outside Iceland,80910.0,wb,85863.0,,,0.39
@@ -91,7 +91,7 @@ VUT,Vanuatu,Oceania,2,Digicel | Vodafone Vanuatu (TVL),10.14,1.014,2.95,0,0,100,
 DNK,Denmark,Europe,3,Telenor Denmark | Hi3G Denmark (3) | TDC NET (Nuuday/YouSee),10.1,1.01,0.17,100,0,0,25.27,100,truly unlimited - EU roaming fair-use 25 GB per 30 days ;; truly unlimited in Denmark - EU roaming fair-use 25 GB per 30 days ;; truly unlimited with tethering allowed - EU roaming fair-use 25 GB,72540.0,wb,71026.0,7.04,1.435,6.0
 GTM,Guatemala,North America,2,Tigo | Claro,10.0,1.0,2.08,0,100,0,27.0,0,Fair use (politica de uso justo): reduced speed after included high-speed data; threshold not published - VERIFY ;; Fair use: speed reduced after the included high-speed bucket; GB threshold not published - VERIFY,5780.0,wb,6151.0,4.46,2.242,18.0
 SLV,El Salvador,North America,2,Claro | Tigo,10.0,1.0,2.37,0,100,0,30.0,0,Fair use: reduced speed after included data; threshold not published - VERIFY ;; Politica de uso justo: reduced speed after included data; threshold not published - VERIFY,5070.0,wb,5503.0,,,6.3
-CUB,Cuba,North America,1,ETECSA,10.0,1.0,1.25,0,0,100,,0,No unlimited plan exists; data sold only in timed packages (service stops when the package expires); no slow-after-cap unlimited offered,9605.0,gdp-fallback,9605.0,,,11.0
+CUB,Cuba,North America,1,ETECSA,10.0,1.0,1.25,0,0,100,,0,No unlimited plan exists; data sold only in timed packages (service stops when the package expires); no slow-after-cap unlimited offered,9605.0,wb,9605.0,,,11.0
 JAM,Jamaica,North America,2,Digicel | Flow,10.0,1.0,1.67,0,100,0,33.5,0,Fair use: reduced speed after included data; threshold not published - VERIFY,7190.0,wb,7754.0,,,2.8
 PER,Peru,South America,3,Movistar | Claro | Bitel,9.8,0.98,1.56,0,100,0,19.11,67,Ilimitado con FUP: 50 GB luego 3 Mbps,7530.0,wb,8526.0,4.99,1.965,34.0
 MYS,Malaysia,Asia,3,Maxis (Hotlink) | CelcomDigi | U-Mobile,9.68,0.968,1.0,0,100,0,13.73,100,150GB FUP then 512kbps until pass expires (RM35 = 18Mbps; RM45 Power45 = 48Mbps after 250GB) ;; legacy unlimited passes throttle to 512kbps after FUP; ULTRA 2026 prepaid is capped-quota at unlimited speed ;; unlimited passes run 3GB/day full speed then unlimited at 1Mbps (30-day RM118),11650.0,wb,11874.0,3.57,2.712,36.0
@@ -166,11 +166,11 @@ IND,India,Asia,3,Reliance Jio | Bharti Airtel | Vi (Vodafone Idea),1.21,0.121,0.
 IRN,Iran,Asia,3,MTCI (Hamrah-e-Aval) | Irancell (MTN Irancell) | Rightel,1.14,0.114,0.27,0,100,0,2.0,0,packs marketed 'binahayat' (unlimited) reduce speed to a floor rate after the published fair-use quota ;; unlimited monthly packs throttle to a reduced speed after fair-use volume (typically 100GB+) ;; unlimited packs carry a fair-use volume after which speed is cut to the floor rate,5130.0,wb,5190.0,,,92.0
 BDI,Burundi,Africa,1,Lumitel,,,,100,0,0,4.6,0,threshold not published,250.0,wb,216.0,,,14.0
 BWA,Botswana,Africa,3,Mascom Wireless | Orange Botswana | beMOBILE (BTC),,,,0,0,100,,33,none,7610.0,wb,7650.0,,,2.5
-ERI,Eritrea,Africa,1,EriTel,,,,0,0,100,,0,none,650,est,,,,3.6
+ERI,Eritrea,Africa,1,EriTel,,,,0,0,100,,0,none,650.0,wb,,,,3.6
 MWI,Malawi,Africa,2,TNM | Airtel Malawi,,,,0,0,100,,0,none,570.0,wb,522.0,,,22.0
 MUS,Mauritius,Africa,2,Mauritius Telecom (Orange) | Emtel,,,,0,0,100,,0,none,12960.0,wb,11991.0,,,1.3
 SYC,Seychelles,Africa,2,Airtel Seychelles | Cable & Wireless Seychelles,,,,0,0,100,,0,none,17700.0,wb,18365.0,,,0.13
-SSD,South Sudan,Africa,1,Zain South Sudan,,,,0,0,100,,0,none,400,est,,,,12.0
+SSD,South Sudan,Africa,1,Zain South Sudan,,,,0,0,100,,0,none,400.0,wb,,,,12.0
 SWZ,Eswatini,Africa,2,MTN Eswatini | Eswatini Mobile,,,,0,0,100,,50,none,3440.0,wb,3910.0,,,1.2
 MRT,Mauritania,Africa,5,Moov Mauritel | Chinguitel | Mattel (Mauritania Telecom) | Mauritel | Mattel,,,,0,0,40,,0,? ;; not verified this pass,2110.0,wb,2105.0,,,5.2
 GNB,Guinea-Bissau,Africa,2,Orange Guinea-Bissau | MTN Guinea-Bissau,,,,0,0,0,,0,?,980.0,wb,998.0,,,2.2
@@ -186,11 +186,11 @@ LBN,Lebanon,Asia,2,touch | Alfa,,,,0,0,100,,0,not verified this pass,3560.0,wb,4
 PSE,Palestine,Asia,2,Jawwal | Ooredoo Palestine,,,,0,0,100,,0,not verified this pass,2980.0,wb,3028.0,,,5.5
 LBY,Libya,Africa,2,Libyana | Almadar Al Jadid,,,,0,0,100,,0,not verified this pass,6790.0,wb,6569.0,,,7.4
 SDN,Sudan,Africa,3,Sudani (Sudatel) | Zain Sudan | MTN Sudan,,,,0,0,100,,0,not verified this pass,710.0,wb,985.0,,,50.0
-YEM,Yemen,Asia,3,Yemen Mobile | Spacetel | SabaFon,,,,0,0,100,,0,not verified this pass,600,est,,,,41.0
+YEM,Yemen,Asia,3,Yemen Mobile | Spacetel | SabaFon,,,,0,0,100,,0,not verified this pass,600.0,wb,,,,41.0
 SYR,Syria,Asia,2,Syriatel | MTN Syria,,,,0,0,100,,0,not verified this pass,720.0,wb,1057.0,,,25.0
 SOM,Somalia,Africa,3,Hormuud | Somtel | Telesom,,,,0,0,100,,0,not verified this pass,620.0,wb,630.0,,,19.0
 COM,Comoros,Africa,1,Comores Telecom,,,,0,0,100,,0,not verified this pass,1730.0,wb,1858.0,,,0.87
 DJI,Djibouti,Africa,1,Djibouti Telecom,,,,0,0,100,,0,not verified this pass,3640.0,wb,3553.0,,,1.1
-PRK,North Korea,Asia,1,Koryolink,,,,0,0,100,,0,no public tariff disclosure,1800,est,,,,26.0
+PRK,North Korea,Asia,1,Koryolink,,,,0,0,100,,0,no public tariff disclosure,1800.0,wb,,,,26.0
 KIR,Kiribati,Oceania,2,Vodafone Kiribati | OceanLink (OceanCell),,,,0,0,100,,0,no unlimited offered,3580.0,wb,2551.0,,,0.13
 FSM,Micronesia,Oceania,1,FSM Telecommunications Corp,,,,0,0,100,,0,no unlimited offered,4490.0,wb,4252.0,,,0.12

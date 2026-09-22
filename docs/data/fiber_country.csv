@@ -28,7 +28,7 @@ ZWE,Zimbabwe,Africa,3,TelOne | Liquid Home (ZOL) | Econet Wireless,67.5,52.0,,1.
 SAU,Saudi Arabia,Asia,4,STC | Mobily | Zain | Salam,66.86,275.0,88.0,0.2431,35990.0,wb,35528.0,5.06,2999.17,2.23,13.21,1.74,34.0
 BFA,Burkina Faso,Africa,3,Orange Burkina Faso | Moov Africa Burkina Faso | Bridge Fiber Solutions (BFS),65.5,125.0,,0.524,850.0,wb,982.0,,70.83,92.46,,1.71,23.0
 NGA,Nigeria,Africa,3,ipNX | MTN Nigeria | FiberOne,65.41,207.0,,0.3165,1710.0,wb,1084.0,,142.5,45.9,,1.71,233.0
-LIE,Liechtenstein,Europe,3,Telecom Liechtenstein AG (FL1) | Salt (Liechtenstein) AG | SupraNet AG,63.54,567.0,533.0,0.1121,220167.0,gdp-fallback,220167.0,,18347.25,0.35,,1.66,0.04
+LIE,Liechtenstein,Europe,3,Telecom Liechtenstein AG (FL1) | Salt (Liechtenstein) AG | SupraNet AG,63.54,567.0,533.0,0.1121,220167.0,wb,220167.0,,18347.25,0.35,,1.66,0.04
 MMR,Myanmar,Asia,3,MPT | Myanmar Net | 5BB Broadband,62.78,115.0,115.0,0.5459,1210.0,wb,1359.0,,100.83,62.26,,1.64,54.0
 BEL,Belgium,Europe,3,Proximus | Telenet | BASE,61.71,183.0,23.0,0.3366,55290.0,wb,56582.0,,4607.5,1.34,,1.61,12.0
 NAM,Namibia,Africa,3,MTC Namibia | Telecom Namibia | Paratus Namibia,61.0,75.0,38.0,0.8133,4290.0,wb,4502.0,,357.5,17.06,,1.59,3.0
@@ -50,7 +50,7 @@ NLD,Netherlands,Europe,3,KPN | Ziggo | Odido,47.32,167.0,167.0,0.2839,62500.0,wb
 MAR,Morocco,Africa,3,Maroc Telecom | Orange Morocco | inwi,47.31,200.0,200.0,0.2365,3840.0,wb,4153.0,,320.0,14.78,,1.23,38.0
 MOZ,Mozambique,Africa,2,Vodacom Moçambique | Tmcel,47.0,100.0,50.0,0.47,550.0,wb,657.0,,45.83,102.55,,1.23,35.0
 SVN,Slovenia,Europe,3,Telekom Slovenije | A1 Slovenija | Telemach Slovenia,45.96,1000.0,83.0,0.046,31790.0,wb,34301.0,,2649.17,1.73,,1.2,2.1
-MCO,Monaco,Europe,3,Monaco Telecom | Orange France | SFR,45.61,500.0,350.0,0.0912,288002.0,gdp-fallback,288002.0,,24000.17,0.19,,1.19,0.039
+MCO,Monaco,Europe,3,Monaco Telecom | Orange France | SFR,45.61,500.0,350.0,0.0912,288002.0,wb,288002.0,,24000.17,0.19,,1.19,0.039
 NOR,Norway,Europe,3,Telenor | Altibox (Lyse) | Telia Norge (Get),45.57,233.0,233.0,0.1953,100030.0,wb,89889.0,8.05,8335.83,0.55,5.66,1.19,5.6
 GBR,United Kingdom,Europe,3,BT (Openreach) | Virgin Media | Sky (Openreach FTTP),45.1,188.0,30.0,0.2399,49320.0,wb,53341.0,7.4,4110.0,1.1,6.09,1.18,69.0
 DNK,Denmark,Europe,3,YouSee (TDC) | Norlys | Telenor Denmark,45.07,100.0,100.0,0.4507,72540.0,wb,71026.0,7.04,6045.0,0.75,6.4,1.18,6.0
@@ -94,7 +94,7 @@ CYP,Cyprus,Asia,3,CYTA | PrimeTel | Cablenet,31.2,200.0,100.0,0.156,32870.0,wb,3
 TUN,Tunisia,Africa,3,Tunisie Telecom | Ooredoo Tunisia | Orange Tunisie,31.18,167.0,30.0,0.1871,3880.0,wb,4188.0,,323.33,9.64,,0.81,12.0
 SLV,El Salvador,North America,2,Claro | Tigo,31.0,200.0,200.0,0.155,5070.0,wb,5503.0,,422.5,7.34,,0.81,6.3
 GRC,Greece,Europe,3,COSMOTE (OTE) | Vodafone Greece | Nova,30.98,200.0,117.0,0.1549,22730.0,wb,24626.0,,1894.17,1.64,,0.81,10.4
-VAT,Vatican City,Europe,3,Vatican Internet Service | TIM Italia | Fastweb,30.96,1500.0,767.0,0.0206,50000,est,,,4166.67,0.74,,0.81,0.001
+VAT,Vatican City,Europe,3,Vatican Internet Service | TIM Italia | Fastweb,30.96,1500.0,767.0,0.0206,50000.0,wb,,,4166.67,0.74,,0.81,0.001
 SMR,San Marino,Europe,3,TIM San Marino | Telenet San Marino | TIM Italia,30.94,567.0,277.0,0.0546,53910.0,wb,59871.0,,4492.5,0.69,,0.81,0.034
 PAK,Pakistan,Asia,3,Pakistan Telecommunication Company (PTCL) | StormFiber (Cybertel) | Nayatel,30.48,157.0,123.0,0.1945,1430.0,wb,1479.0,3.89,119.17,25.57,7.83,0.8,251.0
 MLT,Malta,Europe,3,GO | Melita | Epic,30.26,283.0,28.0,0.1068,36540.0,wb,44024.0,,3045.0,0.99,,0.79,0.56
@@ -137,7 +137,7 @@ CHL,Chile,South America,3,Movistar | Claro | WOM,15.62,600.0,600.0,0.026,15840.0
 MDA,Moldova,Europe,3,Moldtelecom | StarNet | Orange Moldova,15.5,300.0,300.0,0.0517,6890.0,wb,7579.0,4.56,574.17,2.7,3.4,0.4,3.0
 ARG,Argentina,South America,3,Fibertel | Claro | Telecentro,15.45,300.0,300.0,0.0515,13530.0,wb,13970.0,5.91,1127.5,1.37,2.61,0.4,46.0
 ARM,Armenia,Asia,3,Ucom | Telecom Armenia (Beeline / Team) | Viva Armenia,15.11,100.0,50.0,0.1511,7810.0,wb,8556.0,,650.83,2.32,,0.39,3.0
-CUB,Cuba,North America,1,ETECSA,15.0,60.0,60.0,0.25,9605.0,gdp-fallback,9605.0,,800.42,1.87,,0.39,11.0
+CUB,Cuba,North America,1,ETECSA,15.0,60.0,60.0,0.25,9605.0,wb,9605.0,,800.42,1.87,,0.39,11.0
 TJK,Tajikistan,Asia,3,Tajiktelecom OJSC | Megafon Tajikistan | Tcell,14.19,100.0,67.0,0.1419,1650.0,wb,1362.0,,137.5,10.32,,0.37,10.6
 LTU,Lithuania,Europe,3,Telia Lietuva | Cgates | Init,13.97,233.0,167.0,0.0599,27110.0,wb,29604.0,,2259.17,0.62,,0.36,2.9
 NPL,Nepal,Asia,3,WorldLink | Subisu CableNet | Nepal Telecom (NTC),13.47,100.0,67.0,0.1347,1480.0,wb,1460.0,,123.33,10.92,,0.35,30.0
