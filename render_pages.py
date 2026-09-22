@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Render docs/index.html, docs/fiber.html, docs/mobile.html from build2 outputs."""
 import csv, json, os
+from urllib.parse import urlparse
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 DOCS = os.path.join(BASE, "docs")
@@ -80,7 +81,7 @@ a{color:#58a6ff}footer{color:var(--dim);font-size:12px;padding:0 32px 40px}
 
 def page(title, nav_cur, header_html, body_html, extra_js=""):
     nav = [("index.html", "🏠 Overview"), ("fiber.html", "🌐 Fiber study"),
-           ("mobile.html", "📱 Mobile 4G/5G")]
+           ("mobile.html", "📱 Mobile 4G/5G"), ("saudi.html", "🇸🇦 Saudi vs peers")]
     navhtml = "".join(
         f'<a href="{h}"{" class=cur" if h==nav_cur else ""}>{t}</a>' for h, t in nav)
     return f"""<!DOCTYPE html>
@@ -480,7 +481,207 @@ index_html = page(
     "Plotted against GDP, GNI per capita and the Big Mac.",
     index_body, "")
 open(os.path.join(DOCS, "index.html"), "w", encoding="utf-8").write(index_html)
+index_html = page(
+    "📊 Internet Scam Study — fiber & mobile prices vs what people earn",
+    "index.html",
+    "Two studies from one 195-country operator-level dataset: what <b>200 Mbps fiber</b> "
+    "costs when you average each country's 3 big ISPs, and what <b>10 GB of mobile</b> "
+    "costs — with the truth about \"unlimited\" plans and fair-use policies. "
+    "Plotted against GDP, GNI per capita and the Big Mac. "
+    "New: <a href=\"saudi.html\">🇸🇦 Saudi Arabia vs similar-income peers</a>.",
+    index_body, "")
+open(os.path.join(DOCS, "index.html"), "w", encoding="utf-8").write(index_html)
 open(os.path.join(DOCS, ".nojekyll"), "w").close()
+
+# ---------------- SAUDI PAGE ----------------
+import statistics as _st
+
+def _f(r, k):
+    try:
+        return float(r.get(k)) if r.get(k) not in (None, "") else None
+    except (ValueError, TypeError):
+        return None
+
+peers = [r for r in fiber if (g := _f(r, "gni")) and 25000 <= g <= 55000]
+peers.sort(key=lambda r: -(_f(r, "avg_price") or 0))
+_mob = {r["iso3"]: r for r in mobile}
+_ksu_f = next(r for r in fiber if r["iso3"] == "SAU")
+_ksu_m = _mob["SAU"]
+_peer_f = [r for r in peers if r["iso3"] != "SAU"]
+_med_f = _st.median([_f(r, "avg_price") for r in _peer_f])
+_med_gb = _st.median([_f(_mob[r["iso3"]], "per_gb") for r in _peer_f
+                      if r["iso3"] in _mob and _f(_mob[r["iso3"]], "per_gb")])
+_med_inc_f = _st.median([_f(r, "pct_income") for r in _peer_f if _f(r, "pct_income")])
+_med_inc_m = _st.median([_f(_mob[r["iso3"]], "pct_income") for r in _peer_f
+                         if r["iso3"] in _mob and _f(_mob[r["iso3"]], "pct_income")])
+_kf, _km = _f(_ksu_f, "avg_price"), _f(_ksu_m, "per_gb")
+
+def _fmt(v, d=2):
+    return "–" if v is None else f"{v:.{d}f}"
+
+sau_ops_f = [r for r in fops if r.get("iso3") == "SAU"]
+sau_ops_m = [r for r in mops if r.get("iso3") == "SAU"]
+
+def _link(u):
+    u = (u or "").strip()
+    if not u or u == "knowledge":
+        return "–"
+    d = urlparse(u).netloc.replace("www.", "")
+    return f'<a href="{u}" target="_blank" rel="noopener">{d}</a>'
+
+f_rows = []
+for r in peers:
+    p, sau = _f(r, "avg_price"), r["iso3"] == "SAU"
+    m = _mob.get(r["iso3"], {})
+    f_rows.append(
+        f'<tr{" class=ksu" if sau else ""}><td class="l"><b>{r["country"]}'
+        f'{" 🇸🇦" if sau else ""}</b></td>'
+        f'<td>{r["n_ops"]}</td><td>{_fmt(p)}</td>'
+        f'<td>{r["avg_down"] or "–"}↓/{r["avg_up"] or "–"}↑</td>'
+        f'<td>{r["ppm"] or "–"}</td>'
+        f'<td>{_fmt(_f(r, "gni"), 0)}</td>'
+        f'<td class="{"bad" if (_f(r,"pct_income") or 0) > 2 else "warn" if (_f(r,"pct_income") or 0) > 1 else "ok"}>'
+        f'{_fmt(_f(r, "pct_income"))}%</td>'
+        f'<td>{"—" if sau else f"{p / _kf:.2f}×"}</td></tr>')
+
+m_sorted = sorted(peers, key=lambda r: -(_f(_mob.get(r["iso3"], {}), "per_gb") or 0))
+m_rows = []
+for r in m_sorted:
+    x = _mob.get(r["iso3"], {})
+    g, sau = _f(x, "per_gb"), r["iso3"] == "SAU"
+    m_rows.append(
+        f'<tr{" class=ksu" if sau else ""}><td class="l"><b>{r["country"]}'
+        f'{" 🇸🇦" if sau else ""}</b></td>'
+        f'<td>{x.get("n_ops", "–")}</td><td>{_fmt(_f(x, "avg_10gb"))}</td>'
+        f'<td>{_fmt(g, 3)}</td>'
+        f'<td class="ok">{x.get("unlim_yes", "–")}%</td>'
+        f'<td class="warn">{x.get("unlim_throttled", "–")}%</td>'
+        f'<td class="bad">{x.get("unlim_no", "–")}%</td>'
+        f'<td>{_fmt(_f(x, "avg_unlimited_price"))}</td>'
+        f'<td>{x.get("fiveg_share", "–")}%</td>'
+        f'<td>{"—" if sau else (f"{g / _km:.2f}×" if g else "–")}</td></tr>')
+
+op_f = "".join(
+    f'<tr><td class="l"><b>{o["operator"]}</b></td><td class="l">{o["plan_name"]}</td>'
+    f'<td>{o["speed_down_mbps"] or "–"}↓/{o["speed_up_mbps"] or "–"}↑</td>'
+    f'<td><b>${o["price_usd_month"] or "–"}</b></td><td class="l">{_link(o["source_url"])}</td>'
+    f'<td class="l exp">{o["notes"][:140]}</td></tr>' for o in sau_ops_f)
+op_m = "".join(
+    f'<tr><td class="l"><b>{o["operator"]}</b></td><td>{o["network"]}</td>'
+    f'<td><b>${o["ten_gb_price_usd"] or "–"}</b></td>'
+    f'<td>${o["unlimited_offer_usd"] or "–"}</td>'
+    f'<td class="{"ok" if o["unlimited"]=="yes" else "warn" if o["unlimited"]=="throttled" else "bad"}">'
+    f'{o["unlimited"]}</td><td class="l exp">{o["fup_policy"]}</td>'
+    f'<td class="l">{_link(o["source_url"])}</td></tr>' for o in sau_ops_m)
+
+sau_body = f"""
+<div class="stats">
+ <div class="stat red"><b>${_fmt(_kf)}/mo</b><span>KSA fiber (STC+Mobily+Zain+Salam avg,
+  {_ksu_f["avg_down"]}↓/{_ksu_f["avg_up"]}↑) vs peer median ${_med_f} {_kf / _med_f:.1f}×</span></div>
+ <div class="stat red"><b>${_fmt(_km, 3)}/GB</b><span>KSA mobile vs peer median
+  ${_med_gb:.3f} {_km / _med_gb:.1f}×</span></div>
+ <div class="stat amber"><b>{_fmt(_f(_ksu_f, "pct_income"))}%</b><span>of Saudi monthly
+  income on fiber (peer median {_med_inc_f:.2f}%, fair line 2%)</span></div>
+ <div class="stat amber"><b>${_fmt(_f(_ksu_m, "avg_unlimited_price"))}</b><span>cheapest
+  Saudi unlimited plan (STC/Mobily/Zain/Salam avg)</span></div>
+</div>
+<style>.ksu td{{background:#1c2a1c;font-weight:600}}</style>
+<div class="grid"><div class="card" style="padding:14px 18px">
+<h2>Verdict — how scammed is Saudi Arabia?</h2>
+<p class="sub" style="max-width:none">Peer group = <b>{len(peers)} countries with GNI
+per capita $25k–$55k</b> (Gulf + Europe + Korea/Japan + Canada …). KSA fiber costs
+<b>${_fmt(_kf)} vs peer median ${_med_f} = {_kf / _med_f:.1f}×</b> and eats
+<b>{_fmt(_f(_ksu_f, "pct_income"))}% of monthly income vs {_med_inc_f:.2f}% peer median</b>
+(above the 2% fair line). Mobile: <b>${_fmt(_km, 3)}/GB vs ${_med_gb:.3f} peer median =
+{_km / _med_gb:.1f}×</b>. Upload is the structural gap: KSA avg
+<b>{_ksu_f["avg_up"]}↑ on {_ksu_f["avg_down"]}↓ (1:{float(_ksu_f["avg_down"]) / float(_ksu_f["avg_up"]):.1f})</b>
+while peers like Spain (400/400), France (500/500), Japan (800/800) are symmetric.
+Bright spots: 100% truly-unlimited mobile (no FUP games) and 100% 5G across all four operators.</p>
+</div></div>
+<div class="grid two">
+ <div class="card"><h2>KSA fiber price vs peers (same income band)</h2>
+ <p>Red dashed = KSA level. Log X.</p><div id="s1"></div></div>
+ <div class="card"><h2>KSA $/GB vs peers</h2><p>Red dashed = KSA level. Log X.</p>
+ <div id="s2"></div></div>
+</div>
+<div class="grid"><div class="card">
+<h2>TABLE 1 — Fiber: Saudi Arabia vs {len(peers)} similar-income countries</h2>
+<p>avg $/mo = mean of each country's ~3 operators' nearest-200 Mbps plan ·
+multiple = country price ÷ KSA price</p>
+<div style="overflow-x:auto"><table><thead><tr>
+<th class="l">Country</th><th>Ops</th><th>avg $/mo</th><th>↓/↑ avg</th><th>$/Mbps</th>
+<th>GNI $</th><th>% income</th><th>vs KSA</th></tr></thead><tbody>
+{"".join(f_rows)}</tbody></table></div></div></div>
+<div class="grid"><div class="card">
+<h2>KSA fiber, operator by operator (the average above)</h2>
+<div style="overflow-x:auto"><table><thead><tr>
+<th class="l">Operator</th><th class="l">Plan</th><th>↓/↑</th><th>$/mo</th>
+<th class="l">Source</th><th class="l">Notes</th></tr></thead><tbody>
+{op_f}</tbody></table></div></div></div>
+<div class="grid"><div class="card">
+<h2>TABLE 2 — Mobile: Saudi Arabia vs similar-income countries</h2>
+<p>10GB $ = mean of 3 MNOs' prepaid ~10 GB · multiple = country $/GB ÷ KSA $/GB</p>
+<div style="overflow-x:auto"><table><thead><tr>
+<th class="l">Country</th><th>Ops</th><th>10GB $</th><th>$/GB</th>
+<th class="ok">truly %</th><th class="warn">FUP %</th><th class="bad">none %</th>
+<th>unl plan $</th><th>5G %</th><th>vs KSA</th></tr></thead><tbody>
+{"".join(m_rows)}</tbody></table></div></div></div>
+<div class="grid"><div class="card">
+<h2>KSA mobile, operator by operator</h2>
+<div style="overflow-x:auto"><table><thead><tr>
+<th class="l">Operator</th><th>Net</th><th>10GB $</th><th>Unl $</th><th>Unlimited?</th>
+<th class="l">FUP policy (published)</th><th class="l">Source</th></tr></thead><tbody>
+{op_m}</tbody></table></div></div></div>
+"""
+
+_MOB_JSON = json.dumps({r["iso3"]: {k: (_mob[r["iso3"]].get(k)
+    if r["iso3"] in _mob else None) for k in ("per_gb", "avg_10gb", "country")}
+    for r in peers})
+
+sau_js = f"""
+const PEERS={json_rows(peers, fiber_keys)};
+const MOB={_MOB_JSON};
+const base={{paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{{color:'#e6edf3',size:12}},
+margin:{{l:60,r:14,t:8,b:52}},xaxis:{{type:'log',gridcolor:'#21262d',title:'GNI per capita $ (log)'}},
+hovermode:'closest'}};
+(function(){{
+const d=PEERS.filter(x=>x.gni&&x.avg_price);
+const col=d.map(x=>x.iso3==='SAU'?'#ff5f56':'#58a6ff');
+const sz=d.map(x=>x.iso3==='SAU'?18:10);
+Plotly.react('s1',[{{type:'scatter',mode:'markers',x:d.map(x=>x.gni),y:d.map(x=>x.avg_price),
+text:d.map(x=>x.country+' $'+x.avg_price+' ('+x.avg_down+'↓/'+x.avg_up+'↑)'),
+marker:{{color:col,size:sz}},hovertemplate:'%{{text}}<extra></extra>'}}],
+{{...base,yaxis:{{type:'log',gridcolor:'#21262d',title:'fiber $/mo'}},
+shapes:[{{type:'line',x0:0,x1:1,xref:'paper',y0:{_kf},y1:{_kf},
+line:{{color:'#ff5f56',width:1.5,dash:'dash'}}}}],
+annotations:[{{x:.98,y:{_kf},xref:'paper',yref:'y',text:'KSA ${_fmt(_kf)}',
+showarrow:false,xanchor:'right',font:{{color:'#ff5f56',size:11}}}}]}},
+{{responsive:true,displayModeBar:false}});
+const d2=PEERS.filter(x=>x.gni&&MOB[x.iso3]&&MOB[x.iso3].per_gb);
+const c2=d2.map(x=>x.iso3==='SAU'?'#ff5f56':'#3fd68c');
+const s2=d2.map(x=>x.iso3==='SAU'?18:10);
+Plotly.react('s2',[{{type:'scatter',mode:'markers',
+x:d2.map(x=>x.gni),y:d2.map(x=>MOB[x.iso3].per_gb),
+text:d2.map(x=>x.country+' $'+MOB[x.iso3].per_gb+'/GB'),
+marker:{{color:c2,size:s2}},hovertemplate:'%{{text}}<extra></extra>'}}],
+{{...base,yaxis:{{type:'log',gridcolor:'#21262d',title:'$/GB (log)'}},
+shapes:[{{type:'line',x0:0,x1:1,xref:'paper',y0:{_km},y1:{_km},
+line:{{color:'#ff5f56',width:1.5,dash:'dash'}}}}],
+annotations:[{{x:.98,y:{_km},xref:'paper',yref:'y',text:'KSA ${_fmt(_km, 3)}',
+showarrow:false,xanchor:'right',font:{{color:'#ff5f56',size:11}}}}]}},
+{{responsive:true,displayModeBar:false}});
+}})();
+"""
+
+sau_html = page(
+    "🇸🇦 Saudi Arabia vs similar-income countries — fiber & mobile",
+    "saudi.html",
+    "KSA (STC + Mobily + Zain + Salam averaged) against "
+    f"<b>{len(peers)} countries earning $25k–$55k per person</b>: what each pays for "
+    "fiber and mobile, and the scam multiple vs Saudi prices. Two tables + operator breakdowns.",
+    sau_body, sau_js)
+open(os.path.join(DOCS, "saudi.html"), "w", encoding="utf-8").write(sau_html)
+print("saudi peers:", len(peers))
 
 print("wrote:", sorted(os.listdir(DOCS)))
 print("fiber rows:", len(fiber), "mobile rows:", len(mobile))
