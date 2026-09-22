@@ -62,6 +62,7 @@ fiber,COD,Airtel DRC,https://www.airtel.cd/
 fiber,COD,Vodacom DRC,https://www.vodacom.cd/fr/particulier/nos-offres/js8/js8-internet
 fiber,COG,MTN Congo,https://mtn.cg/particuliers/offres-mobiles/internet-en-fin-de-forfait-internet/
 fiber,COG,Airtel Congo,https://blog.iambeezy.app/fr/forfaits-internet-mtn-airtel-congo-2026-comparatif-plans/
+fiber,COM,Comores Telecom,https://en.wikipedia.org/wiki/Telecommunications_in_the_Comoros
 fiber,CPV,Unitel T+,https://www.uniteltmais.cv/private/home/home-plus-bundles
 fiber,CPV,CVMovel,https://www.caboverdeexpert.com/cape-verde-communication-and-internet/
 fiber,CRI,Kolbi,https://www.kolbi.cr/wps/portal/kolbi/hogares/servicios-kolbi-hogar/internet/
@@ -70,9 +71,11 @@ fiber,CRI,Telecable,https://www.pressreader.com/costa-rica/el-financiero-costa-r
 fiber,DEU,Deutsche Telekom,https://www.telekom.de
 fiber,DEU,Vodafone Deutschland,https://www.vodafone.de
 fiber,DEU,1&1 Telekom,https://www.1und1.de
+fiber,DJI,afrifiber (AfriFiber),https://www.afrifiber.com/
 fiber,DNK,YouSee (TDC),https://billig-fiber.dk/internetudbydere
 fiber,DNK,Norlys,https://billig-fiber.dk/internetudbydere
 fiber,DNK,Telenor Denmark,https://billig-fiber.dk/internetudbydere
+fiber,DZA,Algérie Télécom,https://zoomalgerie.com/fibre-optique-algerie-idoom-prix-offres-eligibilite/
 fiber,EGY,Telecom Egypt (WE),https://flatswipe.app/en/guides-egypt/egypt-home-internet
 fiber,ESP,Movistar,https://www.movistar.es
 fiber,ESP,Orange España,https://www.orange.es
@@ -116,6 +119,8 @@ fiber,IND,ACT Fibernet,https://www.gadgets360.com/broadband-plans/act-chennai
 fiber,IRL,eir,https://en.wikipedia.org/wiki/Telecommunications_in_the_Republic_of_Ireland
 fiber,IRL,Virgin Media Ireland,https://en.wikipedia.org/wiki/Telecommunications_in_the_Republic_of_Ireland
 fiber,IRL,Vodafone Ireland,https://en.wikipedia.org/wiki/Telecommunications_in_the_Republic_of_Ireland
+fiber,IRQ,EarthLink,https://stg.earthlink.iq/en/standard-package/
+fiber,IRQ,iQ Online (iQ Group),https://iqonline.com/broadband
 fiber,ISL,Síminn,https://en.wikipedia.org/wiki/Internet_in_Iceland
 fiber,ISL,Sýn (Vodafone Iceland),https://en.wikipedia.org/wiki/Internet_in_Iceland
 fiber,ISL,Nova,https://en.wikipedia.org/wiki/Internet_in_Iceland
@@ -124,6 +129,8 @@ fiber,ITA,WindTre,https://www.windtre.it
 fiber,ITA,Fastweb,https://www.fastweb.it
 fiber,JAM,Digicel,https://www.digicelgroup.com/jm/en/home-and-entertainment/internet
 fiber,JOR,Orange Jordan,https://eshop.orange.jo/en/internet/fiber-offers/fiber-200-mbps
+fiber,JOR,Umniah,https://eshop.umniah.com/en/plans/internet/fiber.html
+fiber,JOR,Zain Jordan,https://eshop.jo.zain.com/en/internet/fiber/packages
 fiber,KAZ,JSC Kazakhtelecom,https://telecom.kz/en/common/idnet
 fiber,KAZ,Beeline Kazakhstan,https://qrnews.kz/en/news/beeline-and-tele2-announce-upcoming-tariff-increases-F06I1
 fiber,KAZ,Altel,https://finance.kz/internet/altel
@@ -138,6 +145,9 @@ fiber,KIR,Vodafone Kiribati,https://vodafone.com.ki/
 fiber,KWT,Ooredoo,https://gsmplans.com/plan/kuwait/ooredoo-home-internet-kuwait/
 fiber,KWT,STC Kuwait,https://gsmplans.com/plan/kuwait/stc-kuwait-home-internet/
 fiber,LAO,Lao Telecom,https://www.laotel.com/la/new-package-ftth.php?Lang=en
+fiber,LBN,OGERO,https://waradana.com/english/article/265591-fiber-internet-prices-in-lebanon-a-comprehensive-guide
+fiber,LBN,IDM,https://www.idm.net.lb/fiber.html
+fiber,LBN,Cyberia,https://cyberia.net.lb/cybersmart-fiber.php
 fiber,LBR,Orange Liberia,https://www.orange.com.lr/en/voice-and-data-offers.html
 fiber,LBR,Lonestar Cell (MTN Liberia),https://lonestarcell.com/data-bundle/
 fiber,LBR,Novafone,https://www.telecomtrainer.com/list-of-mobile-operators-in-liberia/
@@ -184,6 +194,7 @@ fiber,MNE,Telemach Montenegro,https://telemach.me
 fiber,MNE,m:tel Montenegro,https://mtel.me
 fiber,MOZ,Vodacom Moçambique,https://infromoz.com/tecnologia/pacotes-de-internet-vodacom-2026-precos-megas-e-codigos-de-ativacao/
 fiber,MRT,Rimatel,https://are.mr/pdfs/tarifs_rimatel_juin_2025.pdf
+fiber,MRT,Moov Mauritel (ex-Mauritel),https://are.mr/pdfs/tarifs_mauritel_juin_2025.pdf
 fiber,NAM,MTC Namibia,https://temovision.com/mtc-namibia-bundles/
 fiber,NER,Orange Niger,https://vosreponses.com/meilleurs-forfaits-internet-au-niger-en-2025/
 fiber,NER,Liptinfor,https://www.liptinfor.net/rates.pdf
@@ -214,12 +225,14 @@ fiber,PNG,ElluNet PNG,https://ellunetpng.com.pg
 fiber,PRT,MEO,https://www.meo.pt
 fiber,PRT,NOS,https://www.nos.pt
 fiber,PRT,Vodafone Portugal,https://www.vodafone.pt
+fiber,PSE,Paltel (Hadara),https://www.facebook.com/paltel.palastine/posts/1538542584953077/
 fiber,QAT,Ooredoo,https://gsmplans.com/plan/qatar/ooredoo-home-plus-internet-qatar/
 fiber,QAT,Vodafone Qatar,https://gsmplans.com/plan/qatar/vodafone-gigahome-fiber-qatar/
 fiber,SAU,STC,https://www.stc.com.sa/content/stc/sa/en/personal/homepackages/baity-bundles.html
 fiber,SAU,Mobily,https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-300
 fiber,SAU,Zain,https://shop.sa.zain.com/en/product/fiber-home
 fiber,SAU,Salam,https://salam.sa/en/personal/fiber-postpaid
+fiber,SDN,Sudani (Sudatel),https://en.wikipedia.org/wiki/Telecommunications_in_Sudan
 fiber,SEN,Orange Sénégal,https://prixdakar.com/les-tarifs-de-linternet-au-senegal-comparatif-des-offres-adsl-et-fibre-en-2026/
 fiber,SEN,Yas Sénégal,https://prixdakar.com/les-tarifs-de-linternet-au-senegal-comparatif-des-offres-adsl-et-fibre-en-2026/
 fiber,SEN,Expresso Sénégal,https://prixdakar.com/les-tarifs-de-linternet-au-senegal-comparatif-des-offres-adsl-et-fibre-en-2026/
@@ -229,6 +242,7 @@ fiber,SLE,Africell Sierra Leone,https://www.africell.sl/services/data-bundles/
 fiber,SMR,TIM San Marino,https://www.telecomitalia.sm
 fiber,SMR,Telenet San Marino,https://www.telenet.sm
 fiber,SMR,TIM Italia,https://www.tim.it
+fiber,SOM,Hormuud Telecom,https://en.wikipedia.org/wiki/Communications_in_Somalia
 fiber,SRB,Telekom Srbija (mts),https://mts.rs
 fiber,SRB,A1 Srbija,https://a1.rs
 fiber,SRB,SBB,https://sbb.rs
@@ -241,6 +255,7 @@ fiber,SVN,Telemach Slovenia,https://telemach.si
 fiber,SYC,Cable & Wireless Seychelles,https://cwseychelles.com/giganet
 fiber,SYC,Intelvision,https://intelvision.sc/internet/
 fiber,SYC,Airtel Seychelles,https://www.nation.sc/articles/27477/airtel-seychelles-unveils-smart-connect
+fiber,SYR,Syrian Telecom,https://syria-ex.com/display_art.php?id=42609&catId=0
 fiber,TCD,Airtel Chad,https://www.airtel.td/
 fiber,TCD,Moov Africa Chad,https://vosreponses.com/quels-sont-les-meilleurs-forfaits-internet-en-tchad/
 fiber,TCD,Salam Mobile,https://vosreponses.com/comparer-les-operateurs-telephoniques-en-tchad/
@@ -252,6 +267,9 @@ fiber,TJK,Megafon Tajikistan,https://www.telecompaper.com/news/megafon-tajikista
 fiber,TKM,Turkmentelekom,https://telecom.tm/en/internet/
 fiber,TLS,Timor Telecom,https://www.timortelecom.tl/en/tt-fibra
 fiber,TTO,Digicel,https://www.digicelgroup.com/tt/en/home-and-entertainment/internet
+fiber,TUN,Tunisie Telecom,https://mnin.tn/forfaits/tunisie-telecom
+fiber,TUN,Ooredoo Tunisia,https://www.ooredoo.tn/Personal/fr/content/344-fibre-box
+fiber,TUN,Orange Tunisie,https://www.orange.tn/pages/fibre-optique
 fiber,TUV,Tuvalu Telecom (TTC),https://tuvalutelecom.tv/mobile-broadband-plans
 fiber,TZA,TTCL,https://pamojacompare.com/home-internet-in-2026/
 fiber,TZA,Vodacom Tanzania,https://pamojacompare.com/home-internet-in-2026/
@@ -270,6 +288,7 @@ fiber,VEN,Movistar,https://www.movistar.com.ve/Particulares/terminos-y-condicion
 fiber,VUT,Vodafone Vanuatu (TVL),https://vodafone.com.vu/pages/unlimited-plans
 fiber,WSM,Vodafone Samoa,https://vodafone.com.ws/broadband/vodafone-fibre/
 fiber,WSM,Digicel Samoa,https://www.digicelpacific.com/mobile/ws/bundles
+fiber,YEM,YemenNet (PTC),https://yemenfiy.com/blog/yemen-net-fiber-ftth-packages-prices-guide/
 fiber,ZAF,Vodacom,https://pricesinsouthafrica.co.za/vodacom-monthly-data-fiber-package-prices-data-bundles-prepaid-rates-and-contract-plans/
 fiber,ZAF,MWeb,https://fastestfibre.co.za/200mbps-fibre-deals/
 fiber,ZAF,Vox,https://fastestfibre.co.za/200mbps-fibre-deals/
