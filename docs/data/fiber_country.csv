@@ -1,5 +1,4 @@
 iso3,country,region,n_ops,operators,avg_price,avg_down,avg_up,ppm,gni,gni_note,gdp,bigmac,monthly_inc,pct_income,price_bigmacs,vs_median,pop
-PNG,Papua New Guinea,Oceania,2,Telikom PNG | ElluNet PNG,5355.46,75.0,,71.4061,2860.0,wb,2912.0,,238.33,2247.05,,139.72,10.6
 VUT,Vanuatu,Oceania,1,Vodafone Vanuatu (TVL),253.37,30.0,30.0,8.4457,4130.0,wb,3960.0,,344.17,73.62,,6.61,0.34
 TLS,Timor-Leste,Asia,3,Timor Telecom | Telemor | Telkomcel,150.0,200.0,200.0,0.75,1650.0,wb,1332.0,,137.5,109.09,,3.91,1.4
 MRT,Mauritania,Africa,4,Moov Mauritel | Rimatel | Mattel (Mauritania Telecom) | Moov Mauritel (ex-Mauritel),123.96,200.0,,0.6198,2110.0,wb,2105.0,,175.83,70.5,,3.23,5.2
@@ -75,6 +74,7 @@ DMA,Dominica,North America,2,Flow | Digicel,41.0,200.0,,0.205,9930.0,wb,10405.0,
 LBY,Libya,Africa,1,Libya Telecom & Technology (LTT),40.84,100.0,,0.4084,6790.0,wb,6569.0,,565.83,7.22,,1.07,7.4
 VEN,Venezuela,South America,3,Movistar | Digitel | Movilnet,40.0,,,,3840.0,wb,4244.0,4.51,320.0,12.5,8.87,1.04,28.0
 PSE,Palestine,Asia,1,Paltel (Hadara),39.76,300.0,300.0,0.1325,2980.0,wb,3028.0,,248.33,16.01,,1.04,5.5
+PNG,Papua New Guinea,Oceania,2,Telikom PNG | ElluNet PNG,39.32,75.0,,0.5243,2860.0,wb,2912.0,,238.33,16.5,,1.03,10.6
 FIN,Finland,Europe,3,Elisa | DNA | Telia Finland,38.87,300.0,300.0,0.1296,51710.0,wb,53156.0,,4309.17,0.9,,1.01,5.6
 USA,United States,North America,3,AT&T Fiber | Verizon Fios | Spectrum,38.33,233.0,203.0,0.1643,82910.0,wb,86170.0,6.22,6909.17,0.55,6.16,1.0,345.0
 ETH,Ethiopia,Africa,2,Ethio Telecom | Safaricom Ethiopia,38.0,200.0,,0.19,1100.0,wb,1134.0,,91.67,41.45,,0.99,132.0
