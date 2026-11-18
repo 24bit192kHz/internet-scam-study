@@ -1,50 +1,73 @@
-# 📊 Internet Scam Study — fiber & mobile prices vs national income
+# Internet bill vs income · فاتورة الإنترنت مقابل الدخل
 
-A 195-country, **operator-level** study of how much internet actually costs relative
-to what people earn — split into two focused studies:
+A 195-country, **operator-level** study of what home fiber and mobile data cost
+relative to what people earn. Site (Arabic, with English under `/en/`):
+**https://24bit192khz.github.io/internet-scam-study/**
 
-| Study | Page | Question |
-|---|---|---|
-| 🌐 **Fiber** | [`/fiber`](docs/fiber.html) | What does the typical **~200 Mbps fiber** plan cost, averaged across each country's **3 major operators** (e.g. Saudi = mean of **STC, Mobily, Zain, Salam**)? How does that compare with GDP, GNI per capita and the Big Mac? |
-| 📱 **Mobile 4G/5G** | [`/mobile`](docs/mobile.html) | How much **GB per dollar**? Is "unlimited" really unlimited — **fair-use policy (FUP)**, throttle thresholds, 5G availability? |
-
-**DSL is excluded from this study entirely** (legacy tech, not comparable to fiber).
-The earlier all-in basket study (fiber+DSL+voice, 3-source average) lives in the
-`v3` branch/history of the original project.
-
-## Methodology
-
-- **195 countries** (all UN members + Palestine + Vatican), Sep-2026 FX.
-- **Fiber price per country** = plain average of the nearest-to-200 Mbps consumer
-  fiber tier from **3 real operators** (4 where they exist). Real down/up speeds
-  recorded per plan; $/Mbps computed from the average.
-- **Mobile per country** = average of 3 MNOs' prepaid ~10 GB / 30-day price.
-  Per-operator columns: `unlimited` ∈ {yes, throttled, no}, `fup_policy`
-  (published threshold text), `5g`, cheapest unlimited offer price.
-- **Economics**: World Bank API (GDP & GNI per capita 2024 — GNI = average income
-  per person), The Economist Big Mac Index (2026-07-01).
-- **Every operator row carries a `source_url`** — see [`docs/data/sources.csv`](docs/data/sources.csv)
-  (N source citations, domains listed below). Rows researched from knowledge without
-  a live URL are marked `knowledge` and flagged in the audit notes.
-
-## Data files
-
-- `docs/data/fiber_country.csv` — country-level fiber averages + econ join
-- `docs/data/mobile_country.csv` — country-level mobile averages, unlimited/FUP shares
-- `docs/data/fiber_ops.csv` — **every operator plan** (fiber) with source URL
-- `docs/data/mobile_ops.csv` — **every operator plan** (mobile) with FUP policy + source
-- `docs/data/sources.csv` — all citations
-- `docs/data/stats.json` — headline statistics
+| Page | Question |
+|---|---|
+| [Fiber](https://24bit192khz.github.io/internet-scam-study/fiber.html) | What does the home fiber plan nearest **200 Mbps** cost, averaged over each country's **3 biggest operators** (4 where a fourth major exists, e.g. Saudi = STC, Mobily, Zain, Salam)? |
+| [Mobile](https://24bit192khz.github.io/internet-scam-study/mobile.html) | What does a prepaid bundle near **10 GB / 30 days** cost per GB? Is "unlimited" really unlimited (fair-use caps, throttling, 5G)? |
+| [Saudi vs peers](https://24bit192khz.github.io/internet-scam-study/saudi.html) | Saudi Arabia against countries whose income per person is within 1.5× of it. |
+| [Method & sources](https://24bit192khz.github.io/internet-scam-study/method.html) | Rules, audit status, data files, most-cited domains. |
 
 ## Headline numbers
 
-_Filled by build: see stats.json._
+<!-- stats:start -->
+- **158** countries with a fiber price, **165** with a mobile price (497 fiber + 517 mobile operator rows, 945 source URLs).
+- Median fiber plan: **$37.34/month**; median **$0.164 per Mbps**.
+- Fiber within 2 % of monthly income in **63 of 158** countries.
+- Median mobile price: **$1.05 per GB**; 61 % of countries sell some unlimited plan, 30 % one without a published throttle.
+- Row status, fiber: first-pass 497; mobile: first-pass 517.
+- Income: World Bank, latest year up to 2025.
+<!-- stats:end -->
+
+## Method
+
+- **Fiber per country** = plain average of the plan nearest 200 Mbps at the 3 biggest
+  fixed operators, regular monthly price (temporary intro promos are recorded but not
+  used). DSL is excluded. Real down/up speeds are kept per plan.
+- **Mobile per country** = average over the 3 biggest MNOs of a prepaid bundle near
+  10 GB / 30 days, normalised to a 10 GB price; plus whether an unlimited plan exists
+  (`yes` = no published throttle, `throttled`, `no`), its price, the published
+  fair-use text and 5G.
+- **Income**: World Bank GNI per capita (Atlas), latest year per country; GDP per
+  capita as fallback, rough estimates only where no series exists (flagged `est`).
+  Big Mac prices from The Economist (latest release). Monthly income = GNI / 12.
+- **FX**: one snapshot (`data/fx.csv`) for every audited row. Currencies with no single
+  meaningful rate (YER, SYP, KPW, SSP, SDG, CUP) are not converted.
+- **Peers** ("vs peers" column, the stamp on the home page): countries with income
+  within ×1.5 (widened to ×2 / ×3 until there are at least 8); the figure is the
+  country's price divided by the peers' median.
+
+### Audit (2026-11)
+
+Every operator row was re-checked against the operator's published tariff page (or a
+reputable comparison/regulator page) by parallel research agents. A new price is
+accepted only if it appears in text that was actually fetched; status is then derived
+by comparing with the earlier value:
+
+| status | meaning |
+|---|---|
+| `verified` | re-confirmed, within 7 % of the earlier USD value |
+| `corrected` | re-confirmed, different plan/price/speed |
+| `new` | operator added in the audit |
+| `unverified` | earlier value kept, could not be re-confirmed (still averaged; has a URL) |
+| `unsourced` | earlier value with no URL or only Wikipedia: kept for reference, **not averaged** |
+| `not_offered` | operator sells no such product |
+
+## Data files
+
+- `data/` canonical inputs: `fiber_ops.csv`, `mobile_ops.csv` (every operator row with
+  local price, currency, status, source URL, notes), `economics.csv`, `bigmac.csv`,
+  `fx.csv`, `countries_195.csv`, `names_ar.csv`
+- `docs/data/` published outputs: `fiber_country.csv`, `mobile_country.csv`, the ops
+  files, `sources.csv`, `stats.json`
 
 ## Reproduce
 
 ```bash
-python3 build2.py   # regenerates docs/ from data/*.csv
+python3 tools/fetch_econ.py   # optional: refresh World Bank / Big Mac / FX
+python3 build2.py             # data/ -> docs/data/
+python3 render_site.py        # docs/data/ -> docs/*.html (ar) + docs/en/*.html
 ```
-
-Data collection used parallel research agents (one per region), then
-plausibility audits (range rules, n_ops consistency, duplicate checks).

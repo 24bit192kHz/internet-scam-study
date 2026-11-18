@@ -54,6 +54,11 @@ def dedupe(rows, keyfields):
 fiber_ops = dedupe(fiber_ops, ("iso3", "operator"))
 mobile_ops = dedupe(mobile_ops, ("iso3", "operator"))
 
+# rows with no URL (or only Wikipedia) are kept in the ops CSVs for reference but
+# never enter a country average: a price needs a citable source
+def counts(r):
+    return (r.get("status") or "") not in ("unsourced", "not_offered")
+
 # ---- country-level fiber: AVERAGE OF THE 3 COMPANIES ------------------
 fiber_by_iso = {}
 for r in fiber_ops:
@@ -61,7 +66,8 @@ for r in fiber_ops:
 
 fiber_country = []
 for iso, ops in fiber_by_iso.items():
-    prices = [num(o["price_usd_month"]) for o in ops if num(o.get("price_usd_month"))]
+    ops = [o for o in ops if counts(o) and num(o.get("price_usd_month"))]
+    prices = [num(o["price_usd_month"]) for o in ops]
     downs = [num(o["speed_down_mbps"]) for o in ops if num(o.get("speed_down_mbps"))]
     ups = [num(o["speed_up_mbps"]) for o in ops if num(o.get("speed_up_mbps"))]
     if not prices:
@@ -101,7 +107,7 @@ for r in mobile_ops:
 
 mobile_country = []
 for iso, ops in mobile_by_iso.items():
-    t10 = [num(o["ten_gb_price_usd"]) for o in ops if num(o.get("ten_gb_price_usd"))]
+    t10 = [num(o["ten_gb_price_usd"]) for o in ops if counts(o) and num(o.get("ten_gb_price_usd"))]
     unm = [(o.get("unlimited") or "").strip().lower() for o in ops]
     yes = sum(1 for u in unm if u == "yes")
     thr = sum(1 for u in unm if u == "throttled")
@@ -138,7 +144,7 @@ all_sources = []
 for kind, rows in (("fiber", fiber_ops), ("mobile", mobile_ops)):
     for r in rows:
         u = (r.get("source_url") or "").strip()
-        if u and u != "knowledge":
+        if u.startswith("http"):
             all_sources.append(dict(kind=kind, iso3=r["iso3"],
                                     operator=r.get("operator", ""), url=u))
 src_domains = {}
@@ -171,18 +177,12 @@ mobile_cols = ["iso3", "country", "region", "n_ops", "operators", "avg_10gb",
 write_csv("fiber_country.csv", clean(fiber_country, fiber_cols), fiber_cols)
 write_csv("mobile_country.csv", clean(mobile_country, mobile_cols), mobile_cols)
 
-# operator-level dumps (raw, for the repo / full transparency)
-with open(os.path.join(DOCS, "data", "fiber_ops.csv"), "w", newline="", encoding="utf-8") as f:
-    cols = ["iso3", "country", "operator", "plan_name", "speed_down_mbps",
-            "speed_up_mbps", "price_usd_month", "source_url", "notes"]
-    w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore"); w.writeheader()
-    for r in sorted(fiber_ops, key=lambda x: x["iso3"]): w.writerow(r)
-with open(os.path.join(DOCS, "data", "mobile_ops.csv"), "w", newline="", encoding="utf-8") as f:
-    cols = ["iso3", "country", "operator", "network", "ten_gb_price_usd",
-            "unlimited_offer_usd", "unlimited", "fup_policy", "5g",
-            "source_url", "notes"]
-    w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore"); w.writeheader()
-    for r in sorted(mobile_ops, key=lambda x: x["iso3"]): w.writerow(r)
+# operator-level dumps (raw, for the repo / full transparency): every canonical column
+for name, rows in (("fiber_ops.csv", fiber_ops), ("mobile_ops.csv", mobile_ops)):
+    cols = list(rows[0].keys())
+    with open(os.path.join(DOCS, "data", name), "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore"); w.writeheader()
+        for r in sorted(rows, key=lambda x: (x["iso3"], x["operator"].lower())): w.writerow(r)
 with open(os.path.join(DOCS, "data", "sources.csv"), "w", newline="", encoding="utf-8") as f:
     w = csv.DictWriter(f, fieldnames=["kind", "iso3", "operator", "url"])
     w.writeheader()
@@ -193,15 +193,21 @@ def med(vals):
     return round(statistics.median(vals), 4) if vals else None
 
 stats = dict(
-    n_fiber_countries=len(fiber_country), n_mobile_countries=len(mobile_country),
+    n_fiber_countries=len(fiber_country),
+    n_mobile_countries=sum(1 for r in mobile_country if r["avg_10gb"]),
     n_fiber_ops=len(fiber_ops), n_mobile_ops=len(mobile_ops),
     n_sources=len(all_sources),
+    status_fiber={k: sum(1 for r in fiber_ops if (r.get("status") or "first-pass") == k)
+                  for k in sorted({r.get("status") or "first-pass" for r in fiber_ops})},
+    status_mobile={k: sum(1 for r in mobile_ops if (r.get("status") or "first-pass") == k)
+                   for k in sorted({r.get("status") or "first-pass" for r in mobile_ops})},
     med_fiber=med_fiber,
     med_ppm=med([r["ppm"] for r in fiber_country]),
     med_per_gb=med([r["per_gb"] for r in mobile_country]),
     pct_unlim_any=round(100 * sum(1 for r in mobile_country
                                   if r["unlim_yes"] + r["unlim_throttled"] > 0)
                         / len(mobile_country)) if mobile_country else 0,
+    econ_year=max(int(e["gni_year"]) for e in econ.values() if e.get("gni_year")),
     pct_truly_unlim=round(100 * sum(1 for r in mobile_country
                                     if r["unlim_yes"] >= 50) / len(mobile_country))
                       if mobile_country else 0,
@@ -215,3 +221,31 @@ print("fiber ops without source URL:",
       sum(1 for r in fiber_ops if (r.get("source_url") or "knowledge") == "knowledge"))
 print("mobile ops without source URL:",
       sum(1 for r in mobile_ops if (r.get("source_url") or "knowledge") == "knowledge"))
+
+# ---- README headline block ---------------------------------------------
+def _readme():
+    p = os.path.join(BASE, "README.md")
+    if not os.path.exists(p):
+        return
+    s = open(p, encoding="utf-8").read()
+    a, b = "<!-- stats:start -->", "<!-- stats:end -->"
+    if a not in s or b not in s:
+        return
+    sf, sm = stats["status_fiber"], stats["status_mobile"]
+    def st(d):
+        return ", ".join(f"{k} {v}" for k, v in sorted(d.items(), key=lambda x: -x[1]))
+    fair = sum(1 for r in fiber_country if r["pct_income"] is not None and r["pct_income"] <= 2)
+    block = (f"\n- **{stats['n_fiber_countries']}** countries with a fiber price, "
+             f"**{stats['n_mobile_countries']}** with a mobile price "
+             f"({stats['n_fiber_ops']} fiber + {stats['n_mobile_ops']} mobile operator rows, "
+             f"{stats['n_sources']} source URLs).\n"
+             f"- Median fiber plan: **${stats['med_fiber']:.2f}/month**; median **${stats['med_ppm']:.3f} per Mbps**.\n"
+             f"- Fiber within 2 % of monthly income in **{fair} of {len(fiber_country)}** countries.\n"
+             f"- Median mobile price: **${stats['med_per_gb']:.2f} per GB**; "
+             f"{stats['pct_unlim_any']} % of countries sell some unlimited plan, "
+             f"{stats['pct_truly_unlim']} % one without a published throttle.\n"
+             f"- Row status, fiber: {st(sf)}; mobile: {st(sm)}.\n"
+             f"- Income: World Bank, latest year up to {stats['econ_year']}.\n")
+    s = s[:s.index(a) + len(a)] + block + s[s.index(b):]
+    open(p, "w", encoding="utf-8").write(s)
+_readme()
