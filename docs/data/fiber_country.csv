@@ -1,159 +1,162 @@
 iso3,country,region,n_ops,operators,avg_price,avg_down,avg_up,ppm,gni,gni_note,gdp,bigmac,monthly_inc,pct_income,price_bigmacs,vs_median,pop
-VUT,Vanuatu,Oceania,1,Vodafone Vanuatu (TVL),253.37,30.0,30.0,8.4457,4410.0,wb,4039.0,,367.5,68.94,,6.79,0.34
-TLS,Timor-Leste,Asia,1,Timor Telecom,150.0,200.0,200.0,0.75,1510.0,wb,1341.0,,125.83,119.21,,4.02,1.4
-MRT,Mauritania,Africa,1,Moov Mauritel (ex-Mauritel),123.96,200.0,,0.6198,2210.0,wb,2198.0,,184.17,67.31,,3.32,5.2
-SYC,Seychelles,Africa,3,Cable & Wireless Seychelles | Intelvision | Airtel Seychelles,119.0,267.0,,0.4462,19200.0,wb,19449.0,,1600.0,7.44,,3.19,0.13
-NRU,Nauru,Oceania,1,Digicel Nauru,99.69,,,,20690.0,wb,14640.0,,1724.17,5.78,,2.67,0.013
-MLI,Mali,Africa,1,Orange Mali,96.19,200.0,,0.4809,1120.0,wb,1193.0,,93.33,103.06,,2.58,24.0
-TGO,Togo,Africa,1,Yas Togo (ex-Togocom),96.19,80.0,,1.2024,1350.0,wb,1384.0,,112.5,85.5,,2.58,9.5
-SEN,Senegal,Africa,3,Orange Sénégal | Yas Sénégal | Expresso Sénégal,91.99,117.0,,0.7885,1780.0,wb,1955.0,,148.33,62.01,,2.46,18.0
-OMN,Oman,Asia,2,Omantel | Ooredoo Oman,88.75,250.0,,0.355,19520.0,wb,19947.0,3.97,1626.67,5.46,22.36,2.38,5.3
-ARE,United Arab Emirates,Asia,2,e& (Etisalat) | du,81.42,200.0,200.0,0.4071,51550.0,wb,50274.0,5.17,4295.83,1.9,15.75,2.18,11.0
-QAT,Qatar,Asia,2,Ooredoo | Vodafone Qatar,80.36,1000.0,,0.0804,74330.0,wb,72525.0,4.94,6194.17,1.3,16.27,2.15,3.1
-TKM,Turkmenistan,Asia,1,Turkmentelekom,80.0,6.0,6.0,13.3333,6340.0,wb,6540.0,,528.33,15.14,,2.14,7.5
-LAO,Laos,Asia,1,Lao Telecom,78.78,180.0,180.0,0.4377,2150.0,wb,2325.0,,179.17,43.97,,2.11,7.8
-MDV,Maldives,Asia,3,Dhiraagu | Ooredoo Maldives | Focus Infocom,75.66,100.0,50.0,0.7566,12950.0,wb,14615.0,,1079.17,7.01,,2.03,0.53
-GIN,Guinea,Africa,1,Orange Guinea,73.9,30.0,,2.4633,1730.0,wb,1877.0,,144.17,51.26,,1.98,15.0
-KEN,Kenya,Africa,3,Safaricom | Jamii Telecommunications | Zuku (Wananchi/Yas),72.33,183.0,,0.3945,2200.0,wb,2363.0,,183.33,39.45,,1.94,56.0
-TUV,Tuvalu,Oceania,1,Tuvalu Telecom (TTC),71.21,,,,9780.0,wb,6041.0,,815.0,8.74,,1.91,0.011
-UGA,Uganda,Africa,3,MTN Uganda | Liquid Home Uganda | Zuku (Wananchi/Yas),70.33,133.0,,0.5275,1120.0,wb,1206.0,,93.33,75.36,,1.88,50.0
-BHS,Bahamas,North America,2,BTC | Cable Bahamas,70.0,275.0,,0.2545,37020.0,wb,39455.0,,3085.0,2.27,,1.87,0.4
-AUS,Australia,Oceania,3,Telstra | Optus | TPG,69.55,149.0,28.0,0.4657,64120.0,wb,65130.0,5.95,5343.33,1.3,11.69,1.86,27.0
-CHE,Switzerland,Europe,3,Swisscom | Sunrise | Salt,68.94,3433.0,3433.0,0.0201,110330.0,wb,114769.0,9.04,9194.17,0.75,7.63,1.85,8.9
-BHR,Bahrain,Asia,3,Batelco | STC Bahrain | Zain Bahrain,68.26,250.0,,0.2731,28790.0,wb,30597.0,4.77,2399.17,2.85,14.31,1.83,1.6
-TZA,Tanzania,Africa,3,TTCL | Vodacom Tanzania | Airtel Tanzania,68.0,67.0,100.0,1.02,1270.0,wb,1319.0,,105.83,64.25,,1.82,69.0
-CPV,Cabo Verde,Africa,1,Unitel T+,67.61,100.0,50.0,0.6761,5590.0,wb,5796.0,,465.83,14.51,,1.81,0.53
-ZWE,Zimbabwe,Africa,2,TelOne | Econet Wireless,67.5,52.0,,1.2857,2660.0,wb,3021.0,,221.67,30.45,,1.81,17.0
-SAU,Saudi Arabia,Asia,4,STC | Mobily | Zain | Salam,66.86,275.0,88.0,0.2431,36070.0,wb,34537.0,5.06,3005.83,2.22,13.21,1.79,34.0
-BFA,Burkina Faso,Africa,2,Orange Burkina Faso | Moov Africa Burkina Faso,65.5,125.0,,0.524,980.0,wb,1148.0,,81.67,80.2,,1.75,23.0
-NGA,Nigeria,Africa,3,ipNX | MTN Nigeria | FiberOne,65.41,207.0,,0.3165,1360.0,wb,1224.0,,113.33,57.71,,1.75,233.0
-LIE,Liechtenstein,Europe,3,Telecom Liechtenstein AG (FL1) | Salt (Liechtenstein) AG | SupraNet AG,63.54,567.0,533.0,0.1121,220167.0,gdp-fallback,220167.0,,18347.25,0.35,,1.7,0.04
-MMR,Myanmar,Asia,3,MPT | Myanmar Net | 5BB Broadband,62.78,115.0,115.0,0.5459,1320.0,wb,1489.0,,110.0,57.08,,1.68,54.0
-BEL,Belgium,Europe,3,Proximus | Telenet | BASE,61.71,183.0,23.0,0.3366,59500.0,wb,60750.0,,4958.33,1.24,,1.65,12.0
-NAM,Namibia,Africa,1,MTC Namibia,61.0,75.0,38.0,0.8133,4340.0,wb,4876.0,,361.67,16.87,,1.63,3.0
-DZA,Algeria,Africa,1,Algérie Télécom,59.72,200.0,200.0,0.2986,5850.0,wb,6051.0,,487.5,12.25,,1.6,47.0
-LUX,Luxembourg,Europe,3,POST Luxembourg | Eltrona | Tango,58.26,1033.0,683.0,0.0564,95720.0,wb,147252.0,,7976.67,0.73,,1.56,0.67
-ZAF,South Africa,Africa,3,Vodacom | MWeb | Vox,58.0,213.0,123.0,0.2719,6270.0,wb,6598.0,3.49,522.5,11.1,16.62,1.55,63.0
-GNQ,Equatorial Guinea,Africa,1,GETESA,57.71,5.0,,11.542,5890.0,wb,6615.0,,490.83,11.76,,1.55,1.9
-BLZ,Belize,North America,2,Digi | SMART,57.5,150.0,,0.3833,7530.0,wb,7865.0,,627.5,9.16,,1.54,0.42
-HTI,Haiti,North America,2,Natcom | Haitel,57.5,100.0,,0.575,2010.0,wb,2694.0,,167.5,34.33,,1.54,12.0
-ISL,Iceland,Europe,3,Síminn | Sýn (Vodafone Iceland) | Nova,55.3,100.0,30.0,0.553,89220.0,wb,98323.0,,7435.0,0.74,,1.48,0.39
-BEN,Benin,Africa,3,Canalbox Benin | MTN Benin | Moov Africa Benin,52.46,85.0,,0.6172,1600.0,wb,1658.0,,133.33,39.35,,1.41,14.0
-GHA,Ghana,Africa,3,MTN Ghana | Telecel Ghana | Busy Internet,51.72,193.0,,0.2675,2630.0,wb,3257.0,,219.17,23.6,,1.39,34.0
-CAN,Canada,North America,3,Bell | Rogers | Telus,51.0,267.0,222.0,0.1912,56420.0,wb,55698.0,5.81,4701.67,1.08,8.78,1.37,41.0
-LSO,Lesotho,Africa,1,Vodacom Lesotho,50.0,45.0,,1.1111,1280.0,wb,1089.0,,106.67,46.88,,1.34,2.4
-DEU,Germany,Europe,3,Deutsche Telekom | Vodafone Deutschland | 1&1 Telekom,49.81,217.0,58.0,0.2299,60200.0,wb,60496.0,,5016.67,0.99,,1.33,85.0
-TTO,Trinidad and Tobago,North America,3,Flow | Digicel | TSTT,47.67,200.0,,0.2383,18550.0,wb,18967.0,,1545.83,3.08,,1.28,1.4
-EGY,Egypt,Africa,1,Telecom Egypt (WE),47.47,200.0,,0.2374,3260.0,wb,3086.0,2.87,271.67,17.47,16.54,1.27,116.0
-NLD,Netherlands,Europe,3,KPN | Ziggo | Odido,47.32,167.0,167.0,0.2839,68530.0,wb,73684.0,,5710.83,0.83,,1.27,18.0
-MAR,Morocco,Africa,3,Maroc Telecom | Orange Morocco | inwi,47.31,200.0,200.0,0.2365,4360.0,wb,4672.0,,363.33,13.02,,1.27,38.0
-MOZ,Mozambique,Africa,1,Vodacom Moçambique,47.0,100.0,50.0,0.47,570.0,wb,627.0,,47.5,98.95,,1.26,35.0
-SVN,Slovenia,Europe,3,Telekom Slovenije | A1 Slovenija | Telemach Slovenia,45.96,1000.0,83.0,0.046,35520.0,wb,37376.0,,2960.0,1.55,,1.23,2.1
-MCO,Monaco,Europe,3,Monaco Telecom | Orange France | SFR,45.61,500.0,350.0,0.0912,288002.0,gdp-fallback,288002.0,,24000.17,0.19,,1.22,0.039
-NOR,Norway,Europe,3,Telenor | Altibox (Lyse) | Telia Norge (Get),45.57,233.0,233.0,0.1953,97310.0,wb,94594.0,8.05,8109.17,0.56,5.66,1.22,5.6
-GBR,United Kingdom,Europe,3,BT (Openreach) | Virgin Media | Sky (Openreach FTTP),45.1,188.0,30.0,0.2399,54550.0,wb,57602.0,7.4,4545.83,0.99,6.09,1.21,69.0
-DNK,Denmark,Europe,3,YouSee (TDC) | Norlys | Telenor Denmark,45.07,100.0,100.0,0.4507,77190.0,wb,76970.0,7.04,6432.5,0.7,6.4,1.21,6.0
-ATG,Antigua and Barbuda,North America,2,Flow | Digicel,45.0,200.0,,0.225,23790.0,wb,24819.0,,1982.5,2.27,,1.21,0.09
-BIH,Bosnia and Herzegovina,Europe,3,BH Telecom | Telemach Bosnia and Herzegovina | m:tel Bosnia and Herzegovina,44.15,267.0,37.0,0.1656,9940.0,wb,10382.0,,828.33,5.33,,1.18,3.2
-AND,Andorra,Europe,3,Andorra Telecom | Movistar España | Orange France,44.08,433.0,433.0,0.1017,53230.0,wb,54292.0,,4435.83,0.99,,1.18,0.081
-NZL,New Zealand,Oceania,3,Spark | 2degrees | One NZ,44.01,105.0,26.0,0.4178,46630.0,wb,49591.0,5.14,3885.83,1.13,8.56,1.18,5.3
-VCT,Saint Vincent and the Grenadines,North America,2,Flow | Digicel,44.0,200.0,,0.22,12000.0,wb,12562.0,,1000.0,4.4,,1.18,0.1
-IRL,Ireland,Europe,3,eir | Virgin Media Ireland | Vodafone Ireland,43.77,183.0,28.0,0.2387,87360.0,wb,131592.0,,7280.0,0.6,,1.17,5.3
-PAN,Panama,North America,3,Tigo | +Movil (Cable & Wireless) | Movistar,43.0,233.0,162.0,0.1843,19140.0,wb,19790.0,,1595.0,2.7,,1.15,4.5
-BRN,Brunei,Asia,3,imagine (TelBru) | DST (Datastream Digital) | Progresif,42.97,100.0,100.0,0.4297,34790.0,wb,32235.0,,2899.17,1.48,,1.15,0.46
-AUT,Austria,Europe,3,A1 | Magenta | Drei (Hutchison Drei),42.9,233.0,27.0,0.1838,60360.0,wb,62930.0,,5030.0,0.85,,1.15,9.2
-KWT,Kuwait,Asia,2,Ooredoo | STC Kuwait,42.62,150.0,,0.2841,41110.0,wb,32312.0,4.52,3425.83,1.24,9.43,1.14,4.9
-BRB,Barbados,North America,2,Flow | Digicel,42.5,200.0,,0.2125,27080.0,wb,28365.0,,2256.67,1.88,,1.14,0.28
-GRD,Grenada,North America,2,Flow | Digicel,42.5,200.0,,0.2125,11660.0,wb,12107.0,,971.67,4.37,,1.14,0.12
-JAM,Jamaica,North America,2,Flow | Digicel,42.5,200.0,,0.2125,7790.0,wb,8003.0,,649.17,6.55,,1.14,2.8
-KNA,Saint Kitts and Nevis,North America,2,Flow | Digicel,42.5,200.0,,0.2125,24530.0,wb,25223.0,,2044.17,2.08,,1.14,0.047
-LCA,Saint Lucia,North America,2,Flow | Digicel,42.5,200.0,,0.2125,13410.0,wb,14746.0,,1117.5,3.8,,1.14,0.18
-WSM,Samoa,Oceania,2,Vodafone Samoa | Digicel Samoa,42.18,100.0,25.0,0.4218,5640.0,wb,5873.0,,470.0,8.97,,1.13,0.22
-FRA,France,Europe,3,Orange | SFR | Free,41.77,500.0,500.0,0.0835,48630.0,wb,48986.0,,4052.5,1.03,,1.12,66.0
-DMA,Dominica,North America,2,Flow | Digicel,41.0,200.0,,0.205,10690.0,wb,10989.0,,890.83,4.6,,1.1,0.073
-LBY,Libya,Africa,1,Libya Telecom & Technology (LTT),40.84,100.0,,0.4084,7250.0,wb,6449.0,,604.17,6.76,,1.09,7.4
-PSE,Palestine,Asia,1,Paltel (Hadara),39.76,300.0,300.0,0.1325,3250.0,wb,3171.0,,270.83,14.68,,1.06,5.5
-PNG,Papua New Guinea,Oceania,1,ElluNet PNG,39.32,100.0,,0.3932,2890.0,wb,3020.0,,240.83,16.33,,1.05,10.6
-FIN,Finland,Europe,3,Elisa | DNA | Telia Finland,38.87,300.0,300.0,0.1296,55250.0,wb,56149.0,,4604.17,0.84,,1.04,5.6
-USA,United States,North America,3,AT&T Fiber | Verizon Fios | Spectrum,38.33,233.0,203.0,0.1643,88810.0,wb,90027.0,6.22,7400.83,0.52,6.16,1.03,345.0
-ETH,Ethiopia,Africa,1,Ethio Telecom,38.0,200.0,,0.19,1110.0,wb,933.0,,92.5,41.08,,1.02,132.0
-CRI,Costa Rica,North America,3,Kolbi | Liberty | Telecable,37.67,200.0,200.0,0.1883,17930.0,wb,19970.0,7.0,1494.17,2.52,5.38,1.01,5.2
-KHM,Cambodia,Asia,2,Ezecom | MekongNet,37.0,100.0,100.0,0.37,2750.0,wb,2872.0,,229.17,16.15,,0.99,18.0
-ESP,Spain,Europe,3,Movistar | Orange España | Vodafone España,36.42,400.0,400.0,0.091,37120.0,wb,38627.0,,3093.33,1.18,,0.98,48.0
-MNE,Montenegro,Europe,3,Crnogorski Telekom | Telemach Montenegro | m:tel Montenegro,36.31,900.0,357.0,0.0403,14150.0,wb,14817.0,,1179.17,3.08,,0.97,0.63
-JOR,Jordan,Asia,3,Orange Jordan | Umniah | Zain Jordan,34.51,200.0,,0.1726,5260.0,wb,5348.0,3.53,438.33,7.87,9.78,0.92,11.0
-FJI,Fiji,Oceania,3,Telecom Fiji | Vodafone Fiji | Digicel Fiji,34.14,,,,6230.0,wb,6642.0,,519.17,6.58,,0.91,0.93
-HRV,Croatia,Europe,3,Hrvatski Telekom | A1 Hrvatska | Telemach Hrvatska,33.75,233.0,63.0,0.1447,25360.0,wb,27104.0,,2113.33,1.6,,0.9,3.9
-SRB,Serbia,Europe,3,Telekom Srbija (mts) | A1 Srbija | SBB,32.75,267.0,67.0,0.1228,13480.0,wb,15262.0,,1123.33,2.92,,0.88,6.6
-PRT,Portugal,Europe,3,MEO | NOS | Vodafone Portugal,32.39,467.0,467.0,0.0694,29930.0,wb,32082.0,,2494.17,1.3,,0.87,10.4
-JPN,Japan,Asia,4,NTT東日本 | NTT西日本 | KDDI | NURO,32.27,800.0,800.0,0.0403,38340.0,wb,35951.0,3.08,3195.0,1.01,10.48,0.86,124.0
-ITA,Italy,Europe,3,TIM | WindTre | Fastweb,32.14,2000.0,600.0,0.0161,42080.0,wb,43309.0,,3506.67,0.92,,0.86,59.0
-IRQ,Iraq,Asia,2,EarthLink | iQ Online (iQ Group),32.02,,,,5690.0,wb,5410.0,,474.17,6.75,,0.86,46.0
-CYP,Cyprus,Asia,3,CYTA | PrimeTel | Cablenet,31.2,200.0,100.0,0.156,36110.0,wb,41783.0,,3009.17,1.04,,0.84,1.4
-TUN,Tunisia,Africa,3,Tunisie Telecom | Ooredoo Tunisia | Orange Tunisie,31.18,167.0,30.0,0.1871,4300.0,wb,4657.0,,358.33,8.7,,0.84,12.0
-SLV,El Salvador,North America,2,Claro | Tigo,31.0,200.0,200.0,0.155,5410.0,wb,5767.0,,450.83,6.88,,0.83,6.3
-GRC,Greece,Europe,3,COSMOTE (OTE) | Vodafone Greece | Nova,30.98,200.0,117.0,0.1549,25360.0,wb,26948.0,,2113.33,1.47,,0.83,10.4
-VAT,Vatican City,Europe,2,TIM Italia | Fastweb,30.96,1750.0,650.0,0.0177,50000.0,est,,,4166.67,0.74,,0.83,0.001
-SMR,San Marino,Europe,3,TIM San Marino | Telenet San Marino | TIM Italia,30.94,567.0,277.0,0.0546,53910.0,wb,59871.0,,4492.5,0.69,,0.83,0.034
-PAK,Pakistan,Asia,3,Pakistan Telecommunication Company (PTCL) | StormFiber (Cybertel) | Nayatel,30.48,157.0,123.0,0.1945,1500.0,wb,1596.0,3.89,125.0,24.38,7.83,0.82,251.0
-MLT,Malta,Europe,3,GO | Melita | Epic,30.26,283.0,28.0,0.1068,41440.0,wb,47907.0,,3453.33,0.88,,0.81,0.56
-GEO,Georgia,Asia,3,MagtiCom | Silknet | Neo Net,29.63,100.0,50.0,0.2963,8990.0,wb,9692.0,,749.17,3.96,,0.79,3.8
-SUR,Suriname,South America,1,Telesur,29.5,400.0,400.0,0.0737,6140.0,wb,7070.0,,511.67,5.77,,0.79,0.63
-AFG,Afghanistan,Asia,3,Afghan Telecom (Salaam) | Afghan Wireless Communication Company (AWCC) | Etisalat Afghanistan,29.29,167.0,83.0,0.1758,390.0,wb,417.0,,32.5,90.13,,0.78,43.0
-ISR,Israel,Asia,3,Partner | Cellcom | Bezeq,29.24,200.0,100.0,0.1462,56180.0,wb,60337.0,7.67,4681.67,0.62,3.81,0.78,9.4
-SWE,Sweden,Europe,3,Telia | Bahnhof | Tele2 (Com Hem),29.23,200.0,150.0,0.1462,63010.0,wb,63133.0,7.16,5250.83,0.56,4.08,0.78,10.6
-MYS,Malaysia,Asia,3,TM Unifi | Maxis | TIME,29.13,267.0,100.0,0.1092,12380.0,wb,13125.0,3.57,1031.67,2.82,8.16,0.78,36.0
-SGP,Singapore,Asia,3,Singtel | StarHub | M1,28.57,667.0,667.0,0.0428,81760.0,wb,98814.0,5.77,6813.33,0.42,4.95,0.77,6.0
-NIC,Nicaragua,North America,2,Claro | Tigo,28.5,200.0,200.0,0.1425,2850.0,wb,3173.0,5.11,237.5,12.0,5.58,0.76,7.0
-MEX,Mexico,North America,3,Telmex | Totalplay | izzi,28.33,200.0,107.0,0.1417,13730.0,wb,13889.0,6.27,1144.17,2.48,4.52,0.76,131.0
-HND,Honduras,North America,3,Tigo | Claro | Hondutel,27.67,167.0,200.0,0.166,3270.0,wb,3598.0,5.19,272.5,10.15,5.33,0.74,10.8
-LKA,Sri Lanka,Asia,3,Sri Lanka Telecom (SLT Fibre) | Dialog Axiata | Lanka Bell,27.3,167.0,83.0,0.1638,4670.0,wb,5002.0,,389.17,7.02,,0.73,22.0
-COL,Colombia,South America,2,Movistar | Tigo,26.76,500.0,,0.0535,7900.0,wb,8562.0,8.0,658.33,4.06,3.35,0.72,53.0
-PHL,Philippines,Asia,3,PLDT | Globe | Converge,26.59,200.0,100.0,0.133,4850.0,wb,4171.0,2.74,404.17,6.58,9.71,0.71,116.0
-BGD,Bangladesh,Asia,2,Link3 Technologies | Bangladesh Telecommunications Company (BTCL),26.36,190.0,75.0,0.1387,2840.0,wb,2597.0,,236.67,11.14,,0.71,174.0
-LBN,Lebanon,Asia,3,OGERO | IDM | Cyberia,24.98,450.0,150.0,0.0555,3560.0,wb,4473.0,5.36,296.67,8.42,4.66,0.67,5.5
-BOL,Bolivia,South America,2,Entel | Tigo,24.64,175.0,,0.1408,4420.0,wb,5148.0,,368.33,6.69,,0.66,12.0
-CZE,Czechia,Europe,3,O2 Czech Republic | T-Mobile Czech Republic | Vodafone Czech Republic,23.6,283.0,167.0,0.0833,32960.0,wb,35917.0,5.43,2746.67,0.86,4.35,0.63,10.9
-SVK,Slovakia,Europe,3,Slovak Telekom | Orange Slovensko | ANTIK Telecom,23.27,300.0,300.0,0.0776,26410.0,wb,28544.0,,2200.83,1.06,,0.62,5.4
-IDN,Indonesia,Asia,3,IndiHome | Biznet | MyRepublic,22.46,233.0,183.0,0.0962,5120.0,wb,5060.0,2.38,426.67,5.26,9.44,0.6,283.0
-GTM,Guatemala,North America,2,Tigo | Claro,21.5,200.0,200.0,0.1075,6360.0,wb,6598.0,4.46,530.0,4.06,4.82,0.58,18.0
-ALB,Albania,Europe,3,ALBtelecom | ONE Albania | Abissnet,21.38,233.0,233.0,0.0916,12060.0,wb,12998.0,,1005.0,2.13,,0.57,2.8
-PLW,Palau,Oceania,1,PNCC (Palau National Communications Corp),21.2,,,,19890.0,wb,19532.0,,1657.5,1.28,,0.57,0.018
-EST,Estonia,Europe,3,Telia Eesti | Elisa Eesti | STV,20.93,300.0,217.0,0.0698,32310.0,wb,34418.0,,2692.5,0.78,,0.56,1.4
-MNG,Mongolia,Asia,3,Unitel | Mobicom | Skytel,20.54,167.0,83.0,0.1233,6210.0,wb,7108.0,,517.5,3.97,,0.55,3.5
-URY,Uruguay,South America,1,Antel,20.52,400.0,30.0,0.0513,24020.0,wb,25216.0,8.94,2001.67,1.03,2.3,0.55,3.4
-PRY,Paraguay,South America,3,Tigo | Claro | Personal,20.48,267.0,200.0,0.0768,6750.0,wb,7027.0,,562.5,3.64,,0.55,6.9
-PER,Peru,South America,3,Movistar | Claro | Bitel,20.19,267.0,300.0,0.0757,8430.0,wb,9684.0,4.99,702.5,2.87,4.05,0.54,34.0
-BRA,Brazil,South America,3,Vivo | Claro | TIM,20.13,383.0,150.0,0.0525,10550.0,wb,10713.0,4.71,879.17,2.29,4.27,0.54,212.0
-MKD,North Macedonia,Europe,3,Makedonski Telekom | ONE Macedonia | A1 Macedonia,19.93,150.0,150.0,0.1329,9490.0,wb,10490.0,,790.83,2.52,,0.53,1.8
-KAZ,Kazakhstan,Asia,3,JSC Kazakhtelecom | Beeline Kazakhstan | Altel,19.86,167.0,67.0,0.1192,13740.0,wb,14692.0,,1145.0,1.73,,0.53,21.0
-TUR,Turkey,Asia,3,Turk Telekom (TTNet) | Turkcell Superonline | Vodafone Net,18.98,200.0,83.0,0.0949,16300.0,wb,18599.0,6.91,1358.33,1.4,2.75,0.51,87.0
-AZE,Azerbaijan,Asia,3,Aztelekom | Azeronline (Azercell group) | Bakcell,17.85,217.0,150.0,0.0824,7360.0,wb,7411.0,4.26,613.33,2.91,4.19,0.48,10.4
-LVA,Latvia,Europe,3,Tet (Lattelecom) | Balticom | Bite Latvija,17.53,300.0,300.0,0.0584,24980.0,wb,26312.0,,2081.67,0.84,,0.47,1.9
-POL,Poland,Europe,3,Orange Polska | Play (Netia) | T-Mobile Polska,17.53,300.0,300.0,0.0584,25520.0,wb,28420.0,6.22,2126.67,0.82,2.82,0.47,37.0
-KOR,South Korea,Asia,3,KT | SK Broadband | LG U+,16.67,100.0,100.0,0.1667,37880.0,wb,36227.0,3.84,3156.67,0.53,4.34,0.45,52.0
-UZB,Uzbekistan,Asia,3,UZTELECOM | Skyline | TNET,16.67,133.0,100.0,0.125,3670.0,wb,3968.0,,305.83,5.45,,0.45,36.0
-KGZ,Kyrgyzstan,Asia,3,OJSC Kyrgyztelecom | ElCat Ltd | AKNET Ltd,16.48,133.0,67.0,0.1236,2800.0,wb,3081.0,,233.33,7.06,,0.44,7.2
-THA,Thailand,Asia,3,AIS | True | 3BB,16.13,367.0,367.0,0.044,7690.0,wb,8057.0,4.02,640.83,2.52,4.01,0.43,72.0
-BGR,Bulgaria,Europe,3,Vivacom | A1 Bulgaria | Yettel Bulgaria,16.0,300.0,300.0,0.0533,17780.0,wb,20328.0,,1481.67,1.08,,0.43,6.4
-CHL,Chile,South America,3,Movistar | Claro | WOM,15.62,600.0,600.0,0.026,16960.0,wb,17995.0,5.41,1413.33,1.11,2.89,0.42,20.0
-MDA,Moldova,Europe,3,Moldtelecom | StarNet | Orange Moldova,15.5,300.0,300.0,0.0517,8050.0,wb,8622.0,4.56,670.83,2.31,3.4,0.42,3.0
-ARG,Argentina,South America,2,Personal | Claro,15.18,250.0,250.0,0.0607,14650.0,wb,14898.0,5.91,1220.83,1.24,2.57,0.41,46.0
-ARM,Armenia,Asia,3,Ucom | Telecom Armenia (Beeline / Team) | Viva Armenia,15.11,100.0,50.0,0.1511,9020.0,wb,9474.0,,751.67,2.01,,0.4,3.0
-CUB,Cuba,North America,1,ETECSA,15.0,60.0,60.0,0.25,9010.0,wb,9605.0,,750.83,2.0,,0.4,11.0
-TJK,Tajikistan,Asia,3,Tajiktelecom OJSC | Megafon Tajikistan | Tcell,14.19,100.0,67.0,0.1419,2080.0,wb,1637.0,,173.33,8.18,,0.38,10.6
-LTU,Lithuania,Europe,3,Telia Lietuva | Cgates | Init,13.97,233.0,167.0,0.0599,30500.0,wb,32959.0,,2541.67,0.55,,0.37,2.9
-NPL,Nepal,Asia,3,WorldLink | Subisu CableNet | Nepal Telecom (NTC),13.47,100.0,67.0,0.1347,1570.0,wb,1536.0,,130.83,10.3,,0.36,30.0
-HUN,Hungary,Europe,3,Magyar Telekom | DIGI Hungary | Vodafone Hungary,13.03,283.0,283.0,0.046,23850.0,wb,25907.0,5.3,1987.5,0.66,2.46,0.35,9.6
-DOM,Dominican Republic,North America,3,Altice | Claro | Wind Telecom,12.0,200.0,200.0,0.06,10620.0,wb,11059.0,,885.0,1.36,,0.32,11.0
-ROU,Romania,Europe,3,Digi (RCS&RDS) | Orange România | Vodafone România,11.77,300.0,300.0,0.0392,20190.0,wb,22538.0,4.01,1682.5,0.7,2.93,0.32,19.0
-IND,India,Asia,3,Reliance Jio (JioFiber) | Bharti Airtel (Airtel Xstream Fiber) | ACT Fibernet,11.43,183.0,183.0,0.0623,2760.0,wb,2702.0,2.45,230.0,4.97,4.67,0.31,1451.0
-MDG,Madagascar,Africa,1,Telma,11.0,200.0,,0.055,560.0,wb,599.0,,46.67,23.57,,0.29,32.0
-SLB,Solomon Islands,Oceania,1,Our Telekom,10.11,10.0,,1.011,2020.0,wb,2086.0,,168.33,6.01,,0.27,0.83
-BLR,Belarus,Europe,3,Beltelecom (byfly) | MTS Belarus | A1 Belarus,9.7,300.0,300.0,0.0323,9160.0,wb,10279.0,,763.33,1.27,,0.26,9.1
-BTN,Bhutan,Asia,3,Bhutan Telecom (DrukNet) | Tashi InfoComm | SuperNet InfoComm,8.75,100.0,50.0,0.0875,4310.0,wb,4493.0,,359.17,2.44,,0.23,0.79
-VNM,Vietnam,Asia,3,VNPT | FPT Telecom | Viettel,7.89,300.0,300.0,0.0263,4970.0,wb,5066.0,2.89,414.17,1.9,2.73,0.21,101.0
-RUS,Russia,Europe,3,Rostelecom | MGTS | Beeline,6.53,267.0,167.0,0.0245,15960.0,wb,17547.0,,1330.0,0.49,,0.17,144.0
-CHN,China,Asia,3,China Telecom | China Unicom | China Mobile,5.63,267.0,30.0,0.0211,14230.0,wb,13862.0,3.91,1185.83,0.48,1.44,0.15,1419.0
-UKR,Ukraine,Europe,3,Ukrtelecom | Kyivstar | Triolan,5.43,200.0,133.0,0.0272,5510.0,wb,5866.0,3.34,459.17,1.18,1.63,0.15,38.0
-IRN,Iran,Asia,3,HiWeb | Respina | Parsnet,3.48,200.0,100.0,0.0174,4650.0,wb,3924.0,,387.5,0.9,,0.09,92.0
+VUT,Vanuatu,Oceania,1,Vodafone Vanuatu (TVL),248.25,30.0,30.0,8.275,4410.0,wb,4039.0,,367.5,67.55,,6.21,0.34
+ZMB,Zambia,Africa,1,Liquid Home Zambia,194.17,150.0,,1.2945,1200.0,wb,1318.0,,100.0,194.17,,4.86,21.0
+TLS,Timor-Leste,Asia,1,Timor Telecom,150.0,200.0,,0.75,1510.0,wb,1341.0,,125.83,119.21,,3.75,1.4
+MRT,Mauritania,Africa,3,Moov Mauritel | Moov Mauritel (ex-Mauritel) | Rimatel,131.43,200.0,,0.6572,2210.0,wb,2198.0,,184.17,71.36,,3.29,5.2
+BWA,Botswana,Africa,2,Mascom | Paratus,123.89,170.0,120.0,0.7288,7390.0,wb,7778.0,,615.83,20.12,,3.1,2.5
+ISL,Iceland,Europe,1,Síminn,122.22,1000.0,,0.1222,89220.0,wb,98323.0,,7435.0,1.64,,3.06,0.39
+SYC,Seychelles,Africa,3,Airtel Seychelles | Cable & Wireless Seychelles | Intelvision,119.0,267.0,,0.4462,19200.0,wb,19449.0,,1600.0,7.44,,2.98,0.13
+SLB,Solomon Islands,Oceania,1,Our Telekom,112.13,200.0,200.0,0.5606,2020.0,wb,2086.0,,168.33,66.61,,2.8,0.83
+NRU,Nauru,Oceania,1,Digicel Nauru,99.69,,,,20690.0,wb,14640.0,,1724.17,5.78,,2.49,0.013
+MLI,Mali,Africa,1,Orange Mali,92.22,200.0,,0.4611,1120.0,wb,1193.0,,93.33,98.81,,2.31,24.0
+NOR,Norway,Europe,3,Altibox (Lyse) | Telenor | Telia Norge (Get),84.2,167.0,100.0,0.5052,97310.0,wb,94594.0,8.05,8109.17,1.04,10.46,2.11,5.6
+ARE,United Arab Emirates,Asia,2,du | e& (Etisalat),81.42,200.0,200.0,0.4071,51550.0,wb,50274.0,5.17,4295.83,1.9,15.75,2.04,11.0
+MDV,Maldives,Asia,2,Dhiraagu | Ooredoo Maldives,81.06,100.0,50.0,0.8106,12950.0,wb,14615.0,,1079.17,7.51,,2.03,0.53
+QAT,Qatar,Asia,2,Ooredoo | Vodafone Qatar,80.36,1000.0,,0.0804,74330.0,wb,72525.0,4.94,6194.17,1.3,16.27,2.01,3.1
+KEN,Kenya,Africa,3,Jamii Telecommunications | Safaricom | Zuku (Wananchi/Yas),80.09,183.0,,0.4369,2200.0,wb,2363.0,,183.33,43.69,,2.0,56.0
+TKM,Turkmenistan,Asia,1,Turkmentelekom,80.0,6.0,6.0,13.3333,6340.0,wb,6540.0,,528.33,15.14,,2.0,7.5
+MMR,Myanmar,Asia,2,MPT | Myanmar Net,79.5,140.0,170.0,0.5679,1320.0,wb,1489.0,,110.0,72.28,,1.99,54.0
+OMN,Oman,Asia,2,Omantel | Ooredoo Oman,77.38,175.0,,0.4421,19520.0,wb,19947.0,3.97,1626.67,4.76,19.49,1.93,5.3
+NAM,Namibia,Africa,2,MTC Namibia | Paratus Namibia,76.76,98.0,60.0,0.7873,4340.0,wb,4876.0,,361.67,21.22,,1.92,3.0
+GIN,Guinea,Africa,1,Orange Guinea,73.9,30.0,,2.4633,1730.0,wb,1877.0,,144.17,51.26,,1.85,15.0
+SAU,Saudi Arabia,Asia,4,Mobily | Salam | STC | Zain,73.6,275.0,83.0,0.2676,36070.0,wb,34537.0,5.06,3005.83,2.45,14.55,1.84,34.0
+TUV,Tuvalu,Oceania,1,Tuvalu Telecom (TTC),71.21,,,,9780.0,wb,6041.0,,815.0,8.74,,1.78,0.011
+UGA,Uganda,Africa,3,Liquid Home Uganda | MTN Uganda | Zuku (Wananchi/Yas),71.08,167.0,,0.4265,1120.0,wb,1206.0,,93.33,76.15,,1.78,50.0
+BHS,Bahamas,North America,2,BTC | Cable Bahamas,70.0,275.0,,0.2545,37020.0,wb,39455.0,,3085.0,2.27,,1.75,0.4
+TZA,Tanzania,Africa,3,Airtel Tanzania | TTCL | Vodacom Tanzania,68.53,67.0,100.0,1.028,1270.0,wb,1319.0,,105.83,64.76,,1.71,69.0
+AUS,Australia,Oceania,3,Optus | Telstra | TPG,68.33,149.0,28.0,0.4576,64120.0,wb,65130.0,5.95,5343.33,1.28,11.48,1.71,27.0
+BHR,Bahrain,Asia,3,Batelco | STC Bahrain | Zain Bahrain,68.26,250.0,,0.2731,28790.0,wb,30597.0,4.77,2399.17,2.85,14.31,1.71,1.6
+CPV,Cabo Verde,Africa,1,Unitel T+,67.61,100.0,50.0,0.6761,5590.0,wb,5796.0,,465.83,14.51,,1.69,0.53
+ZWE,Zimbabwe,Africa,2,Econet Wireless | TelOne,67.5,52.0,,1.2857,2660.0,wb,3021.0,,221.67,30.45,,1.69,17.0
+IRL,Ireland,Europe,1,Virgin Media Ireland,65.99,250.0,,0.264,87360.0,wb,131592.0,,7280.0,0.91,,1.65,5.3
+SEN,Senegal,Africa,3,Expresso Sénégal | Orange Sénégal | Yas Sénégal,65.84,93.0,,0.7055,1780.0,wb,1955.0,,148.33,44.39,,1.65,18.0
+NGA,Nigeria,Africa,3,FiberOne | ipNX | MTN Nigeria,64.34,207.0,,0.3113,1360.0,wb,1224.0,,113.33,56.77,,1.61,233.0
+LIE,Liechtenstein,Europe,3,Salt (Liechtenstein) AG | SupraNet AG | Telecom Liechtenstein AG (FL1),63.54,567.0,533.0,0.1121,220167.0,gdp-fallback,220167.0,,18347.25,0.35,,1.59,0.04
+KWT,Kuwait,Asia,2,Ooredoo | STC Kuwait,62.63,150.0,,0.4176,41110.0,wb,32312.0,4.52,3425.83,1.83,13.86,1.57,4.9
+LAO,Laos,Asia,1,Lao Telecom,60.64,180.0,,0.3369,2150.0,wb,2325.0,,179.17,33.85,,1.52,7.8
+CHE,Switzerland,Europe,3,Salt | Sunrise | Swisscom,60.62,3433.0,5100.0,0.0177,110330.0,wb,114769.0,9.04,9194.17,0.66,6.71,1.52,8.9
+HTI,Haiti,North America,1,Natcom,60.0,100.0,,0.6,2010.0,wb,2694.0,,167.5,35.82,,1.5,12.0
+ZAF,South Africa,Africa,3,MWeb | Vodacom | Vox,59.25,213.0,123.0,0.2777,6270.0,wb,6598.0,3.49,522.5,11.34,16.98,1.48,63.0
+LSO,Lesotho,Africa,1,Vodacom Lesotho,59.01,45.0,,1.3113,1280.0,wb,1089.0,,106.67,55.32,,1.48,2.4
+BEL,Belgium,Europe,3,BASE | Proximus | Telenet,58.49,217.0,97.0,0.27,59500.0,wb,60750.0,,4958.33,1.18,,1.46,12.0
+DZA,Algeria,Africa,1,Algérie Télécom,58.26,200.0,200.0,0.2913,5850.0,wb,6051.0,,487.5,11.95,,1.46,47.0
+LUX,Luxembourg,Europe,3,Eltrona | POST Luxembourg | Tango,57.59,1033.0,525.0,0.0557,95720.0,wb,147252.0,,7976.67,0.72,,1.44,0.67
+BLZ,Belize,North America,2,Digi | SMART,57.5,150.0,,0.3833,7530.0,wb,7865.0,,627.5,9.16,,1.44,0.42
+GNQ,Equatorial Guinea,Africa,1,GETESA,55.33,5.0,,11.066,5890.0,wb,6615.0,,490.83,11.27,,1.38,1.9
+BRN,Brunei,Asia,3,DST (Datastream Digital) | imagine (TelBru) | Progresif,54.0,133.0,100.0,0.405,34790.0,wb,32235.0,,2899.17,1.86,,1.35,0.46
+GHA,Ghana,Africa,3,Busy Internet | MTN Ghana | Telecel Ghana,51.72,193.0,,0.2675,2630.0,wb,3257.0,,219.17,23.6,,1.29,34.0
+KNA,Saint Kitts and Nevis,North America,2,Digicel | Flow,51.48,300.0,400.0,0.1716,24530.0,wb,25223.0,,2044.17,2.52,,1.29,0.047
+BFA,Burkina Faso,Africa,2,Moov Africa Burkina Faso | Orange Burkina Faso,51.3,200.0,,0.2565,980.0,wb,1148.0,,81.67,62.81,,1.28,23.0
+NLD,Netherlands,Europe,3,KPN | Odido | Ziggo,51.29,167.0,200.0,0.3078,68530.0,wb,73684.0,,5710.83,0.9,,1.28,18.0
+CAN,Canada,North America,3,Bell | Rogers | Telus,51.0,267.0,222.0,0.1912,56420.0,wb,55698.0,5.81,4701.67,1.08,8.78,1.28,41.0
+TGO,Togo,Africa,1,Yas Togo (ex-Togocom),50.3,60.0,,0.8383,1350.0,wb,1384.0,,112.5,44.71,,1.26,9.5
+TTO,Trinidad and Tobago,North America,3,Digicel | Flow | TSTT,49.91,250.0,350.0,0.1997,18550.0,wb,18967.0,,1545.83,3.23,,1.25,1.4
+VCT,Saint Vincent and the Grenadines,North America,2,Digicel | Flow,48.5,275.0,175.0,0.1764,12000.0,wb,12562.0,,1000.0,4.85,,1.21,0.1
+AUT,Austria,Europe,3,A1 | Drei (Hutchison Drei) | Magenta,47.69,350.0,68.0,0.1363,60360.0,wb,62930.0,,5030.0,0.95,,1.19,9.2
+LCA,Saint Lucia,North America,2,Digicel | Flow,47.69,275.0,,0.1734,13410.0,wb,14746.0,,1117.5,4.27,,1.19,0.18
+AFG,Afghanistan,Asia,2,Afghan Telecom (Salaam) | Etisalat Afghanistan,47.55,150.0,150.0,0.317,390.0,wb,417.0,,32.5,146.29,,1.19,43.0
+DMA,Dominica,North America,2,Digicel | Flow,47.0,225.0,125.0,0.2089,10690.0,wb,10989.0,,890.83,5.28,,1.18,0.073
+MOZ,Mozambique,Africa,1,Vodacom Moçambique,47.0,100.0,50.0,0.47,570.0,wb,627.0,,47.5,98.95,,1.18,35.0
+JAM,Jamaica,North America,2,Digicel | Flow,46.92,225.0,250.0,0.2086,7790.0,wb,8003.0,,649.17,7.23,,1.17,2.8
+ARG,Argentina,South America,2,Claro | Personal,46.87,250.0,250.0,0.1875,14650.0,wb,14898.0,5.91,1220.83,3.84,7.93,1.17,46.0
+MAR,Morocco,Africa,3,inwi | Maroc Telecom | Orange Morocco,46.74,200.0,200.0,0.2337,4360.0,wb,4672.0,,363.33,12.87,,1.17,38.0
+DEU,Germany,Europe,3,1&1 Telekom | Deutsche Telekom | Vodafone Deutschland,46.43,183.0,62.0,0.2532,60200.0,wb,60496.0,,5016.67,0.93,,1.16,85.0
+GRD,Grenada,North America,2,Digicel | Flow,46.15,275.0,175.0,0.1678,11660.0,wb,12107.0,,971.67,4.75,,1.15,0.12
+BEN,Benin,Africa,3,Canalbox Benin | Moov Africa Benin | MTN Benin,45.91,135.0,,0.3401,1600.0,wb,1658.0,,133.33,34.43,,1.15,14.0
+ATG,Antigua and Barbuda,North America,2,Digicel | Flow,45.0,200.0,,0.225,23790.0,wb,24819.0,,1982.5,2.27,,1.13,0.09
+FRA,France,Europe,3,Free | Orange | SFR,44.94,500.0,500.0,0.0899,48630.0,wb,48986.0,,4052.5,1.11,,1.12,66.0
+MCO,Monaco,Europe,3,Monaco Telecom | Orange France | SFR,44.94,500.0,350.0,0.0899,288002.0,gdp-fallback,288002.0,,24000.17,0.19,,1.12,0.039
+SVN,Slovenia,Europe,3,A1 Slovenija | Telekom Slovenije | Telemach Slovenia,44.57,1000.0,83.0,0.0446,35520.0,wb,37376.0,,2960.0,1.51,,1.11,2.1
+DNK,Denmark,Europe,3,Norlys | Telenor Denmark | YouSee (TDC),44.19,400.0,100.0,0.1105,77190.0,wb,76970.0,7.04,6432.5,0.69,6.28,1.11,6.0
+GBR,United Kingdom,Europe,3,BT (Openreach) | Sky (Openreach FTTP) | Virgin Media,43.97,188.0,30.0,0.2339,54550.0,wb,57602.0,7.4,4545.83,0.97,5.94,1.1,69.0
+EGY,Egypt,Africa,1,Telecom Egypt (WE),43.75,200.0,,0.2188,3260.0,wb,3086.0,2.87,271.67,16.1,15.24,1.09,116.0
+AND,Andorra,Europe,3,Andorra Telecom | Movistar España | Orange France,43.39,433.0,433.0,0.1001,53230.0,wb,54292.0,,4435.83,0.98,,1.09,0.081
+PAN,Panama,North America,3,+Movil (Cable & Wireless) | Movistar | Tigo,43.0,233.0,162.0,0.1843,19140.0,wb,19790.0,,1595.0,2.7,,1.08,4.5
+BRB,Barbados,North America,2,Digicel | Flow,42.5,200.0,,0.2125,27080.0,wb,28365.0,,2256.67,1.88,,1.06,0.28
+MUS,Mauritius,Africa,1,Mauritius Telecom (Orange / my.t),42.31,200.0,,0.2116,14040.0,wb,12991.0,,1170.0,3.62,,1.06,1.3
+TUN,Tunisia,Africa,3,Ooredoo Tunisia | Orange Tunisie | Tunisie Telecom,42.25,167.0,30.0,0.2535,4300.0,wb,4657.0,,358.33,11.79,,1.06,12.0
+BIH,Bosnia and Herzegovina,Europe,3,BH Telecom | m:tel Bosnia and Herzegovina | Telemach Bosnia and Herzegovina,41.63,250.0,40.0,0.1665,9940.0,wb,10382.0,,828.33,5.03,,1.04,3.2
+WSM,Samoa,Oceania,2,Digicel Samoa | Vodafone Samoa,41.55,100.0,25.0,0.4155,5640.0,wb,5873.0,,470.0,8.84,,1.04,0.22
+URY,Uruguay,South America,1,Antel,40.56,400.0,30.0,0.1014,24020.0,wb,25216.0,8.94,2001.67,2.03,4.54,1.01,3.4
+LBY,Libya,Africa,1,Libya Telecom & Technology (LTT),40.26,100.0,,0.4026,7250.0,wb,6449.0,,604.17,6.66,,1.01,7.4
+SRB,Serbia,Europe,3,A1 Srbija | SBB | Telekom Srbija (mts),39.99,233.0,63.0,0.1714,13480.0,wb,15262.0,,1123.33,3.56,,1.0,6.6
+PSE,Palestine,Asia,1,Paltel (Hadara),39.76,300.0,300.0,0.1325,3250.0,wb,3171.0,,270.83,14.68,,0.99,5.5
+SWE,Sweden,Europe,3,Bahnhof | Tele2 (Com Hem) | Telia,39.65,217.0,167.0,0.183,63010.0,wb,63133.0,7.16,5250.83,0.76,5.54,0.99,10.6
+PNG,Papua New Guinea,Oceania,1,ElluNet PNG,39.32,100.0,,0.3932,2890.0,wb,3020.0,,240.83,16.33,,0.98,10.6
+FIN,Finland,Europe,3,DNA | Elisa | Telia Finland,38.87,300.0,300.0,0.1296,55250.0,wb,56149.0,,4604.17,0.84,,0.97,5.6
+NZL,New Zealand,Oceania,3,2degrees | One NZ | Spark,38.49,106.0,25.0,0.3643,46630.0,wb,49591.0,5.14,3885.83,0.99,7.49,0.96,5.3
+USA,United States,North America,3,AT&T Fiber | Spectrum | Verizon Fios,38.33,233.0,203.0,0.1643,88810.0,wb,90027.0,6.22,7400.83,0.52,6.16,0.96,345.0
+ETH,Ethiopia,Africa,1,Ethio Telecom,38.0,200.0,,0.19,1110.0,wb,933.0,,92.5,41.08,,0.95,132.0
+CRI,Costa Rica,North America,3,Kolbi | Liberty | Telecable,37.67,200.0,200.0,0.1883,17930.0,wb,19970.0,7.0,1494.17,2.52,5.38,0.94,5.2
+KHM,Cambodia,Asia,2,Ezecom | MekongNet,37.0,100.0,100.0,0.37,2750.0,wb,2872.0,,229.17,16.15,,0.93,18.0
+MNE,Montenegro,Europe,3,Crnogorski Telekom | m:tel Montenegro | Telemach Montenegro,36.31,900.0,357.0,0.0403,14150.0,wb,14817.0,,1179.17,3.08,,0.91,0.63
+JPN,Japan,Asia,5,KDDI | NTT東日本 | NTT西日本 | NURO | SoftBank,34.84,960.0,100.0,0.0363,38340.0,wb,35951.0,3.08,3195.0,1.09,11.31,0.87,124.0
+FJI,Fiji,Oceania,3,Digicel Fiji | Telecom Fiji | Vodafone Fiji,33.53,,,,6230.0,wb,6642.0,,519.17,6.46,,0.84,0.93
+CYP,Cyprus,Asia,3,Cablenet | CYTA | PrimeTel,33.5,600.0,100.0,0.0558,36110.0,wb,41783.0,,3009.17,1.11,,0.84,1.4
+ESP,Spain,Europe,3,Movistar | Orange España | Vodafone España,33.5,400.0,400.0,0.0838,37120.0,wb,38627.0,,3093.33,1.08,,0.84,48.0
+JOR,Jordan,Asia,3,Orange Jordan | Umniah | Zain Jordan,32.77,200.0,,0.1638,5260.0,wb,5348.0,3.53,438.33,7.48,9.28,0.82,11.0
+PRT,Portugal,Europe,3,MEO | NOS | Vodafone Portugal,32.39,467.0,467.0,0.0694,29930.0,wb,32082.0,,2494.17,1.3,,0.81,10.4
+HRV,Croatia,Europe,3,A1 Hrvatska | Hrvatski Telekom | Telemach Hrvatska,32.22,467.0,213.0,0.069,25360.0,wb,27104.0,,2113.33,1.52,,0.81,3.9
+ITA,Italy,Europe,3,Fastweb | TIM | WindTre,32.14,2000.0,600.0,0.0161,42080.0,wb,43309.0,,3506.67,0.92,,0.8,59.0
+SLV,El Salvador,North America,2,Claro | Tigo,31.0,200.0,200.0,0.155,5410.0,wb,5767.0,,450.83,6.88,,0.78,6.3
+GRC,Greece,Europe,3,COSMOTE (OTE) | Nova | Vodafone Greece,30.98,200.0,117.0,0.1549,25360.0,wb,26948.0,,2113.33,1.47,,0.77,10.4
+VAT,Vatican City,Europe,2,Fastweb | TIM Italia,30.96,1750.0,650.0,0.0177,50000.0,est,,,4166.67,0.74,,0.77,0.001
+MYS,Malaysia,Asia,3,Maxis | TIME | TM Unifi,30.7,267.0,125.0,0.1151,12380.0,wb,13125.0,3.57,1031.67,2.98,8.6,0.77,36.0
+PAK,Pakistan,Asia,3,Nayatel | Pakistan Telecommunication Company (PTCL) | StormFiber (Cybertel),30.59,157.0,123.0,0.1952,1500.0,wb,1596.0,3.89,125.0,24.47,7.86,0.76,251.0
+GEO,Georgia,Asia,3,MagtiCom | Neo Net | Silknet,30.04,100.0,50.0,0.3004,8990.0,wb,9692.0,,749.17,4.01,,0.75,3.8
+SUR,Suriname,South America,1,Telesur,29.96,400.0,400.0,0.0749,6140.0,wb,7070.0,,511.67,5.86,,0.75,0.63
+MLT,Malta,Europe,3,Epic | GO | Melita,29.81,283.0,28.0,0.1052,41440.0,wb,47907.0,,3453.33,0.86,,0.75,0.56
+LKA,Sri Lanka,Asia,2,Dialog Axiata | Sri Lanka Telecom (SLT Fibre),29.15,200.0,100.0,0.1457,4670.0,wb,5002.0,,389.17,7.49,,0.73,22.0
+SMR,San Marino,Europe,3,Telenet San Marino | TIM Italia | TIM San Marino,28.97,433.0,143.0,0.0669,53910.0,wb,59871.0,,4492.5,0.64,,0.72,0.034
+ISR,Israel,Asia,2,Cellcom | Partner,28.95,200.0,100.0,0.1447,56180.0,wb,60337.0,7.67,4681.67,0.62,3.77,0.72,9.4
+SGP,Singapore,Asia,3,M1 | Singtel | StarHub,28.36,3500.0,500.0,0.0081,81760.0,wb,98814.0,5.77,6813.33,0.42,4.91,0.71,6.0
+MEX,Mexico,North America,3,izzi | Telmex | Totalplay,27.92,200.0,107.0,0.1396,13730.0,wb,13889.0,6.27,1144.17,2.44,4.45,0.7,131.0
+IRQ,Iraq,Asia,2,EarthLink | iQ Online (iQ Group),27.75,,,,5690.0,wb,5410.0,,474.17,5.85,,0.69,46.0
+HND,Honduras,North America,3,Claro | Hondutel | Tigo,27.67,167.0,200.0,0.166,3270.0,wb,3598.0,5.19,272.5,10.15,5.33,0.69,10.8
+NIC,Nicaragua,North America,2,Claro | Tigo,27.49,200.0,110.0,0.1375,2850.0,wb,3173.0,5.11,237.5,11.57,5.38,0.69,7.0
+RWA,Rwanda,Africa,1,CanalBox,27.03,200.0,,0.1351,1150.0,wb,1124.0,,95.83,28.21,,0.68,14.0
+COL,Colombia,South America,2,Movistar | Tigo,26.76,500.0,,0.0535,7900.0,wb,8562.0,8.0,658.33,4.06,3.35,0.67,53.0
+EST,Estonia,Europe,3,Elisa Eesti | STV | Telia Eesti,25.94,283.0,283.0,0.0915,32310.0,wb,34418.0,,2692.5,0.96,,0.65,1.4
+BGD,Bangladesh,Asia,3,Bangladesh Telecommunications Company (BTCL) | Carnival Internet | Link3 Technologies,24.89,193.0,,0.1288,2840.0,wb,2597.0,,236.67,10.52,,0.62,174.0
+PHL,Philippines,Asia,3,Converge | Globe | PLDT,24.32,200.0,100.0,0.1216,4850.0,wb,4171.0,2.74,404.17,6.02,8.88,0.61,116.0
+LBN,Lebanon,Asia,3,Cyberia | IDM | OGERO,23.28,450.0,,0.0517,3560.0,wb,4473.0,5.36,296.67,7.85,4.34,0.58,5.5
+BGR,Bulgaria,Europe,2,Vivacom | Yettel Bulgaria,22.63,250.0,200.0,0.0905,17780.0,wb,20328.0,,1481.67,1.53,,0.57,6.4
+BRA,Brazil,South America,3,Claro | TIM | Vivo,21.78,383.0,150.0,0.0568,10550.0,wb,10713.0,4.71,879.17,2.48,4.62,0.54,212.0
+GTM,Guatemala,North America,2,Claro | Tigo,21.5,200.0,200.0,0.1075,6360.0,wb,6598.0,4.46,530.0,4.06,4.82,0.54,18.0
+UZB,Uzbekistan,Asia,2,TNET | UZTELECOM,21.49,175.0,200.0,0.1228,3670.0,wb,3968.0,,305.83,7.03,,0.54,36.0
+ALB,Albania,Europe,3,Abissnet | ALBtelecom | ONE Albania,21.38,233.0,233.0,0.0916,12060.0,wb,12998.0,,1005.0,2.13,,0.53,2.8
+BOL,Bolivia,South America,2,Entel | Tigo,21.34,175.0,,0.122,4420.0,wb,5148.0,,368.33,5.8,,0.53,12.0
+PLW,Palau,Oceania,1,PNCC (Palau National Communications Corp),21.2,,,,19890.0,wb,19532.0,,1657.5,1.28,,0.53,0.018
+IDN,Indonesia,Asia,3,Biznet | IndiHome | MyRepublic,21.11,183.0,125.0,0.1151,5120.0,wb,5060.0,2.38,426.67,4.95,8.87,0.53,283.0
+PER,Peru,South America,3,Bitel | Claro | Movistar,21.06,267.0,300.0,0.079,8430.0,wb,9684.0,4.99,702.5,3.0,4.22,0.53,34.0
+SVK,Slovakia,Europe,3,ANTIK Telecom | Orange Slovensko | Slovak Telekom,20.78,467.0,300.0,0.0445,26410.0,wb,28544.0,,2200.83,0.94,,0.52,5.4
+MNG,Mongolia,Asia,3,Mobicom | Skytel | Unitel,20.54,167.0,83.0,0.1233,6210.0,wb,7108.0,,517.5,3.97,,0.51,3.5
+TJK,Tajikistan,Asia,3,Megafon Tajikistan | Tajiktelecom OJSC | Tcell,20.4,83.0,50.0,0.2448,2080.0,wb,1637.0,,173.33,11.77,,0.51,10.6
+KAZ,Kazakhstan,Asia,3,Altel | Beeline Kazakhstan | JSC Kazakhtelecom,20.27,167.0,67.0,0.1216,13740.0,wb,14692.0,,1145.0,1.77,,0.51,21.0
+LVA,Latvia,Europe,3,Balticom | Bite Latvija | Tet (Lattelecom),20.25,400.0,300.0,0.0506,24980.0,wb,26312.0,,2081.67,0.97,,0.51,1.9
+PRY,Paraguay,South America,3,Claro | Personal | Tigo,20.13,267.0,200.0,0.0755,6750.0,wb,7027.0,,562.5,3.58,,0.5,6.9
+CZE,Czechia,Europe,3,O2 Czech Republic | T-Mobile Czech Republic | Vodafone Czech Republic,19.87,250.0,175.0,0.0795,32960.0,wb,35917.0,5.43,2746.67,0.72,3.66,0.5,10.9
+DOM,Dominican Republic,North America,3,Altice | Claro | Wind Telecom,19.52,200.0,150.0,0.0976,10620.0,wb,11059.0,,885.0,2.21,,0.49,11.0
+TUR,Turkey,Asia,2,Turkcell Superonline | Vodafone Net,19.15,200.0,100.0,0.0957,16300.0,wb,18599.0,6.91,1358.33,1.41,2.77,0.48,87.0
+ARM,Armenia,Asia,3,Telecom Armenia (Beeline / Team) | Ucom | Viva Armenia,17.89,167.0,50.0,0.1073,9020.0,wb,9474.0,,751.67,2.38,,0.45,3.0
+AZE,Azerbaijan,Asia,3,Azeronline (Azercell group) | Aztelekom | Bakcell,17.85,217.0,150.0,0.0824,7360.0,wb,7411.0,4.26,613.33,2.91,4.19,0.45,10.4
+MKD,North Macedonia,Europe,3,A1 Macedonia | Makedonski Telekom | ONE Macedonia,17.63,267.0,267.0,0.0661,9490.0,wb,10490.0,,790.83,2.23,,0.44,1.8
+LTU,Lithuania,Europe,3,Cgates | Init | Telia Lietuva,17.09,233.0,300.0,0.0732,30500.0,wb,32959.0,,2541.67,0.67,,0.43,2.9
+THA,Thailand,Asia,3,3BB | AIS | True,16.99,433.0,433.0,0.0392,7690.0,wb,8057.0,4.02,640.83,2.65,4.23,0.42,72.0
+KGZ,Kyrgyzstan,Asia,3,AKNET Ltd | ElCat Ltd | OJSC Kyrgyztelecom,16.96,133.0,,0.1272,2800.0,wb,3081.0,,233.33,7.27,,0.42,7.2
+KOR,South Korea,Asia,2,KT | LG U+,16.63,100.0,100.0,0.1663,37880.0,wb,36227.0,3.84,3156.67,0.53,4.33,0.42,52.0
+HUN,Hungary,Europe,3,DIGI Hungary | Magyar Telekom | Vodafone Hungary,16.54,517.0,275.0,0.032,23850.0,wb,25907.0,5.3,1987.5,0.83,3.12,0.41,9.6
+CHL,Chile,South America,3,Claro | Movistar | WOM,15.62,600.0,600.0,0.026,16960.0,wb,17995.0,5.41,1413.33,1.11,2.89,0.39,20.0
+CUB,Cuba,North America,1,ETECSA,15.0,60.0,60.0,0.25,9010.0,wb,9605.0,,750.83,2.0,,0.38,11.0
+POL,Poland,Europe,3,Orange Polska | Play (Netia) | T-Mobile Polska,14.61,300.0,300.0,0.0487,25520.0,wb,28420.0,6.22,2126.67,0.69,2.35,0.37,37.0
+NPL,Nepal,Asia,3,Nepal Telecom (NTC) | Subisu CableNet | WorldLink,13.25,133.0,50.0,0.0994,1570.0,wb,1536.0,,130.83,10.13,,0.33,30.0
+ROU,Romania,Europe,3,Digi (RCS&RDS) | Orange România | Vodafone România,11.77,300.0,300.0,0.0392,20190.0,wb,22538.0,4.01,1682.5,0.7,2.93,0.29,19.0
+IND,India,Asia,3,ACT Fibernet | Bharti Airtel (Airtel Xstream Fiber) | Reliance Jio (JioFiber),11.21,183.0,175.0,0.0611,2760.0,wb,2702.0,2.45,230.0,4.87,4.57,0.28,1451.0
+MDG,Madagascar,Africa,1,Telma,10.7,,,,560.0,wb,599.0,,46.67,22.93,,0.27,32.0
+MDA,Moldova,Europe,1,StarNet,9.86,300.0,,0.0329,8050.0,wb,8622.0,4.56,670.83,1.47,2.16,0.25,3.0
+BLR,Belarus,Europe,3,A1 Belarus | Beltelecom (byfly) | MTS Belarus,9.7,300.0,300.0,0.0323,9160.0,wb,10279.0,,763.33,1.27,,0.24,9.1
+VNM,Vietnam,Asia,3,FPT Telecom | Viettel | VNPT,9.53,267.0,300.0,0.0357,4970.0,wb,5066.0,2.89,414.17,2.3,3.3,0.24,101.0
+BTN,Bhutan,Asia,3,Bhutan Telecom (DrukNet) | SuperNet InfoComm | Tashi InfoComm,8.75,100.0,50.0,0.0875,4310.0,wb,4493.0,,359.17,2.44,,0.22,0.79
+RUS,Russia,Europe,3,Beeline | MGTS | Rostelecom,6.53,267.0,167.0,0.0245,15960.0,wb,17547.0,,1330.0,0.49,,0.16,144.0
+UKR,Ukraine,Europe,3,Kyivstar | Triolan | Ukrtelecom,5.7,167.0,150.0,0.0342,5510.0,wb,5866.0,3.34,459.17,1.24,1.71,0.14,38.0
+CHN,China,Asia,3,China Mobile | China Telecom | China Unicom,5.63,267.0,30.0,0.0211,14230.0,wb,13862.0,3.91,1185.83,0.48,1.44,0.14,1419.0

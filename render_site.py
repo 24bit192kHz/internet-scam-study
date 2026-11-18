@@ -56,7 +56,7 @@ T = {
     strip_fiber_h="كم تأكل باقة الألياف من الدخل الشهري",
     strip_fiber_p="كل نقطة دولة: متوسط سعر باقة الألياف الأقرب إلى 200 ميغابت لدى أكبر مشغّليها، كنسبة من متوسط دخل الفرد الشهري (مقياس لوغاريتمي). الأحمر فوق حدّ 2٪.",
     strip_mobile_h="كم يأكل 10 غيغابايت جوال من الدخل الشهري",
-    strip_mobile_p="كل نقطة دولة: متوسط سعر باقة مسبقة الدفع تقارب 10 غيغابايت لـ30 يوماً لدى أكبر مشغّليها، كنسبة من الدخل الشهري.",
+    strip_mobile_p="كل نقطة دولة: متوسط كلفة 10 غيغابايت على الأقل لمدة شهر لدى أكبر مشغّليها، كنسبة من الدخل الشهري.",
     scatter_h="السعر مقابل الدخل",
     scatter_p="محور أفقي: دخل الفرد السنوي (GNI). محور رأسي: سعر الألياف الشهري. كلاهما لوغاريتمي. الدول الغنية تدفع أكثر بالدولار لكن أقل من دخلها.",
     x_gni="دخل الفرد السنوي $", y_fiber="سعر الألياف $ / شهر", y_gb="سعر 1 غيغابايت $",
@@ -82,7 +82,7 @@ T = {
     strip_fiber_h="How much of a monthly income a fiber plan takes",
     strip_fiber_p="Each dot is a country: the average price of the plan nearest 200 Mbps at its biggest operators, as a share of average monthly income per person (log scale). Red is above 2%.",
     strip_mobile_h="How much of a monthly income 10 GB of mobile data takes",
-    strip_mobile_p="Each dot is a country: the average price of a ~10 GB / 30-day prepaid bundle at its biggest operators, as a share of monthly income.",
+    strip_mobile_p="Each dot is a country: the average cost of getting at least 10 GB for a month at its biggest operators, as a share of monthly income.",
     scatter_h="Price against income",
     scatter_p="Across: income per person per year (GNI). Up: monthly fiber price. Both log. Rich countries pay more dollars but a smaller share of income.",
     x_gni="Income per person / year $", y_fiber="Fiber $ / month", y_gb="$ per GB",
@@ -473,8 +473,8 @@ def mobile_page(lang):
     body = f"""
 <section class="pagehead"><h1>{esc(s(lang,'الجوال: سعر الغيغابايت وحقيقة «غير محدود»','Mobile: price per GB and the truth about “unlimited”'))}</h1>
 <p class="note">{esc(s(lang,
- 'لكل دولة: باقة مسبقة الدفع تقارب 10 غيغابايت لـ30 يوماً لدى أكبر 3 مشغّلين، ثم سعر الغيغابايت. «غير محدود فعلاً» يعني عدم نشر حد تُخفَّض بعده السرعة.',
- 'For each country: a prepaid bundle near 10 GB / 30 days at the 3 biggest operators, then the price per GB. “Truly unlimited” means no published cap after which speed is cut.'))}</p></section>
+ 'لكل دولة وأكبر 3 مشغّلين فيها: كم يكلّف الحصول على 10 غيغابايت على الأقل لمدة شهر بباقة مسبقة الدفع. الباقة الأكبر من 10 غيغابايت تُحسب بسعرها كاملاً، والأصغر تُضاعَف حتى 10. «غير محدود فعلاً» يعني عدم نشر حد تُخفَّض بعده السرعة.',
+ 'For each country and its 3 biggest operators: what it costs to get at least 10 GB for a month on prepaid. A bundle bigger than 10 GB counts at its full price; a smaller one is multiplied up to 10 GB. “Truly unlimited” means no published cap after which speed is cut.'))}</p></section>
 <section><h2>{esc(t['strip_mobile_h'])}</h2><p class="note">{esc(t['strip_mobile_p'])}</p>
 <figure class="scroll">{strip_svg('mpct', lang, [0.1, 0.3, 1, 2, 5, 10, 30, 100], 0.05, 200)}</figure></section>
 <section><h2>{esc(s(lang,'سعر الغيغابايت مقابل الدخل','Price per GB against income'))}</h2>

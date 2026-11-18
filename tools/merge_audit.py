@@ -95,24 +95,35 @@ def merge(kind):
         olds = by_iso.get(iso, [])
         news = ev.get((kind, iso), [])
         used = set()
+        target = (lambda n: abs((n.get("speed_down_mbps") or 1e9) - 200)) if kind == "fiber" else \
+                 (lambda n: abs((n.get("data_gb") or 1e9) - 10))
         for o in olds:
-            m = None
-            for j, n in enumerate(news):
-                if j not in used and key(n["operator"]) == key(o["operator"]):
-                    m = j
-                    break
-            if m is None:
-                for j, n in enumerate(news):
-                    if j not in used and (key(o["operator"]) in key(n["operator"]) or key(n["operator"]) in (o["operator"] or "").lower()):
-                        m = j
-                        break
+            ko = key(o["operator"])
+            cand = [j for j, n in enumerate(news) if j not in used and key(n["operator"]) == ko]
+            if not cand:
+                cand = [j for j, n in enumerate(news) if j not in used and
+                        (ko in key(n["operator"]) or key(n["operator"]) in (o["operator"] or "").lower())]
+            # prefer an evidenced row, then the tier nearest the target
+            cand.sort(key=lambda j: (not accepted(news[j]), target(news[j])))
+            m = cand[0] if cand else None
+            # the operator's other rows are alternatives, not new operators
+            for j in cand[1:]:
+                used.add(j)
             n = news[m] if m is not None else None
             if m is not None:
                 used.add(m)
             out.append(row(kind, o, n, names))
+        # unmatched agent rows: only genuinely new operators, one row each,
+        # the tier nearest the target (200 Mbps / 10 GB)
+        have = {key(o["operator"]) for o in olds}
+        best = {}
         for j, n in enumerate(news):
-            if j in used:
+            if j in used or key(n["operator"]) in have:
                 continue
+            k = key(n["operator"])
+            if k not in best or target(n) < target(best[k]):
+                best[k] = n
+        for n in best.values():
             r = row(kind, None, n, names)
             if r:
                 out.append(r)
@@ -162,16 +173,21 @@ def row(kind, o, n, names):
                         technology=n.get("technology") or base.get("technology", ""),
                         promo_price_local=n.get("promo_price_local") if n.get("promo_price_local") is not None else "",
                         price_usd_month=round(u, 2) if u is not None else "")
-            if n.get("speed_down_mbps"):
-                base["speed_down_mbps"] = n["speed_down_mbps"]
-            if n.get("speed_up_mbps"):
-                base["speed_up_mbps"] = n["speed_up_mbps"]
+            # speeds come from the new evidence only (a blank beats an inherited guess)
+            base["speed_down_mbps"] = n.get("speed_down_mbps") or ""
+            base["speed_up_mbps"] = n.get("speed_up_mbps") or ""
             new_usd = u
         else:
             gb = num(n.get("data_gb"))
             base.update(bundle_gb=gb if gb else "", validity_days=n.get("validity_days") or "",
                         bundle_price_usd=round(u, 2) if u is not None else "")
-            new_usd = (u / gb * 10) if (u is not None and gb) else None
+            # "what it costs to get at least 10 GB for a month": a bundle >= 10 GB counts at
+            # its full price, a smaller one is scaled up to 10 GB, short validity to 30 days
+            days = num(n.get("validity_days"))
+            scale = (max(1.0, 10.0 / gb) if gb else None)
+            if scale and days and days < 25:
+                scale *= 30.0 / days
+            new_usd = (u * scale) if (u is not None and scale) else None
             base["ten_gb_price_usd"] = round(new_usd, 2) if new_usd is not None else ""
             if n.get("unlimited") in ("yes", "throttled", "no"):
                 base["unlimited"] = n["unlimited"]

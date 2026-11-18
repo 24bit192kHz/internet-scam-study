@@ -1,7 +1,7 @@
 (function () {
   "use strict";
   var AR = window.LANG === "ar", C = window.C || {};
-  var nf = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 });
+  var nf = new Intl.NumberFormat("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   function nm(i) { return C[i] ? (AR ? C[i].ar : C[i].en) : i; }
   function usd(v) { return v == null ? "–" : "$" + (v >= 100 ? Math.round(v).toLocaleString("en-US") : nf.format(v)); }
   function pc(v) { return v == null ? "–" : (v < 10 ? v.toFixed(1) : Math.round(v)) + "%"; }
@@ -18,12 +18,12 @@
     var n = esc(nm(iso)), a = "", b = "", stamp = null, lab = "";
     if (c.fp != null) {
       a = AR
-        ? "في " + n + "، متوسط باقة الألياف (≈" + bdi(Math.round(c.fd || 0) + " ميغابت") + ") يكلّف " + bdi("<b>" + usd(c.fp) + "</b>") + " شهرياً، أي " + bdi("<b>" + pc(c.fpct) + "</b>") + " من متوسط الدخل الشهري."
+        ? "في " + n + "، متوسط باقة الألياف (≈" + bdi(String(Math.round(c.fd || 0))) + " ميغابت) يكلّف " + bdi("<b>" + usd(c.fp) + "</b>") + " شهرياً، أي " + bdi("<b>" + pc(c.fpct) + "</b>") + " من متوسط الدخل الشهري."
         : "In " + n + ", the average fiber plan (≈" + Math.round(c.fd || 0) + " Mbps) costs <b>" + usd(c.fp) + "</b> a month: <b>" + pc(c.fpct) + "</b> of an average monthly income.";
       if (c.fmult != null) {
         stamp = c.fmult;
-        lab = AR ? "سعر الألياف مقابل وسيط " + c.fpeer_n + " دولة دخلها مشابه: " + usd(c.fpeer_med)
-                 : "fiber price vs the median of " + c.fpeer_n + " similar-income countries: " + usd(c.fpeer_med);
+        lab = AR ? "سعر الألياف مقابل وسيط " + c.fpeer_n + " دولة دخلها مشابه|" + usd(c.fpeer_med)
+                 : "fiber price vs the median of " + c.fpeer_n + " similar-income countries|" + usd(c.fpeer_med);
       }
     } else {
       a = AR ? "لم نجد في " + n + " سعر ألياف منشوراً يمكن التحقق منه."
@@ -44,7 +44,9 @@
     if (stamp != null) {
       S.hidden = false;
       document.getElementById("stampnum").textContent = x(stamp);
-      document.getElementById("stamplab").textContent = lab;
+      var parts = lab.split("|"), sl = document.getElementById("stamplab");
+      sl.textContent = parts[0];
+      if (parts[1]) { var m = document.createElement("bdi"); m.dir = "ltr"; m.className = "med"; m.textContent = parts[1]; sl.appendChild(document.createElement("br")); sl.appendChild(m); }
       S.classList.toggle("fair", stamp < 1);
       S.classList.remove("thump"); void S.offsetWidth; S.classList.add("thump");
     } else S.hidden = true;
