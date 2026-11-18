@@ -43,11 +43,19 @@ def tool_text(path):
         for c in msg.get("content") or []:
             if isinstance(c, dict) and c.get("type") == "tool_result":
                 name, inp = uses.get(c.get("tool_use_id"), (None, {}))
-                if name != "WebFetch":
+                if name == "WebFetch":
+                    url = inp.get("url", "")
+                elif name == "Bash" and "render_text.mjs" in (inp.get("command") or ""):
+                    # headless render: the URL is the first http argument of the command
+                    m = re.search(r"render_text\.mjs\s+[\"']?(https?://[^\s\"']+)", inp.get("command") or "")
+                    if not m:
+                        continue
+                    url = m.group(1)
+                else:
                     continue
                 v = c.get("content")
                 txt = json.dumps(v, ensure_ascii=False) if not isinstance(v, str) else v
-                dom = base_domain(inp.get("url", ""))
+                dom = base_domain(url)
                 by_dom[dom] = by_dom.get(dom, "") + "\n" + re.sub(r"\s+", " ", txt)
     return by_dom
 

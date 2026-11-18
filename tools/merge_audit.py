@@ -46,9 +46,17 @@ def key(s):
     return w[0] if w else s.strip()
 
 
+# blogs / news / travel sites: a price there is hearsay, not a tariff. Operator pages,
+# regulators and dedicated price-comparison sites are the only accepted sources.
+SECONDARY = ("wikipedia.org", "thedailystar.net", "zoomalgerie.com", "techbiva.com", "africascoop.net",
+             "temovision.com", "legit.ng", "elowise.ng", "speedtester.pk", "jbklutse.com", "vosreponses.com",
+             "traveltomtom.net", "mobilemasr.com", "malikonews.com", "2001online.com", "elestimulo.com",
+             "prixdakar.com", "fiberoptic.ma", "facebook.com", "reddit.com", "x.com", "twitter.com")
+
+
 def weak(u):
     u = (u or "").strip().lower()
-    return (not u.startswith("http")) or "wikipedia.org" in u
+    return (not u.startswith("http")) or any(d in u for d in SECONDARY)
 
 
 def clean_text(s):
@@ -73,7 +81,7 @@ ev = {}
 for p in sys.argv[1:]:
     for batch, rows in json.load(open(p)).items():
         for r in rows:
-            ev.setdefault((batch.split("_")[0], r["iso3"]), []).append(r)
+            ev.setdefault((re.sub(r"\d+$", "", batch.split("_")[0]), r["iso3"]), []).append(r)
 
 FCOLS = ["iso3", "country", "operator", "plan_name", "technology", "speed_down_mbps", "speed_up_mbps",
          "price_local", "promo_price_local", "currency", "price_usd_month", "status", "checked",
@@ -211,7 +219,9 @@ def row(kind, o, n, names):
             if n.get("fiveg") in ("yes", "no"):
                 base["5g"] = n["fiveg"]
             if n.get("fup_policy"):
-                base["fup_policy"] = n["fup_policy"]
+                f = n["fup_policy"]
+                # agent bookkeeping ("the input's ... unverified") is not a policy
+                base["fup_policy"] = "not published on the page" if re.search(r"\binput\b|unverified|not on the page", f, re.I) else f
             if n.get("unlimited_price_local") is not None:
                 ul = usd(float(n["unlimited_price_local"]), cur)
                 base["unlimited_price_local"] = n["unlimited_price_local"]

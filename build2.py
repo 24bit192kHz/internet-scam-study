@@ -56,8 +56,12 @@ mobile_ops = dedupe(mobile_ops, ("iso3", "operator"))
 
 # rows with no URL (or only Wikipedia) are kept in the ops CSVs for reference but
 # never enter a country average: a price needs a citable source
+CONFIRMED = ("verified", "corrected", "new")
+
+
 def counts(r):
-    return (r.get("status") or "") not in ("unsourced", "not_offered")
+    # only prices confirmed against a fetched operator/source page count
+    return (r.get("status") or "") in CONFIRMED
 
 # ---- country-level fiber: AVERAGE OF THE 3 COMPANIES ------------------
 fiber_by_iso = {}
@@ -145,7 +149,7 @@ all_sources = []
 for kind, rows in (("fiber", fiber_ops), ("mobile", mobile_ops)):
     for r in rows:
         u = (r.get("source_url") or "").strip()
-        if u.startswith("http"):
+        if u.startswith("http") and counts(r):
             all_sources.append(dict(kind=kind, iso3=r["iso3"],
                                     operator=r.get("operator", ""), url=u))
 src_domains = {}
@@ -181,6 +185,7 @@ write_csv("mobile_country.csv", clean(mobile_country, mobile_cols), mobile_cols)
 # operator-level dumps (raw, for the repo / full transparency): every canonical column
 for name, rows in (("fiber_ops.csv", fiber_ops), ("mobile_ops.csv", mobile_ops)):
     cols = list(rows[0].keys())
+    rows = [r for r in rows if counts(r)]  # publish confirmed rows only
     with open(os.path.join(DOCS, "data", name), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore"); w.writeheader()
         for r in sorted(rows, key=lambda x: (x["iso3"], x["operator"].lower())): w.writerow(r)

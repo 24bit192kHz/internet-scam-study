@@ -335,9 +335,6 @@ def flags(c, kind, lang):
         out.append(t["flag_est"])
     elif c["gni_old"]:
         out.append(t["flag_old"] + f" ({c['gni_year']})")
-    v = c.get("fv" if kind == "f" else "mv")
-    if v is not None and v < 0.5:
-        out.append(t["flag_unv"])
     return out
 
 
@@ -490,8 +487,8 @@ def fiber_page(lang):
     body = f"""
 <section class="pagehead"><h1>{esc(s(lang,'الألياف: ماذا تكلّف 200 ميغابت تقريباً','Fiber: what about 200 Mbps costs'))}</h1>
 <p class="note">{esc(s(lang,
- 'لكل دولة نأخذ من أكبر 3 مشغّلين (4 إن وُجد) الباقة المنزلية الأقرب إلى 200 ميغابت ثم نحسب المتوسط. الصفوف التي أُعيد فحصها في نوفمبر 2026 بالسعر المعلن دون عروض مؤقتة؛ الصفوف غير المؤكَّدة تحتفظ بقيمتها السابقة ومُعلَّمة في الجدول. DSL مستبعد.',
- 'For each country we take the home plan nearest 200 Mbps at the 3 biggest operators (4 where they exist) and average them. Rows re-checked in November 2026 use the regular price without temporary promos; rows that could not be re-confirmed keep their earlier value and are flagged in the table. DSL is excluded.'))}</p></section>
+ 'لكل دولة نأخذ من أكبر 3 مشغّلين (4 إن وُجد) الباقة المنزلية الأقرب إلى 200 ميغابت ثم نحسب المتوسط. كل الأسعار مؤكَّدة من صفحات المشغّلين في نوفمبر 2026، بالسعر المعلن دون عروض مؤقتة. DSL مستبعد.',
+ 'For each country we take the home plan nearest 200 Mbps at the 3 biggest operators (4 where they exist) and average them. Every price was confirmed on the operator’s page in November 2026, at the regular price without temporary promos. DSL is excluded.'))}</p></section>
 <section><h2>{esc(t['strip_fiber_h'])}</h2>
 <figure class="scroll">{strip_svg('fpct', lang, [0.3, 1, 2, 5, 10, 30, 100], 0.1, 200)}</figure></section>
 <section><h2>{esc(t['scatter_h'])}</h2><p class="note">{esc(t['scatter_p'])}</p>
@@ -547,9 +544,8 @@ def saudi_page(lang):
 
 def method_page(lang):
     t = T[lang]
-    st_rows = [r.get("status") for r in fops + mops if r.get("status")]
     from collections import Counter
-    sc = Counter(st_rows)
+    sc = Counter(stats.get("status_fiber", {})) + Counter(stats.get("status_mobile", {}))
     doms = Counter(domain(r["source_url"]) for r in fops + mops
                    if (r.get("source_url") or "").startswith("http")
                    and r.get("status") not in ("unsourced", "not_offered"))
@@ -570,12 +566,12 @@ def method_page(lang):
  'Fiber: for each country, the home plan nearest 200 Mbps at the 3 biggest operators (4 where a fourth major exists), at the published monthly price. Mobile: what it costs to get at least 10 GB for a month on prepaid at the 3 biggest networks (a bigger bundle counts at full price, a smaller one is multiplied up to 10 GB when that needs at most 2×), plus whether an unlimited plan exists, its published cap, and 5G. The country figure is the plain average of its operators. Peers: countries with income per person within 1.5× (widened until there are at least 8).'))}</p>
 <h2>{esc(s(lang,'الدخل والعملات','Income and currencies'))}</h2>
 <p>{esc(s(lang,
- 'الدخل: نصيب الفرد من الدخل القومي (GNI، طريقة أطلس) من البنك الدولي، آخر سنة متاحة لكل دولة. الدخل الشهري = السنوي ÷ 12. الصفوف المُعاد فحصها حُوّلت إلى الدولار بسعر صرف واحد بتاريخ 18 نوفمبر 2026 (data/fx.csv)؛ الصفوف غير المؤكَّدة تبقى بسعر صرف سبتمبر 2026 المذكور في ملاحظاتها. عملات بلا سعر صرف واحد ذي معنى (الريال اليمني، الليرة السورية، الوون الكوري الشمالي، جنيه جنوب السودان، الجنيه السوداني، البيزو الكوبي) لم تُحوَّل.',
- 'Income: GNI per capita (Atlas method) from the World Bank, latest year available for each country. Monthly income = yearly ÷ 12. Re-checked rows are converted to dollars with one exchange-rate snapshot of 18 November 2026 (data/fx.csv); rows that could not be re-confirmed keep the September 2026 rate stated in their notes. Currencies with no single meaningful rate (YER, SYP, KPW, SSP, SDG, CUP) are not converted.'))}</p>
+ 'الدخل: نصيب الفرد من الدخل القومي (GNI، طريقة أطلس) من البنك الدولي، آخر سنة متاحة لكل دولة. الدخل الشهري = السنوي ÷ 12. كل الأسعار حُوّلت إلى الدولار بسعر صرف واحد بتاريخ 18 نوفمبر 2026 (data/fx.csv). عملات بلا سعر صرف واحد ذي معنى (الريال اليمني، الليرة السورية، الوون الكوري الشمالي، جنيه جنوب السودان، الجنيه السوداني، البيزو الكوبي) لم تُحوَّل.',
+ 'Income: GNI per capita (Atlas method) from the World Bank, latest year available for each country. Monthly income = yearly ÷ 12. All prices are converted to dollars with one exchange-rate snapshot of 18 November 2026 (data/fx.csv). Currencies with no single meaningful rate (YER, SYP, KPW, SSP, SDG, CUP) are not converted.'))}</p>
 <p>{esc(s(lang,'دخل تقديري أو بديل:','Estimated or fallback income:'))} {esc('، '.join(n_est) if lang=='ar' else ', '.join(n_est))}</p>
 <p>{esc(s(lang,'دخل من سنة أقدم من 2023:','Income older than 2023:'))} {esc('، '.join(n_old) if lang=='ar' else ', '.join(n_old))}</p>
 <h2>{esc(s(lang,'التدقيق','Audit'))}</h2>
-<p>{esc(s(lang,'أُعيد فحص كل صف مشغّل مقابل صفحة الأسعار المنشورة. يُقبل السعر الجديد فقط إذا ظهر في نص صفحة جُلبت فعلاً من موقع المصدر نفسه. الصفوف التي لا مصدر لها أو مصدرها ويكيبيديا فقط تبقى في الملفات لكنها لا تدخل في أي متوسط. بعض الأسعار منشورة دون ضريبة القيمة المضافة وذُكر ذلك في ملاحظاتها. حالة الصفوف:','Every operator row was re-checked against the published tariff page. A new price is accepted only if it appears in text actually fetched from the source site itself. Rows with no source, or only Wikipedia, stay in the files but never enter an average. A few prices are published excluding VAT; their notes say so. Row status:'))}</p>
+<p>{esc(s(lang,'كل سعر في هذا الموقع مؤكَّد: ظهر في نص صفحة جُلبت فعلاً من موقع المشغّل أو المصدر نفسه في نوفمبر 2026 (بما فيها الصفحات التي لا تعرض أسعارها إلا بجافاسكربت، عبر متصفح آلي). أي سعر لم نستطع تأكيده حُذف من المتوسطات والرسوم والجداول، والدولة التي لا سعر مؤكَّد لها لا تظهر. بعض الأسعار منشورة دون ضريبة القيمة المضافة وذُكر ذلك في ملاحظاتها. حصيلة الفحص لكل صفوف المشغّلين:','Every price on this site is confirmed: it appeared in text actually fetched from the operator’s (or source’s) own site in November 2026, including pages that only show prices via JavaScript (read with a headless browser). Any price we could not confirm is removed from averages, charts and tables; a country with no confirmed price is not shown. A few prices are published excluding VAT; their notes say so. Outcome of the check over all operator rows:'))}</p>
 {audit}
 <h2>{esc(s(lang,'الملفات','Files'))}</h2>
 <ul>{''.join(f'<li><a href="{pre}data/{x}" dir="ltr">{x}</a></li>' for x in files)}</ul>
@@ -586,7 +582,7 @@ def method_page(lang):
 
 # ---------------------------------------------------------------- data.js for the picker / tooltips
 def data_js():
-    keep = ("fp", "fd", "fpct", "fn", "fmult", "fpeer_med", "fpeer_n", "fmult_aud", "fpeer_aud_n", "mmult_aud", "mpeer_aud_n", "mgb", "m10", "mpct", "mmult",
+    keep = ("fp", "fd", "fpct", "fn", "fmult", "fpeer_med", "fpeer_n", "mgb", "m10", "mpct", "mmult",
             "mpeer_med", "mpeer_n", "gni", "gni_note", "gni_year", "region", "uy", "ut")
     out = {}
     for iso, c in C.items():

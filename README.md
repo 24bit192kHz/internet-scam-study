@@ -14,11 +14,11 @@ relative to what people earn. Site (Arabic, with English under `/en/`):
 ## Headline numbers
 
 <!-- stats:start -->
-- **161** countries with a fiber price, **162** with a mobile price (503 fiber + 518 mobile operator rows, 956 source URLs).
-- Median fiber plan: **$39.65/month**; median **$0.166 per Mbps**.
-- Fiber within 2 % of monthly income in **59 of 161** countries.
-- Median mobile price: **$1.10 per GB**; 60 % of countries sell some unlimited plan, 29 % one without a published throttle.
-- Row status, fiber: unverified 323, corrected 84, verified 61, unsourced 19, not_offered 10, new 6; mobile: unverified 375, corrected 64, unsourced 43, verified 34, new 1, not_offered 1.
+- **125** countries with a fiber price, **98** with a mobile price (512 fiber + 522 mobile operator rows, 341 source URLs).
+- Median fiber plan: **$43.12/month**; median **$0.149 per Mbps**.
+- Fiber within 2 % of monthly income in **48 of 125** countries.
+- Median mobile price: **$1.18 per GB**; 61 % of countries sell some unlimited plan, 28 % one without a published throttle.
+- Row status, fiber: unverified 271, corrected 112, verified 69, unsourced 35, new 15, not_offered 10; mobile: unverified 320, corrected 106, unsourced 56, verified 34, new 5, not_offered 1.
 - Income: World Bank, latest year up to 2025.
 <!-- stats:end -->
 
