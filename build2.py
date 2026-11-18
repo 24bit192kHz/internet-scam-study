@@ -7,9 +7,9 @@ import csv, json, os, glob, statistics, re
 from urllib.parse import urlparse
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-# operator-level CSVs land in the shared research dir (agents write there);
-# econ + country meta are copied there too
-DATA = "/tmp/opencode/internet-scam-chart/data"
+# canonical inputs live in the repo: data/{countries_195,economics,bigmac,
+# fiber_ops,mobile_ops}.csv
+DATA = os.path.join(BASE, "data")
 DOCS = os.path.join(BASE, "docs")
 os.makedirs(os.path.join(DOCS, "data"), exist_ok=True)
 
@@ -29,26 +29,16 @@ bigmac = {r["iso_a3"]: r for r in load(os.path.join(DATA, "bigmac.csv"))
           if r["iso_a3"] != "EUZ"}
 meta = {r["iso3"]: r for r in countries}
 
-# GNI fallback chain (same documented basis as v3 study):
-# 1) World Bank GNI p.c.  2) WB GDP p.c.  3) marked estimate for states with no WB data
-GNI_EST = {"YEM": 600, "SSD": 400, "ERI": 650, "VAT": 50000, "PRK": 1800}
-
+# GNI basis comes from data/economics.csv (tools/fetch_econ.py): latest World
+# Bank year per country, gni_note = wb | gdp-fallback | est
 def gni_with_note(e, iso):
-    gni = num(e.get("gni_per_capita_usd"))
-    if gni is not None:
-        return gni, "wb"
-    gdp = num(e.get("gdp_per_capita_usd"))
-    if gdp is not None:
-        return gdp, "gdp-fallback"
-    if iso in GNI_EST:
-        return GNI_EST[iso], "est"
-    return None, "missing"
+    return num(e.get("gni_per_capita_usd")), (e.get("gni_note") or "missing")
 
 # ---- load operator-level files ---------------------------------------
 fiber_ops, mobile_ops = [], []
-for f in sorted(glob.glob(os.path.join(DATA, "fiber_ops_*.csv"))):
+for f in sorted(glob.glob(os.path.join(DATA, "fiber_ops*.csv"))):
     fiber_ops += [r for r in load(f) if r.get("iso3")]
-for f in sorted(glob.glob(os.path.join(DATA, "mobile_ops_*.csv"))):
+for f in sorted(glob.glob(os.path.join(DATA, "mobile_ops*.csv"))):
     mobile_ops += [r for r in load(f) if r.get("iso3")]
 
 # dedupe (iso3, operator) keeping first
@@ -102,7 +92,7 @@ med_fiber = (statistics.median([r["avg_price"] for r in fiber_country])
              if fiber_country else None)
 for r in fiber_country:
     r["vs_median"] = round(r["avg_price"] / med_fiber, 2) if med_fiber else None
-fiber_country.sort(key=lambda r: -(r["avg_price"] or 0))
+fiber_country.sort(key=lambda r: (-(r["avg_price"] or 0), r["iso3"]))
 
 # ---- country-level mobile --------------------------------------------
 mobile_by_iso = {}
@@ -141,7 +131,7 @@ for iso, ops in mobile_by_iso.items():
         gni=gni, gni_note=gni_note, gdp=gdp, bigmac=bm,
         price_bigmacs=round(avg10 / bm, 3) if (avg10 and bm) else None,
     ))
-mobile_country.sort(key=lambda r: -(r["per_gb"] or 0))
+mobile_country.sort(key=lambda r: (-(r["per_gb"] or 0), r["iso3"]))
 
 # ---- sources ----------------------------------------------------------
 all_sources = []
