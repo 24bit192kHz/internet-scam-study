@@ -36,6 +36,7 @@ mops = load(os.path.join(D, "mobile_ops.csv"))
 stats = json.load(open(os.path.join(D, "stats.json")))
 econ = {r["iso3"]: r for r in load(os.path.join(RAW, "economics.csv"))}
 names_ar = {r["iso3"]: r["name_ar"] for r in load(os.path.join(RAW, "names_ar.csv"))}
+iso2s = {r["iso3"]: r["iso2"] for r in load(os.path.join(RAW, "names_ar.csv"))}
 meta = {r["iso3"]: r for r in load(os.path.join(RAW, "countries_195.csv"))}
 
 REGIONS = ["Asia", "Africa", "Europe", "North America", "South America", "Oceania"]
@@ -210,13 +211,35 @@ def tick_fmt(v):
     return f"{v:g}"
 
 
+_clip = [0]
+
+
+def flag_defs():
+    _clip[0] += 1
+    cid = f"fc{_clip[0]}"
+    return cid, (f'<defs><clipPath id="{cid}" clipPathUnits="objectBoundingBox">'
+                 f'<circle cx=".5" cy=".5" r=".5"/></clipPath></defs>')
+
+
+def flag_mark(c, x, y, cls, cid, lang, region=False):
+    """a round flag with a coloured ring (red above the 2% line, teal below)"""
+    iso2 = (iso2s.get(c["iso"]) or "").lower()
+    pre = "" if lang == "ar" else "../"
+    reg = f' data-region="{esc(c["region"])}"' if region else ""
+    return (f'<g class="{cls}" data-iso="{c["iso"]}"{reg} data-x="{x:.1f}" data-y="{y:.1f}">'
+            f'<circle class="ring" cx="{x:.1f}" cy="{y:.1f}" r="9"/>'
+            f'<image href="{pre}assets/flags/{iso2}.webp" x="{x-7.5:.1f}" y="{y-7.5:.1f}" width="15" height="15" '
+            f'clip-path="url(#{cid})" preserveAspectRatio="xMidYMid slice"/></g>')
+
+
 def strip_svg(key, lang, ticks, lo, hi, unit="%"):
     t = T[lang]
-    W, lane, top, left, right = 900, 54, 14, 128, 20
+    W, lane, top, left, right = 900, 70, 18, 128, 20
+    cid, defs = flag_defs()
     H = top + lane * len(REGIONS) + 40
     x0, x1 = left, W - right
     parts = [f'<svg class="chart strip" data-kind="{key[0]}" viewBox="0 0 {W} {H}" role="img" '
-             f'aria-label="{esc(t["strip_fiber_h"] if key=="fpct" else t["strip_mobile_h"])}">']
+             f'aria-label="{esc(t["strip_fiber_h"] if key=="fpct" else t["strip_mobile_h"])}">' + defs]
     for v in ticks:
         x = logx(v, lo, hi, x0, x1)
         parts.append(f'<line class="grid" x1="{x:.1f}" x2="{x:.1f}" y1="{top}" y2="{H-34}"/>'
@@ -230,9 +253,9 @@ def strip_svg(key, lang, ticks, lo, hi, unit="%"):
         pts = sorted([c for c in C.values() if c["region"] == reg and c.get(key)], key=lambda c: c[key])
         for j, c in enumerate(pts):
             x = logx(c[key], lo, hi, x0, x1)
-            dy = ((j % 3) - 1) * 9  # small deterministic jitter so neighbours separate
+            dy = ((j % 3) - 1) * 17  # deterministic 3-row jitter so neighbouring flags separate
             cls = "dot over" if c[key] > FAIR else "dot under"
-            parts.append(f'<circle class="{cls}" data-iso="{c["iso"]}" cx="{x:.1f}" cy="{y+dy:.1f}" r="5.5"/>')
+            parts.append(flag_mark(c, x, y + dy, cls, cid, lang))
     parts.append("</svg>")
     return "".join(parts)
 
@@ -242,7 +265,8 @@ def scatter_svg(ykey, lang, ylo, yhi, yticks, ylabel):
     W, H, l, r, tp, b = 900, 520, 70, 20, 16, 56
     xlo, xhi = 300, 250000
     xt = [500, 1000, 3000, 10000, 30000, 100000]
-    parts = [f'<svg class="chart scatter" data-kind="{"f" if ykey=="fp" else "m"}" viewBox="0 0 {W} {H}" role="img" aria-label="{esc(t["scatter_h"])}">']
+    cid, defs = flag_defs()
+    parts = [f'<svg class="chart scatter" data-kind="{"f" if ykey=="fp" else "m"}" viewBox="0 0 {W} {H}" role="img" aria-label="{esc(t["scatter_h"])}">' + defs]
     for v in xt:
         x = logx(v, xlo, xhi, l, W - r)
         parts.append(f'<line class="grid" x1="{x:.1f}" x2="{x:.1f}" y1="{tp}" y2="{H-b}"/>'
@@ -265,8 +289,7 @@ def scatter_svg(ykey, lang, ylo, yhi, yticks, ylabel):
         y = H - b - logx(c[ykey], ylo, yhi, 0, H - b - tp)
         over = (c.get("fpct") if ykey == "fp" else c.get("mpct")) or 0
         cls = "dot over" if over > FAIR else "dot under"
-        parts.append(f'<circle class="{cls}" data-iso="{c["iso"]}" data-region="{esc(c["region"])}" '
-                     f'cx="{x:.1f}" cy="{y:.1f}" r="5.5"/>')
+        parts.append(flag_mark(c, x, y, cls, cid, lang, region=True))
     parts.append(f'<text class="axis" x="{(l+W-r)/2:.0f}" y="{H-8}" text-anchor="middle">{esc(t["x_gni"])}</text>'
                  f'<text class="axis" transform="translate(16 {(tp+H-b)/2:.0f}) rotate(-90)" text-anchor="middle">{esc(ylabel)}</text>')
     parts.append("</svg>")

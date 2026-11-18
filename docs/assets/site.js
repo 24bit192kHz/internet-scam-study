@@ -66,14 +66,14 @@
   var NS = "http://www.w3.org/2000/svg";
   function mark(iso) {
     document.querySelectorAll(".chart").forEach(function (svg) {
-      svg.querySelectorAll(".sel").forEach(function (d) { d.classList.remove("sel"); d.setAttribute("r", "5.5"); });
+      svg.querySelectorAll(".sel").forEach(function (d) { d.classList.remove("sel"); });
       svg.querySelectorAll(".sel-lab").forEach(function (t) { t.remove(); });
       var d = svg.querySelector('.dot[data-iso="' + iso + '"]');
       if (!d) return;
-      d.classList.add("sel"); d.setAttribute("r", "9"); d.parentNode.appendChild(d);
+      d.classList.add("sel"); d.parentNode.appendChild(d);
       var t = document.createElementNS(NS, "text");
-      t.setAttribute("class", "sel-lab"); t.setAttribute("x", d.getAttribute("cx"));
-      t.setAttribute("y", +d.getAttribute("cy") - 14); t.setAttribute("text-anchor", "middle");
+      t.setAttribute("class", "sel-lab"); t.setAttribute("x", d.dataset.x);
+      t.setAttribute("y", +d.dataset.y - 20); t.setAttribute("text-anchor", "middle");
       t.textContent = nm(iso); svg.appendChild(t);
     });
   }
@@ -86,7 +86,7 @@
     return nm(iso);
   }
   function show(e, d) {
-    tip.textContent = tipText(d.dataset.iso, d.ownerSVGElement); tip.hidden = false;
+    tip.textContent = tipText(d.dataset.iso, d.ownerSVGElement || d.closest("svg")); tip.hidden = false;
     var r = d.getBoundingClientRect(), w = tip.offsetWidth;
     tip.style.left = Math.max(8, Math.min(innerWidth - w - 8, r.left + r.width / 2 - w / 2)) + "px";
     tip.style.top = Math.max(8, r.top - tip.offsetHeight - 10) + "px";
