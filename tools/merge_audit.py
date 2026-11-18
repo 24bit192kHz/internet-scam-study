@@ -157,6 +157,23 @@ def row(kind, o, n, names):
         cur = (n.get("currency") or "").upper()
         p = float(n["price_local"])
         u = usd(p, cur)
+        why = None
+        if u is None:
+            why = f"no single meaningful {cur}/USD rate"
+        elif kind == "mobile":
+            gb, days = num(n.get("data_gb")), num(n.get("validity_days"))
+            sc = (max(1.0, 10.0 / gb) if gb else None)
+            if sc and days and days < 25:
+                sc *= 30.0 / days
+            if not gb:
+                why = "bundle size not published"
+            elif sc > 2.0:
+                why = f"nearest bundle ({gb:g} GB / {days or '?'} days) is not comparable with 10 GB / 30 days"
+        if why:
+            # a sourced earlier value is never replaced by one we cannot compare
+            n = dict(n, comment=f"{cur} {p:g} found but not used: {why}. " + (n.get("comment") or ""),
+                     status="unverifiable")
+            return row(kind, o, dict(n, price_local=None), names) if o else None
         base.update(price_local=p, currency=cur, checked=CHECKED, source_url=n["source_url"].strip())
         extra = f"audit {CHECKED}: {cur} {p:g}"
         if n.get("promo_price_local") is not None:

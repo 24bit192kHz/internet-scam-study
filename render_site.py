@@ -99,6 +99,14 @@ T = {
 }
 
 
+STATUS = {
+    "ar": dict(verified="مطابق للمصدر", corrected="صُحّح", new="أُضيف", unverified="غير مؤكَّد",
+               unsourced="بلا مصدر، خارج المتوسط", not_offered="لا يقدّم الخدمة"),
+    "en": dict(verified="verified", corrected="corrected", new="added", unverified="not re-confirmed",
+               unsourced="no source, not averaged", not_offered="not offered"),
+}
+
+
 def name(iso, lang):
     if lang == "ar":
         return names_ar.get(iso) or meta.get(iso, {}).get("country", iso)
@@ -183,6 +191,11 @@ for iso, c in C.items():
             c[pk + "mult"] = c[key] / medp if medp else None
             c[pk + "peer_lo"] = min(x["gni"] for x in p)
             c[pk + "peer_hi"] = max(x["gni"] for x in p)
+            pa = [x for x in p if (x.get(pk + "v") or 0) >= 0.5]
+            if len(pa) >= 5 and (c.get(pk + "v") or 0) >= 0.5:
+                ma = statistics.median(x[key] for x in pa)
+                c[pk + "mult_aud"] = c[key] / ma
+                c[pk + "peer_aud_n"] = len(pa)
 
 
 # ---------------------------------------------------------------- SVG charts
@@ -378,19 +391,19 @@ def ops_details(kind, lang, isos=None):
                     if u.startswith("http") else f'<span class="muted">{esc(u or "—")}</span>')
             if kind == "f":
                 price = f(o.get("price_usd_month"))
-                body = (f'<bdi dir="ltr">{esc(o.get("plan_name") or "")}</bdi> · '
-                        f'<bdi dir="ltr">{esc(o.get("speed_down_mbps") or "?")}/{esc(o.get("speed_up_mbps") or "?")} {t["mbps"]}</bdi> · '
-                        f'<b><bdi dir="ltr">{money(price) if price else "–"} $</bdi></b>')
+                body = (f'<bdi>{esc(o.get("plan_name") or "")}</bdi> · '
+                        f'<bdi dir="ltr">{esc(o.get("speed_down_mbps") or "?")}/{esc(o.get("speed_up_mbps") or "?")}</bdi> {t["mbps"]} · '
+                        f'<b><bdi dir="ltr">${money(price) if price else "–"}</bdi></b>')
             else:
                 price = f(o.get("ten_gb_price_usd"))
-                body = (f'<b><bdi dir="ltr">{money(price) if price else "–"} $</bdi></b> / 10 {t["gb"]} · '
+                body = (f'<b><bdi dir="ltr">${money(price) if price else "–"}</bdi></b> / 10 {t["gb"]} · '
                         f'{esc(t["unl_yes"] if o.get("unlimited")=="yes" else t["unl_thr"] if o.get("unlimited")=="throttled" else t["unl_no"])}'
-                        + (f'<br><span class="muted">{esc(t["fup"])}: <bdi dir="ltr">{esc(o.get("fup_policy") or "")}</bdi></span>'
+                        + (f'<br><span class="muted">{esc(t["fup"])}: <bdi>{esc(o.get("fup_policy") or "")}</bdi></span>'
                            if o.get("fup_policy") else ""))
             st = o.get("status") or ""
             lis.append(f'<li><span class="op" dir="auto">{esc(o.get("operator") or "")}</span> {body} '
                        f'<span class="src">{esc(t["src"])}: {link}</span>'
-                       + (f' <span class="st st-{esc(st)}">{esc(st)}</span>' if st else "") + "</li>")
+                       + (f' <span class="st st-{esc(st)}">{esc(STATUS[lang].get(st, st))}</span>' if st else "") + "</li>")
         out.append(f'<details data-iso="{iso}"><summary>{esc(name(iso, lang))} '
                    f'<span class="muted">({len(src[iso])})</span></summary><ul>{"".join(lis)}</ul></details>')
     return f'<div class="opsgrid">{"".join(out)}</div>'
@@ -454,8 +467,8 @@ def fiber_page(lang):
     body = f"""
 <section class="pagehead"><h1>{esc(s(lang,'الألياف: ماذا تكلّف 200 ميغابت تقريباً','Fiber: what about 200 Mbps costs'))}</h1>
 <p class="note">{esc(s(lang,
- 'لكل دولة نأخذ من أكبر 3 مشغّلين (4 إن وُجد) الباقة المنزلية الأقرب إلى 200 ميغابت، بالسعر المعلن دون عروض مؤقتة، ثم نحسب المتوسط. DSL مستبعد.',
- 'For each country we take the home plan nearest 200 Mbps at the 3 biggest operators (4 where they exist), at the regular price without temporary promos, and average them. DSL is excluded.'))}</p></section>
+ 'لكل دولة نأخذ من أكبر 3 مشغّلين (4 إن وُجد) الباقة المنزلية الأقرب إلى 200 ميغابت ثم نحسب المتوسط. الصفوف التي أُعيد فحصها في نوفمبر 2026 بالسعر المعلن دون عروض مؤقتة؛ الصفوف غير المؤكَّدة تحتفظ بقيمتها السابقة ومُعلَّمة في الجدول. DSL مستبعد.',
+ 'For each country we take the home plan nearest 200 Mbps at the 3 biggest operators (4 where they exist) and average them. Rows re-checked in November 2026 use the regular price without temporary promos; rows that could not be re-confirmed keep their earlier value and are flagged in the table. DSL is excluded.'))}</p></section>
 <section><h2>{esc(t['strip_fiber_h'])}</h2>
 <figure class="scroll">{strip_svg('fpct', lang, [0.3, 1, 2, 5, 10, 30, 100], 0.1, 200)}</figure></section>
 <section><h2>{esc(t['scatter_h'])}</h2><p class="note">{esc(t['scatter_p'])}</p>
@@ -515,15 +528,14 @@ def method_page(lang):
     from collections import Counter
     sc = Counter(st_rows)
     doms = Counter(domain(r["source_url"]) for r in fops + mops
-                   if (r.get("source_url") or "").startswith("http"))
+                   if (r.get("source_url") or "").startswith("http")
+                   and r.get("status") not in ("unsourced", "not_offered"))
     top = "".join(f'<li><bdi dir="ltr">{esc(d)}</bdi> <span class="muted">{n}</span></li>' for d, n in doms.most_common(30))
     n_est = [name(i, lang) for i, c in C.items() if c["gni_note"] in ("est", "gdp-fallback")]
     n_old = [f'{name(i, lang)} ({c["gni_year"]})' for i, c in C.items() if c["gni_old"] and c["gni_note"] == "wb"]
     audit = ""
     if sc:
-        lab = dict(verified=s(lang, "مطابق للمصدر", "matches source"), corrected=s(lang, "صُحّح", "corrected"),
-                   new=s(lang, "أُضيف", "added"), unverified=s(lang, "غير موثّق", "unverified"),
-                   not_offered=s(lang, "لا يقدّم الخدمة", "not offered"))
+        lab = STATUS[lang]
         audit = ("<ul>" + "".join(f'<li>{esc(lab.get(k, k))}: <bdi dir="ltr">{v}</bdi></li>' for k, v in sc.most_common()) + "</ul>")
     files = ["fiber_country.csv", "mobile_country.csv", "fiber_ops.csv", "mobile_ops.csv", "sources.csv", "stats.json"]
     pre = "" if lang == "ar" else "../"
@@ -531,16 +543,16 @@ def method_page(lang):
 <section class="pagehead prose"><h1>{esc(t['nav_method'])}</h1>
 <h2>{esc(s(lang,'ماذا نقيس','What is measured'))}</h2>
 <p>{esc(s(lang,
- 'الألياف: لكل دولة، الباقة المنزلية الأقرب إلى 200 ميغابت لدى أكبر 3 مشغّلين (4 إن وُجد رابع كبير)، بالسعر الشهري المعلن. الجوال: باقة مسبقة الدفع تقارب 10 غيغابايت لـ30 يوماً لدى أكبر 3 شبكات، مع وجود باقة غير محدودة وحدّها المنشور ووجود 5G. سعر الدولة هو المتوسط البسيط لمشغّليها.',
- 'Fiber: for each country, the home plan nearest 200 Mbps at the 3 biggest operators (4 where a fourth major exists), at the published monthly price. Mobile: a prepaid bundle near 10 GB / 30 days at the 3 biggest networks, plus whether an unlimited plan exists, its published cap, and 5G. The country figure is the plain average of its operators.'))}</p>
+ 'الألياف: لكل دولة، الباقة المنزلية الأقرب إلى 200 ميغابت لدى أكبر 3 مشغّلين (4 إن وُجد رابع كبير)، بالسعر الشهري المعلن. الجوال: كلفة الحصول على 10 غيغابايت على الأقل لمدة شهر بباقة مسبقة الدفع لدى أكبر 3 شبكات (الباقة الأكبر تُحسب بسعرها كاملاً، والأصغر تُضاعَف حتى 10 إن لم يتجاوز ذلك ضعفين)، مع وجود باقة غير محدودة وحدّها المنشور ووجود 5G. سعر الدولة هو المتوسط البسيط لمشغّليها. النظراء: الدول التي يقع دخل الفرد فيها ضمن 1.5 ضعف (تتسع حتى يبلغ عددها 8 على الأقل).',
+ 'Fiber: for each country, the home plan nearest 200 Mbps at the 3 biggest operators (4 where a fourth major exists), at the published monthly price. Mobile: what it costs to get at least 10 GB for a month on prepaid at the 3 biggest networks (a bigger bundle counts at full price, a smaller one is multiplied up to 10 GB when that needs at most 2×), plus whether an unlimited plan exists, its published cap, and 5G. The country figure is the plain average of its operators. Peers: countries with income per person within 1.5× (widened until there are at least 8).'))}</p>
 <h2>{esc(s(lang,'الدخل والعملات','Income and currencies'))}</h2>
 <p>{esc(s(lang,
- 'الدخل: نصيب الفرد من الدخل القومي (GNI، طريقة أطلس) من البنك الدولي، آخر سنة متاحة لكل دولة. الدخل الشهري = السنوي ÷ 12. الأسعار المحلية حُوّلت إلى الدولار بسعر صرف واحد لكل الصفوف (data/fx.csv)، وذُكرت الاستثناءات في ملاحظات الصف.',
- 'Income: GNI per capita (Atlas method) from the World Bank, latest year available for each country. Monthly income = yearly ÷ 12. Local prices are converted to dollars with one exchange-rate snapshot for every row (data/fx.csv); exceptions are stated in the row notes.'))}</p>
-<p>{esc(s(lang,'دخل تقديري أو بديل:','Estimated or fallback income:'))} <bdi dir="ltr">{esc('، '.join(n_est) if lang=='ar' else ', '.join(n_est))}</bdi></p>
-<p>{esc(s(lang,'دخل من سنة أقدم من 2023:','Income older than 2023:'))} <bdi dir="ltr">{esc('، '.join(n_old) if lang=='ar' else ', '.join(n_old))}</bdi></p>
+ 'الدخل: نصيب الفرد من الدخل القومي (GNI، طريقة أطلس) من البنك الدولي، آخر سنة متاحة لكل دولة. الدخل الشهري = السنوي ÷ 12. الصفوف المُعاد فحصها حُوّلت إلى الدولار بسعر صرف واحد بتاريخ 18 نوفمبر 2026 (data/fx.csv)؛ الصفوف غير المؤكَّدة تبقى بسعر صرف سبتمبر 2026 المذكور في ملاحظاتها. عملات بلا سعر صرف واحد ذي معنى (الريال اليمني، الليرة السورية، الوون الكوري الشمالي، جنيه جنوب السودان، الجنيه السوداني، البيزو الكوبي) لم تُحوَّل.',
+ 'Income: GNI per capita (Atlas method) from the World Bank, latest year available for each country. Monthly income = yearly ÷ 12. Re-checked rows are converted to dollars with one exchange-rate snapshot of 18 November 2026 (data/fx.csv); rows that could not be re-confirmed keep the September 2026 rate stated in their notes. Currencies with no single meaningful rate (YER, SYP, KPW, SSP, SDG, CUP) are not converted.'))}</p>
+<p>{esc(s(lang,'دخل تقديري أو بديل:','Estimated or fallback income:'))} {esc('، '.join(n_est) if lang=='ar' else ', '.join(n_est))}</p>
+<p>{esc(s(lang,'دخل من سنة أقدم من 2023:','Income older than 2023:'))} {esc('، '.join(n_old) if lang=='ar' else ', '.join(n_old))}</p>
 <h2>{esc(s(lang,'التدقيق','Audit'))}</h2>
-<p>{esc(s(lang,'أعيد فحص كل صف مشغّل مقابل صفحة الأسعار المنشورة. حالة الصفوف:','Every operator row was re-checked against the published tariff page. Row status:'))}</p>
+<p>{esc(s(lang,'أُعيد فحص كل صف مشغّل مقابل صفحة الأسعار المنشورة. يُقبل السعر الجديد فقط إذا ظهر في نص صفحة جُلبت فعلاً من موقع المصدر نفسه. الصفوف التي لا مصدر لها أو مصدرها ويكيبيديا فقط تبقى في الملفات لكنها لا تدخل في أي متوسط. بعض الأسعار منشورة دون ضريبة القيمة المضافة وذُكر ذلك في ملاحظاتها. حالة الصفوف:','Every operator row was re-checked against the published tariff page. A new price is accepted only if it appears in text actually fetched from the source site itself. Rows with no source, or only Wikipedia, stay in the files but never enter an average. A few prices are published excluding VAT; their notes say so. Row status:'))}</p>
 {audit}
 <h2>{esc(s(lang,'الملفات','Files'))}</h2>
 <ul>{''.join(f'<li><a href="{pre}data/{x}" dir="ltr">{x}</a></li>' for x in files)}</ul>
@@ -551,7 +563,7 @@ def method_page(lang):
 
 # ---------------------------------------------------------------- data.js for the picker / tooltips
 def data_js():
-    keep = ("fp", "fd", "fpct", "fn", "fmult", "fpeer_med", "fpeer_n", "mgb", "m10", "mpct", "mmult",
+    keep = ("fp", "fd", "fpct", "fn", "fmult", "fpeer_med", "fpeer_n", "fmult_aud", "fpeer_aud_n", "mmult_aud", "mpeer_aud_n", "mgb", "m10", "mpct", "mmult",
             "mpeer_med", "mpeer_n", "gni", "gni_note", "gni_year", "region", "uy", "ut")
     out = {}
     for iso, c in C.items():

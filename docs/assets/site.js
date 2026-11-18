@@ -6,6 +6,7 @@
   function usd(v) { return v == null ? "–" : "$" + (v >= 100 ? Math.round(v).toLocaleString("en-US") : nf.format(v)); }
   function pc(v) { return v == null ? "–" : (v < 10 ? v.toFixed(1) : Math.round(v)) + "%"; }
   function x(m) { return m.toFixed(1) + "×"; }
+  function dawla(n) { return n + (n >= 3 && n <= 10 ? " دول" : " دولة"); }
   function bdi(s) { return '<bdi dir="ltr">' + s + "</bdi>"; }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
 
@@ -22,7 +23,7 @@
         : "In " + n + ", the average fiber plan (≈" + Math.round(c.fd || 0) + " Mbps) costs <b>" + usd(c.fp) + "</b> a month: <b>" + pc(c.fpct) + "</b> of an average monthly income.";
       if (c.fmult != null) {
         stamp = c.fmult;
-        lab = AR ? "سعر الألياف مقابل وسيط " + c.fpeer_n + " دولة دخلها مشابه|" + usd(c.fpeer_med)
+        lab = AR ? "سعر الألياف مقابل وسيط " + dawla(c.fpeer_n) + " دخلها مشابه|" + usd(c.fpeer_med)
                  : "fiber price vs the median of " + c.fpeer_n + " similar-income countries|" + usd(c.fpeer_med);
       }
     } else {
@@ -35,7 +36,7 @@
         : "Mobile: " + usd(c.mgb) + " per GB (10 GB ≈ " + usd(c.m10) + ", " + pc(c.mpct) + " of monthly income)" + (c.mmult != null ? ", " + x(c.mmult) + " its peers’ median." : ".");
       if (stamp == null && c.mmult != null) {
         stamp = c.mmult;
-        lab = AR ? "سعر الغيغابايت مقارنةً بوسيط " + c.mpeer_n + " دولة دخلها مشابه" : "price per GB vs the median of " + c.mpeer_n + " similar-income countries";
+        lab = AR ? "سعر الغيغابايت مقابل وسيط " + dawla(c.mpeer_n) + " دخلها مشابه" : "price per GB vs the median of " + c.mpeer_n + " similar-income countries";
       }
     }
     if (c.gni_note === "est" || c.gni_note === "gdp-fallback")
@@ -47,6 +48,14 @@
       var parts = lab.split("|"), sl = document.getElementById("stamplab");
       sl.textContent = parts[0];
       if (parts[1]) { var m = document.createElement("bdi"); m.dir = "ltr"; m.className = "med"; m.textContent = parts[1]; sl.appendChild(document.createElement("br")); sl.appendChild(m); }
+      var au = c.fmult_aud != null && stamp === c.fmult ? c.fmult_aud : null;
+      if (au != null) {
+        var a2 = document.createElement("span"); a2.className = "aud";
+        var b2 = document.createElement("bdi"); b2.dir = "ltr"; b2.textContent = au.toFixed(2) + "×";
+        a2.appendChild(document.createTextNode(AR ? "وبالاقتصار على " + dawla(c.fpeer_aud_n) + " أُعيد فحص أسعارها: " : "against only the " + c.fpeer_aud_n + " re-checked peers: "));
+        a2.appendChild(b2);
+        sl.appendChild(document.createElement("br")); sl.appendChild(a2);
+      }
       S.classList.toggle("fair", stamp < 1);
       S.classList.remove("thump"); void S.offsetWidth; S.classList.add("thump");
     } else S.hidden = true;

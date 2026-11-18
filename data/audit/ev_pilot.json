@@ -218,7 +218,7 @@
    "promo_price_local": null,
    "comment": "Operator Hala+ page shows Hala 8 = 12 GB, 200 min, 4 weeks, OMR 8, stated as including VAT. The gsmplans figure of OMR 8.40 (8 plus 5% VAT) conflicts with that wording; the operator page is preferred, so the VAT treatment is unresolved. The existing 21.85 USD ten-GB value is not supported by the operator page. The existing unlimited claim (Hala 18, OMR 18.90) is not on the operator page. The Hala 19 tier is 50 GB plus unlimited minutes, not unlimited data, so unlimited is set to unknown. The 5G status could not be confirmed on the operator page and is set to unknown.",
    "evidence_price": true,
-   "evidence_quote": true
+   "evidence_quote": false
   },
   {
    "iso3": "OMN",
@@ -297,7 +297,7 @@
    "unlimited_price_local": null,
    "promo_price_local": null,
    "comment": "Operator page lists a monthly renewing 10 GB general bundle at 35 shekel (ILS). Ambiguity: the same page shows a block headed for youth (للشباب) next to this item, and the block boundary is unclear, so the 35 shekel figure should be double-checked. Other 10 GB options on the page are a two-week 10 GB bundle at 40 shekel and another at 30 shekel, and a monthly 10 GB social bundle at 30 shekel (social only, not used). The page states the service is available only to West Bank subscribers. No unlimited bundle is listed. 5G status was not verified. The existing row's blank values are replaced with the operator-page figures.",
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   },
   {

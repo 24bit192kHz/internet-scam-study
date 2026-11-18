@@ -718,7 +718,7 @@
    "promo_price_local": null,
    "unlimited_price_local": 34.99,
    "evidence_price": true,
-   "evidence_quote": true
+   "evidence_quote": false
   },
   {
    "iso3": "MCO",

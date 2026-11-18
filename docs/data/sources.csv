@@ -243,7 +243,7 @@ fiber,KNA,Flow,https://discoverflow.co
 fiber,KOR,KT,https://m.product.kt.com/mDic/productDetail.do?ItemCode=1504
 fiber,KOR,LG U+,https://setkora.com/internet/lgu-100-solo
 fiber,KOR,SK Broadband,https://en.wikipedia.org/wiki/SK_Broadband
-fiber,KWT,Ooredoo,https://www.ooredoo.com.kw/portal/en/HomeInternetFiber
+fiber,KWT,Ooredoo,https://gsmplans.com/plan/kuwait/ooredoo-home-internet-kuwait/
 fiber,KWT,STC Kuwait,https://gsmplans.com/plan/kuwait/stc-kuwait-home-internet/
 fiber,LAO,Lao Telecom,https://www.laotel.com/la/new-package-ftth.php?Lang=en
 fiber,LAO,Unitel,https://www.unitel.com.la/en
@@ -314,7 +314,7 @@ fiber,MRT,Rimatel,https://are.mr/pdfs/tarifs_rimatel_juin_2025.pdf
 fiber,MUS,Mauritius Telecom (Orange / my.t),https://www.myt.mu/home/internet-and-tv/
 fiber,MWI,Malawi Telecommunications (MTL),https://en.wikipedia.org/wiki/Telecommunications_in_Malawi
 fiber,MYS,Maxis,https://www.maxis.com.my/en/broadband/maxis-fibre
-fiber,MYS,TIME,https://www.time.com.my/broadband
+fiber,MYS,TIME,https://www.time.com.my/?contract=24
 fiber,MYS,TM Unifi,https://unifi.com.my/fibre-broadband
 fiber,NAM,MTC Namibia,https://temovision.com/mtc-namibia-bundles/
 fiber,NAM,Paratus Namibia,https://paratus.africa/namibia/explore-our-products/home-internet/fiber/contract/
@@ -597,7 +597,7 @@ mobile,CZE,T-Mobile Czech Republic,https://www.t-mobile.cz
 mobile,CZE,Vodafone Czech Republic,https://www.vodafone.cz
 mobile,DEU,Deutsche Telekom,https://www.telekom.de
 mobile,DEU,Telefonica Germany (o2),https://www.o2online.de
-mobile,DEU,Vodafone,https://www.vodafone.de/prepaid
+mobile,DEU,Vodafone,https://www.vodafone.de
 mobile,DMA,Digicel,https://www.digicelgroup.com/
 mobile,DMA,Flow,https://www.flowdominica.com/
 mobile,DNK,Hi3G Denmark (3),https://www.3.dk
@@ -618,12 +618,12 @@ mobile,ESP,Orange España,https://www.orange.es
 mobile,ESP,Vodafone España,https://www.vodafone.es
 mobile,EST,Elisa Eesti,https://en.wikipedia.org/wiki/Telecommunications_in_Estonia
 mobile,EST,Tele2 Estonia,https://tele2.ee/paketid/konekaart
-mobile,EST,Telia Eesti,https://www.telia.ee/era/mobiil/konekaardid/
+mobile,EST,Telia Eesti,https://en.wikipedia.org/wiki/Telecommunications_in_Estonia
 mobile,ETH,Ethio Telecom,https://timbu.com/ethiopia/networks/ethio-telecom/dataplan
 mobile,ETH,Safaricom Ethiopia,https://www.safaricom.et/
 mobile,FIN,DNA,https://www.dna.fi
 mobile,FIN,Elisa,https://elisa.fi/latausliittymat/
-mobile,FIN,Telia Finland,https://www.telia.fi/prepaid
+mobile,FIN,Telia Finland,https://www.telia.fi
 mobile,FJI,Digicel Fiji,https://www.digicelpacific.com/mobile/fj/bundles
 mobile,FJI,Vodafone Fiji,https://www.vodafone.com.fj/personal/price-plans/rates-price-plan/mobile-internet-rates
 mobile,FRA,Free Mobile,https://www.free.fr
@@ -727,7 +727,7 @@ mobile,LBR,Novafone,https://www.telecomtrainer.com/list-of-mobile-operators-in-l
 mobile,LBR,Orange Liberia,https://www.orange.com.lr/en/data-offers/data-packs.html
 mobile,LCA,Digicel,https://www.digicelgroup.com/lc/en/mobile/prepaid
 mobile,LCA,Flow,https://www.flowlucia.com/
-mobile,LIE,Salt (Liechtenstein) AG,https://www.7acht.li
+mobile,LIE,Salt (Liechtenstein) AG,https://www.salt.ch
 mobile,LIE,Swisscom (Liechtenstein),https://www.swisscom.ch
 mobile,LIE,Telecom Liechtenstein AG (FL1),https://www.fl1.li
 mobile,LKA,Dialog Axiata,https://www.dialog.lk/
@@ -755,7 +755,6 @@ mobile,MDA,Moldtelecom (Unite),https://en.wikipedia.org/wiki/Internet_in_Moldova
 mobile,MDA,Orange Moldova,https://en.wikipedia.org/wiki/Internet_in_Moldova
 mobile,MDG,Airtel Madagascar,https://www.airtel.mg/
 mobile,MDG,Telma,https://blog.sahazamarline.com/2024/03/tarifs-des-forfaits-telma-net-prepaye.html
-mobile,MDG,Yas Madagascar (formerly Telma),https://www.yas.mg/particulier/forfaits-mobiles/internet/
 mobile,MDV,Dhiraagu,https://www.dhiraagu.com.mv/about-us/media-centre/press-releases
 mobile,MDV,Ooredoo Maldives,http://ooredoo.mv/about-us
 mobile,MEX,AT&T Mexico,https://www.att.com.mx/
@@ -840,7 +839,6 @@ mobile,PRT,NOS,https://www.nos.pt/menu/movel-5g/tarifarios/tarifarios-pre-pagos
 mobile,PRT,Vodafone Portugal,https://www.vodafone.pt
 mobile,PRY,Personal,https://www.personal.com.py/planes/prepago.html
 mobile,PRY,Tigo,https://www.tigo.com.py/prepago
-mobile,PSE,Ooredoo Palestine,https://www.ooredoo.ps/%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA
 mobile,QAT,Ooredoo,https://www.ooredoo.qa/web/en/
 mobile,QAT,Vodafone Qatar,https://gsmplans.com/plan/qatar/vodafone-qatar-prepaid-plans/
 mobile,ROU,Digi Mobile,https://www.digi.ro
@@ -875,7 +873,7 @@ mobile,SMR,WindTre,https://www.windtre.it
 mobile,SRB,A1 Srbija,https://a1.rs/privatni/prepaid/mesecni_planovi
 mobile,SRB,Telekom Srbija (mts),https://mts.rs
 mobile,SRB,Yettel Serbia,https://www.yettel.rs/sr/privatni/ponuda/tarifni-paketi/pripejd/
-mobile,SSD,Zain South Sudan,https://ss.zain.com/data-plan/
+mobile,SSD,Zain South Sudan,https://www.zain.com/en/south-sudan/
 mobile,STP,CST,https://www.telecomtrainer.com/list-of-mobile-operators-in-sao-tome-and-principe/
 mobile,STP,Unitel STP,http://unitel.st/tarifarios.php
 mobile,SUR,Telesur,https://www.telesur.sr/prepaid/
@@ -908,7 +906,7 @@ mobile,TJK,ZET Mobile,https://mcc-mnc-lookup.com/country/tj
 mobile,TKM,TMCELL (Altyn Asyr),https://www.communicationstoday.co.in/tm-cell-turkmentelekom-expand-internet-access-across-turkmenistan
 mobile,TLS,Timor Telecom,https://www.timortelecom.tl/en
 mobile,TON,Digicel Tonga,https://www.digicelpacific.com/mobile/to/bundles
-mobile,TTO,Digicel,https://www.digicelgroup.com/tt/en/mobile/prepaid
+mobile,TTO,Digicel,https://www.digicelgroup.com/tt/en/
 mobile,TTO,TSTT,https://www.bcs.com.tt/
 mobile,TUR,Turk Telekom,https://en.wikipedia.org/wiki/T%C3%BCrk_Telekom
 mobile,TUR,Turkcell,https://www.turkcell.com.tr/paket-ve-tarifeler/ana-paketler?paymentType=hazir-kart
@@ -932,7 +930,7 @@ mobile,USA,T-Mobile,https://www.t-mobile.com/cell-phone-plans
 mobile,USA,Verizon,https://www.verizon.com/prepaid/
 mobile,UZB,Beeline Uzbekistan,https://beeline.uz/en
 mobile,UZB,Mobiuz,https://www.mobi.uz/
-mobile,UZB,Ucell (COSCOM),https://ucell.uz/en/services/internet
+mobile,UZB,Ucell (COSCOM),https://ucell.uz/en/tariffs
 mobile,VAT,TIM Italia,https://www.tim.it
 mobile,VAT,Vodafone Italia,https://www.vodafone.it
 mobile,VAT,WindTre,https://www.windtre.it

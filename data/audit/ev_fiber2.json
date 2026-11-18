@@ -420,7 +420,7 @@
    "promo_price_local": null,
    "comment": "DISCREPANCY: the task named 5 countries, but the input file contains only 2 (TLS and VNM). Only TLS and VNM were audited; no other countries were checked. Price is in USD as shown on the page (only the $ sign is printed, so USD is assumed). The name 'TT Fibra+' does not appear on the page; the tier is labelled Ultra. Upload speed is not published (null). Max 100 Mbps = $70 and Total 500 Mbps = $300 are other tiers and were not used. VAT not stated.",
    "evidence_price": true,
-   "evidence_quote": true
+   "evidence_quote": false
   },
   {
    "iso3": "TLS",
@@ -510,7 +510,7 @@
    "promo_price_local": null,
    "comment": "Raw page shows NETVT1_T at 300 Mbps for 180.000 đ/month (non-metro price). The input file's 235000 VND (central HN/HCM) and 195000 VND (61 provinces) figures do not appear on this page. The separate NETVT1_H plan is 210.000 đ/month for central Hanoi and HCM, and that figure is not used for the row. Upload speed is not published (null). Footer names Viettel Telecom. VAT not stated.",
    "evidence_price": true,
-   "evidence_quote": true
+   "evidence_quote": false
   },
   {
    "iso3": "VNM",
@@ -528,7 +528,7 @@
    "promo_price_local": null,
    "comment": "Added as the 200 Mbps plan closest to the target. Ambiguous: it appears under 'Các Gói cước khác cùng chủng loại' (other plans in the same category) on the NETVT1_T page and may be a Wi-Fi/mesh bundle rather than a plain fibre plan. Promo: 4 months free ('Tặng đến: 04 tháng'), promo price not stated, so promo_price_local is null. Upload speed not published. Quote has tags stripped and lines joined, and the doubled 'Mbps Mbps' is verbatim from the page. SUPERNET5 at 250 Mbps for 480.000 đ (525.000 also shown) was noted but not used. VAT not stated.",
    "evidence_price": true,
-   "evidence_quote": true
+   "evidence_quote": false
   }
  ]
 }

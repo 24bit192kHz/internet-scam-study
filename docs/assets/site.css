@@ -55,6 +55,7 @@ h3{font:600 1.1rem/1.4 var(--display);margin:1.6rem 0 .4rem}
 #stampnum{font:700 clamp(3.4rem,9vw,6.2rem)/1.05 var(--display);direction:ltr}
 #stamplab{font:500 .9rem/1.5 var(--display);max-width:13rem}
 #stamplab .med{font-weight:700;font-size:1.05rem}
+#stamplab .aud{font-size:.78rem;opacity:.85}
 @media (prefers-reduced-motion:no-preference){
   .stamp.thump{animation:thump .38s cubic-bezier(.2,1.6,.4,1)}
   @keyframes thump{from{transform:rotate(-5deg) scale(1.35);opacity:0}to{transform:rotate(-5deg) scale(1);opacity:1}}}
@@ -127,7 +128,7 @@ details li{margin:.25rem 0}
 .src{color:var(--muted);font-size:.85rem}
 .st{font:500 .75rem var(--display);border:1px solid var(--rule);border-radius:4px;padding:0 .35rem;color:var(--muted)}
 .st-verified,.st-corrected,.st-new{color:var(--under);border-color:currentColor}
-.st-unverified{color:var(--over);border-color:currentColor}
+.st-unsourced{color:var(--over);border-color:currentColor}
 .cols3{columns:3 12rem;font-size:.92rem}
 
 footer{max-width:1080px;margin:0 auto;padding:1.4rem 16px 2.4rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}

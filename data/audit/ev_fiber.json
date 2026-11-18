@@ -503,7 +503,7 @@
    "vat_included": null,
    "status": "verified",
    "comment": "Operator site returned HTTP 403, so the price comes from the RingGitPlus TIME 200 Mbps page (comparison site, source_url is that page). Page lists RM99 on a 24-month term, RM119 on 12 months, and states 200 Mbps symmetric. Source URL is the comparison page, not the operator's own tariff page. Existing row's time.com.my URL could not be fetched.",
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   }
  ],
@@ -1721,8 +1721,8 @@
    "technology": "FTTH",
    "vat_included": true,
    "plan_name": "La Fibre de Moov 200",
-   "evidence_price": true,
-   "evidence_quote": true
+   "evidence_price": false,
+   "evidence_quote": false
   },
   {
    "iso3": "MRT",
@@ -1739,8 +1739,8 @@
    "technology": "FTTH",
    "vat_included": true,
    "plan_name": "Cheriktak FTTH (shared bandwidth) 200",
-   "evidence_price": true,
-   "evidence_quote": true
+   "evidence_price": false,
+   "evidence_quote": false
   },
   {
    "iso3": "MRT",
@@ -1775,8 +1775,8 @@
    "technology": "FTTH",
    "vat_included": true,
    "plan_name": "La Fibre de Moov 200",
-   "evidence_price": true,
-   "evidence_quote": true
+   "evidence_price": false,
+   "evidence_quote": false
   },
   {
    "iso3": "NER",
@@ -2414,7 +2414,7 @@
    "status": "unverifiable",
    "technology": "FTTH",
    "vat_included": null,
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   },
   {
@@ -2612,7 +2612,7 @@
    "status": "unverifiable",
    "technology": "FTTH",
    "vat_included": null,
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   },
   {
@@ -2630,7 +2630,7 @@
    "status": "unverifiable",
    "technology": "unknown",
    "vat_included": null,
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   },
   {
@@ -2648,7 +2648,7 @@
    "status": "not_offered",
    "technology": "FWA",
    "vat_included": null,
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   }
  ],
@@ -3702,7 +3702,7 @@
    "quote": "Promo: profitez sans plus attendre de notre promo Fibre 100Méga engagement 24 mois jusqu'au 30 novembre 2026 inclus.",
    "status": "corrected",
    "comment": "Regular 12-month price for 100 Méga is 110.90 TND (existing row had 69.90, which is the 50 Méga 12-month price). Promo 64.90 is the 24-month price, valid to 30 Nov 2026 (existing row said 04-Oct-2026). Flag: the 100 Méga 24-month promo equals the 50 Méga 24-month price (64,9 DT) on the same page, so verify. No 200 Méga plan exists; 100 Méga is nearest. Upload not published. Connection fee free ('Frais de raccordement gratuits').",
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": true
   },
   {
@@ -4066,7 +4066,7 @@
    "source_url": "https://stg.earthlink.iq/en/standard-package/",
    "quote": "not retrieved (fetch failed: connect ECONNREFUSED)",
    "comment": "Existing row's IQD 45,000 could not be re-checked; the source fetch failed. The USD figure 34.31 matches 45,000 / 1,311.51, so the arithmetic is right. Mbps still unpublished. Keep the row as-is but flag it unconfirmed.",
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   },
   {
@@ -4102,7 +4102,7 @@
    "source_url": "https://www.partner.co.il/en/",
    "quote": "not retrieved (homepage fetch returned no plan content; fiber URL returned 404)",
    "comment": "Could not confirm the ILS 99 price or the 200/100 speeds. The row is still an indicative figure with no source page behind it. Needs a manual check before it is trusted.",
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   },
   {
@@ -4120,7 +4120,7 @@
    "source_url": "https://www.cellcom.co.il/en/",
    "quote": "not retrieved (homepage returned empty content; fiber URL returned 404)",
    "comment": "Could not confirm the ILS 89 price or the speeds. The row stays indicative and unsourced; needs a manual check.",
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   },
   {
@@ -4138,7 +4138,7 @@
    "source_url": "https://en.wikipedia.org/wiki/Bezeq",
    "quote": "not retrieved (guessed Bezeq fiber URL returned 404; source is Wikipedia, not a price list)",
    "comment": "The cited source is Wikipedia, which does not carry tariffs, so the ILS 119 price is not supported by the source. Needs an official Bezeq price page.",
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   },
   {
@@ -4210,7 +4210,7 @@
    "source_url": "https://www.ooredoo.com.kw/portal/en/HomeInternetFiber",
    "quote": "no verbatim quote: the official page did not render plan prices on fetch; a search-result summary of the official page says 'starting from 25 KD per month' with a 24-month commitment",
    "comment": "The existing row's ~KD 12 came from gsmplans, which now redirects and cannot be re-checked. The official Ooredoo summary points to KD 25/month. Other third-party listings show KD 12 to 20, possibly promotional or stale. The 25 KD figure is a candidate only and must be confirmed on the official page before the row is changed. Kuwait VAT is 0%.",
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   },
   {
@@ -4228,7 +4228,7 @@
    "source_url": "https://gsmplans.com/plan/kuwait/stc-kuwait-home-internet/",
    "quote": "not retrieved (gsmplans redirected; stc.com.kw returned HTTP 403)",
    "comment": "Could not confirm the ~KD 14 price. The official stc site blocked the fetch and the gsmplans source redirects. The row is unsourced. Needs a manual check on stc's own site.",
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   },
   {
@@ -4246,7 +4246,7 @@
    "source_url": "https://waradana.com/english/article/265591-fiber-internet-prices-in-lebanon-a-comprehensive-guide",
    "quote": "not retrieved (secondary article only; not fetched in this pass)",
    "comment": "Source is a secondary price article, not OGERO. The 2,100,000 LBP figure and the USD 23.46 conversion (at 89,500) are internally consistent, but the price was not re-checked and the VAT treatment is unconfirmed. Needs an official OGERO tariff.",
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   },
   {
@@ -4282,7 +4282,7 @@
    "source_url": "https://cyberia.net.lb/cybersmart-fiber.php",
    "quote": "not retrieved (not fetched in this pass)",
    "comment": "The existing row's 2,350,000 LBP HT + 11% VAT = 2,608,500 (USD 29.15 at 89,500) is internally consistent. The 50 Mbps grid value conflicts with the page notice of up to 1 Gbps on GDS and 300 Mbps elsewhere. Not re-checked against the live page.",
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   }
  ],
@@ -5810,7 +5810,7 @@
    "technology": "FTTH",
    "status": "corrected",
    "evidence_price": true,
-   "evidence_quote": true
+   "evidence_quote": false
   },
   {
    "iso3": "MCO",
@@ -6299,7 +6299,7 @@
    "technology": "unknown",
    "vat_included": null,
    "comment": "Standard A$94.99 matches the batch. The fetched page shows the 6-month intro price as A$64.99, not the batch's A$74.99, so promo_price_local is corrected. The quote is reconstructed from the figures noted during the fetch and is not an exact copy of the page wording; re-check the wording before publishing. Speeds are typical evening 98/17.",
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   }
  ],
@@ -7074,7 +7074,7 @@
    "technology": "unknown",
    "vat_included": null,
    "comment": "The tool refused to fetch www.personal.com.ar, so the page was not re-verified. Values are carried from the input: list ARS 90.220 (regular), promo ARS 27.000 (71% off for 6 months), and 300 MB symmetric per the input notes. The existing 17.82 USD matches the promo price (27000 / 1514.91), so that USD figure is the promo rate, not the regular price. Fibertel redirects to Personal (same group), so it is not a separate operator.",
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   },
   {
@@ -7164,7 +7164,7 @@
    "technology": "HFC",
    "vat_included": null,
    "comment": "The fetch returned HTTP 403 on all three URL variants, so the page was not re-verified. Medio C Bs269 = 150 Mbps per the input. The input notes say the site offers 100 to 500 Mbps, so a 200 Mbps tier may exist and the nearest-to-200 pick is unresolved. Technology is HFC/cable inherited from Amnet; FTTH is not confirmed. The input USD 26.62 = 269 / 10.106.",
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   },
   {
@@ -7835,7 +7835,7 @@
    "quote": "SRD 1.124,96 (excl. BTW) met 2 jarig contract, up to:",
    "status": "verified",
    "comment": "Price matches the batch: SRD 1.124,96 excl. BTW on a 2-year contract, 400/400 Mbps. Quote is WebFetch summary-model output; the page's table row reads 'Basic | 400 Mbps | 400 Mbps | SRD 1.124,96'. The batch's BTW-inclusive SRD 1.304,95 is not re-checked. Next tier is Streaming 1 Gbps at SRD 1.899,95. Wifi mesh SRD 200/month from the batch note was not re-confirmed. 400 is the lowest tier, so no 200 row. WebSearch budget was exhausted.",
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": true
   },
   {

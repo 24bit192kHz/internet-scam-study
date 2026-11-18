@@ -124,7 +124,8 @@ for iso, ops in mobile_by_iso.items():
     n = len(ops) or 1
     mobile_country.append(dict(
         iso3=iso, country=m.get("country", iso), region=m.get("region", ""),
-        pop=num(m.get("population_millions")), n_ops=len(ops),
+        pop=num(m.get("population_millions")),
+        n_ops=sum(1 for o in ops if counts(o) and num(o.get("ten_gb_price_usd"))),
         operators=" | ".join(o["operator"] for o in ops),
         avg_10gb=round(avg10, 2) if avg10 else None,
         per_gb=round(avg10 / 10, 3) if avg10 else None,

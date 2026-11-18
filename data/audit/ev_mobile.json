@@ -4409,7 +4409,7 @@
    "fup_policy": "",
    "comment": "No BAM price for a 10 GB prepaid bundle was found. The SMART Full line (1 TB over 24 months) and the !hej TOURIST line (55 GB / 155 GB) show no price or validity. The file's 'Ultra 10GB BAM 15 for 10 days' is unverified, and no unlimited tariff was seen. No 5G launch was confirmed in this session.",
    "evidence_price": false,
-   "evidence_quote": true
+   "evidence_quote": false
   },
   {
    "iso3": "BIH",
@@ -6619,7 +6619,7 @@
    "promo_price_local": null,
    "fup_policy": "no full-price unlimited; 'Unlimited weekend' (Sat-Sun) and 'Unlimited night' (01:00-07:00) are add-ons inside capped Bor tariffs",
    "vat_included": null,
-   "evidence_price": true,
+   "evidence_price": false,
    "evidence_quote": false
   },
   {
@@ -8127,7 +8127,7 @@
    "vat_included": true,
    "comment": "Nearest-to-10 GB 30-day option on the fetched Digicel Haiti page is 18 GB at HTG 1,800 (tax incl. on the card). Next option is 25 GB at HTG 2,200 (quote: '30 Days DigiPaleNèt 30J (2200) | 30 days | 25 GB | HTG 2,200.00 | Tax incl. |'). A '30 Days DigiPaleNèt 30J (450) | 45 GB | HTG 450' card was seen but looks suspicious, so not used. Unlimited: quote '30 Days DigiPaleNèt 30J: 30 days, Unlimited, HTG 3,000.00', from the listing page only, no FUP text seen. Existing US$10 / US$35 replaced by HTG figures. 5G unknown.",
    "evidence_price": true,
-   "evidence_quote": true
+   "evidence_quote": false
   },
   {
    "iso3": "HTI",
