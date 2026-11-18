@@ -1,8 +1,8 @@
 :root{
   --paper:#EEF0EC; --panel:#F7F8F5; --ink:#17202B; --muted:#5A6570; --rule:#CBD1CA;
   --over:#B42318; --under:#0E7C6B; --focus:#1D4ED8;
-  --display:"Reem Kufi","Noto Naskh Arabic",system-ui,sans-serif;
-  --text:"Noto Naskh Arabic","Reem Kufi",Georgia,serif;
+  --display:"Noto Sans Arabic","Noto Sans",system-ui,sans-serif;
+  --text:"Noto Sans Arabic","Noto Sans",system-ui,sans-serif;
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
@@ -13,7 +13,7 @@
 
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.85 var(--text);
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.75 var(--text);
   font-variant-numeric:tabular-nums lining-nums}
 html[lang="en"] body{line-height:1.6}
 a{color:inherit;text-decoration-color:var(--muted);text-underline-offset:.2em}
